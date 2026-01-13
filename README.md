@@ -18,7 +18,7 @@
 
 * Course responsible: Associate Professor [Richard Brooks](https://rbrooksdk.github.io), <rib@via.dk>
 * 5 ECTS (European Credit Transfer System), corresponding to 130 hours of work
-* 10 sessions, each with a duration of 4 lessons (except the first session), starting in week 32
+* 12 sessions, each with a duration of 4 lessons
 * Bachelor level course
 * Grade: 7-step scale
 * Type of assessment: 4-hour written exam (see exam description in the menu to the left)
@@ -33,7 +33,7 @@ It is important that you recap some of your high-school math. Most importantly:
 
 ## :fontawesome-solid-chalkboard-teacher:{ .fa-chalkboard-teacher} Lectures and course organization
 
-The course is scheduled to start Monday August 4 and will continue up until and including August 19. All sessions are from **8:20 to 11:50** in room **C03.12**, except the very first session which is from **8:20 to 14:20**. In general, each session is made up of four activities:
+The course is scheduled to start Friday February 6 and will continue up until and including May 1. All sessions are from **8:20 to 11:50** in room **C05.15**. In general, each session is made up of four activities:
 
 1. At the beginning of each session, there will be a short recap of the previous session.
 2. We then go through the exercises from the previous session.
@@ -51,14 +51,15 @@ Applied Linear Algebra focuses on understanding and applying the core concepts o
 
 **Learning Objectives**
 
-- **Vectors and Vector Spaces**: Understand the fundamental concepts of vectors, vector operations, and vector spaces. Learn to interpret vectors algebraically and geometrically, and reason about spans, bases, dimensions, and linear independence.
+- **Linear Systems**: Understand the concept of a linear system of equations, how to represent them with matrices, and how to solve them using row reduction.
 - **Matrix Algebra**: Perform matrix operations including addition, multiplication, and inversion. Understand matrices as transformations and systems of linear equations, and learn to use matrices for practical problem solving.
 - **Determinants and Invertibility**: Compute determinants of matrices and understand their geometric and algebraic significance. Use determinants to assess matrix invertibility and to solve linear systems.
+- **Vectors and Vector Spaces**: Understand the fundamental concepts of vectors, vector operations, and vector spaces. Learn to interpret vectors algebraically and geometrically, and reason about spans, bases, dimensions, and linear independence.
+- **Markov Chains**: Understand the concept of a Markov chain, how to represent them with matrices, and how to solve them using row reduction.
 - **Linear Transformations and Eigenanalysis**: Understand linear transformations through matrix multiplication. Learn to find eigenvalues and eigenvectors, diagonalise matrices when possible, and interpret eigenanalysis in practical contexts.
 - **Systems of Differential Equations**: Apply linear algebra techniques to solve systems of first-order differential equations. Understand the connection between eigenvalues, eigenvectors, and the behaviour of dynamic systems.
 - **Orthogonality and Least Squares**: Explore orthogonality in vector spaces, apply the Gram-Schmidt process, and solve least squares problems. Understand projections and their role in approximating inconsistent systems and fitting models to data.
 - **Symmetric Matrices, SVD, and PCA**: Analyse symmetric matrices, perform Singular Value Decomposition (SVD), and understand its application to data reduction and Principal Component Analysis (PCA).
-- **Applications of Linear Algebra**: Gain hands-on experience solving real-world problems by applying linear algebra techniques across disciplines such as engineering, computer science, and data analysis.
 
 
 
@@ -93,7 +94,7 @@ Make sure you install a working version of Jupyter Notebook and Python version 3
 Applied Linear Algebra was first offered in 2014 and is scheduled to be taught 1–2 times per year. The course responsible is [Richard Brooks (RIB)](https://rbrooksdk.github.io) who has been the only lecturer teaching the course.
 
 <center>
-  <strong>Grade Distribution 2024 (includes re-exams from 2023)</strong>
+  <strong>Grade Distribution 2025 (includes re-exams from 2023 and 2024)</strong>
   <br><br>
 
   <table>
@@ -104,13 +105,13 @@ Applied Linear Algebra was first offered in 2014 and is scheduled to be taught 1
       </tr>
     </thead>
     <tbody>
-      <tr><td style="text-align:center;">12</td><td style="text-align:center;">1</td></tr>
-      <tr><td style="text-align:center;">10</td><td style="text-align:center;">8</td></tr>
-      <tr><td style="text-align:center;">7</td><td style="text-align:center;">15</td></tr>
-      <tr><td style="text-align:center;">4</td><td style="text-align:center;">9</td></tr>
+      <tr><td style="text-align:center;">12</td><td style="text-align:center;">8</td></tr>
+      <tr><td style="text-align:center;">10</td><td style="text-align:center;">5</td></tr>
+      <tr><td style="text-align:center;">7</td><td style="text-align:center;">3</td></tr>
+      <tr><td style="text-align:center;">4</td><td style="text-align:center;">4</td></tr>
       <tr><td style="text-align:center;">02</td><td style="text-align:center;">2</td></tr>
-      <tr><td style="text-align:center;">00</td><td style="text-align:center;">11</td></tr>
-      <tr><td style="text-align:center;">-3</td><td style="text-align:center;">1</td></tr>
+      <tr><td style="text-align:center;">00</td><td style="text-align:center;">8</td></tr>
+      <tr><td style="text-align:center;">-3</td><td style="text-align:center;">0</td></tr>
     </tbody>
   </table>
 </center>

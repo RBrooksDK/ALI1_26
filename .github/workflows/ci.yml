@@ -4,9 +4,12 @@ on:
   push:
     branches:
       - main
+      - master
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
@@ -31,6 +34,9 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
+          pip install mkdocs
 
       - name: Deploy
         run: mkdocs gh-deploy --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -140,15 +140,17 @@ nav:
   - Sessions:
     - Sessions/README.md
     - 01 Introduction to Linear Algebra: 01_Introduction_to_Linear_Algebra/README.md
-    - 02 Matrix Algebra: 02_Matrix_Algebra/README.md
-    - 03 Determinants: 03_Determinants/README.md
-    - 04 Vector Spaces: 04_Vector_Spaces/README.md
-    - 05 Eigenvalues: 05_Eigenvalues/README.md
-    - 06 Differential Equations: 06_Differential_Equations/README.md
-    - 07 Orthogonality I: 07_Orthogonality_I/README.md
-    - 08 Orthogonality II: 08_Orthogonality_II/README.md
-    - 09 Symmetric Matrices, SVD, and PCA: 09_Symmetric_Matrices_SVD_and_PCA/README.md
-    - 10 Recap and Conclusion: 10_Recap_and_Conclusion/README.md    
+    - 02 Independence and Linear Transformations: 02_Independence_and_Linear_Transformations/README.md
+    - 03 Matrix Algebra: 03_Matrix_Algebra/README.md
+    - 04 Determinants: 04_Determinants/README.md
+    - 05 Vector Spaces: 05_Vector_Spaces/README.md
+    - 06 Eigenvalues: 06_Eigenvalues/README.md
+    - 07 Differential Equations: 07_Differential_Equations/README.md
+    - 08 Orthogonality I: 08_Orthogonality_I/README.md
+    - 09 Orthogonality II: 09_Orthogonality_II/README.md
+    - 10 Symmetric Matrices, SVD, and PCA: 10_Symmetric_Matrices_SVD_and_PCA/README.md
+    - 11 SVD and PCA: 11_SVD_and_PCA/README.md
+    - 12 Recap and Conclusion: 12_Recap_and_Conclusion/README.md    
   - Exam: pages/exam.md
   - FAQ: pages/faq.md
   - Online Resources: pages/online_resources.md
