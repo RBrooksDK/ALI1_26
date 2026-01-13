@@ -1,0 +1,1722 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Course page for Applied Linear Algebra at VIA University College">
+      
+      
+        <meta name="author" content="Richard Brooks">
+      
+      
+        <link rel="canonical" href="https://rbrooksdk.github.io/ALI1_26/01_Introduction_to_Linear_Algebra/">
+      
+      
+        <link rel="prev" href="../Sessions/">
+      
+      
+        <link rel="next" href="../02_Matrix_Algebra/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../figures/ali.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>01 Introduction to Linear Algebra - Applied Linear Algebra</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M22%2012a10%2010%200%200%201-10%2010A10%2010%200%200%201%202%2012%2010%2010%200%200%201%2012%202a10%2010%200%200%201%2010%2010m-12%206%206-6-6-6-1.4%201.4%204.6%204.6-4.6%204.6z%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRed+Hat+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Red Hat Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config",""),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#session-material" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Applied Linear Algebra" class="md-header__button md-logo" aria-label="Applied Linear Algebra" data-md-component="logo">
+      
+  <img src="../figures/ali.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Applied Linear Algebra
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              01 Introduction to Linear Algebra
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/RBrooksDK/ALI1_26" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Applied Linear Algebra" class="md-nav__button md-logo" aria-label="Applied Linear Algebra" data-md-component="logo">
+      
+  <img src="../figures/ali.png" alt="logo">
+
+    </a>
+    Applied Linear Algebra
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/RBrooksDK/ALI1_26" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://rbrooksdk.github.io" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Richard Brooks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Sessions/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sessions
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sessions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 Introduction to Linear Algebra
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 Introduction to Linear Algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#session-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Material:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Description
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Concepts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quiz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quiz
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Matrix_Algebra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 Matrix Algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Determinants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 Determinants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Vector_Spaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 Vector Spaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_Eigenvalues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 Eigenvalues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_Differential_Equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 Differential Equations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_Orthogonality_I/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 Orthogonality I
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_Orthogonality_II/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 Orthogonality II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_Symmetric_Matrices_SVD_and_PCA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 Symmetric Matrices, SVD, and PCA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_Recap_and_Conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 Recap and Conclusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pages/exam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exam
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pages/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pages/online_resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Online Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/EqyrbL4eyEtPlLcHYKt3NfIBLLBs2xWNa4CtjvvZb5dKTw?e=HGyFGo" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Resources ALI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#session-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Material:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Description
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Concepts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quiz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quiz
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 align="center">Introduction to Linear Algebra</h1>
+
+<h2 id="session-material">Session Material:<a class="headerlink" href="#session-material" title="Permanent link">&para;</a></h2>
+<p>Lay: 1.1-1.5  + 1.7-1.10 (1.8-1.10 self-study)  </p>
+<p><a href="https://drive.google.com/file/d/1ICEnghBXNo3U_R6AS3uUzzUHit7FCVRy/view?usp=sharing">Session Notes</a></p>
+<p><a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/EiMKdymBUehBpz9ft6ta4NABEVbrfJnmhYTNyJLH83PH9w?e=iY0JyU">Session Material</a></p>
+<hr />
+<h2 id="session-description">Session Description<a class="headerlink" href="#session-description" title="Permanent link">&para;</a></h2>
+<p>We'll begin with systems of linear equations, what they are, how to represent them with matrices, and how to solve them using row reduction. You'll learn key row operations, how to reach echelon forms, identify pivots, and determine basic and free variables. We'll cover when systems have unique, infinite, or no solutions, revisiting concepts like Theorem 2.</p>
+<p>Next, we introduce vectors: linear combinations, spans, and how vector equations relate to linear systems, with geometric intuition in 2D and 3D. We'll examine linear dependence and independence, identifying redundant vectors and linking this to simple homogeneous systems (Theorems 7–9). Finally, we'll introduce linear transformations, how matrices map vectors between spaces, laying a vital foundation for what's to come.</p>
+<h3 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Linear Systems</li>
+<li>Matrices</li>
+<li>Row Reduction</li>
+<li>Vectors</li>
+<li>Span</li>
+<li>Linear Dependence</li>
+<li>Linear Transformations</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Learning Objectives</p>
+<ul>
+<li>Identify and represent linear systems using matrices.</li>
+<li>Apply row reduction techniques to solve linear systems.</li>
+<li>Describe and construct vectors, spans, and linear combinations.</li>
+<li>Distinguish and determine linear dependence and independence in sets of vectors.</li>
+<li>Analyze and interpret linear transformations and their relationship with matrices.</li>
+</ul>
+</div>
+<hr />
+<h2 id="quiz">Quiz<a class="headerlink" href="#quiz" title="Permanent link">&para;</a></h2>
+<p>After the session, you should be able to answer this quiz. You can see your score at the bottom of the page. Your answers are not saved or recorded.</p>
+<hr />
+<div class="quiz" data-quiz-id="0"><h4>Question 1</h4><h3>A system of linear equations has no solution if its augmented matrix, after row reduction to echelon form, contains a row of the form:</h3><form><fieldset><div><input type="radio" name="answer-0" value="0" id="quiz-0-0" ><label for="quiz-0-0">$[0 \; 0 \; \dots \; 0 \; | \; 0]$</label></div><div><input type="radio" name="answer-0" value="1" id="quiz-0-1" ><label for="quiz-0-1">A row where every entry is non-zero.</label></div><div><input type="radio" name="answer-0" value="2" id="quiz-0-2" ><label for="quiz-0-2">$[1 \; 0 \; \dots \; 0 \; | \; b]$ where $b$ is any real number.</label></div><div><input type="radio" name="answer-0" value="3" id="quiz-0-3" correct><label for="quiz-0-3">$[0 \; 0 \; \dots \; 0 \; | \; b]$ where $b$ is a non-zero real number.</label></div><div><input type="radio" name="answer-0" value="4" id="quiz-0-4" ><label for="quiz-0-4">A column corresponding to a free variable.</label></div></fieldset><button type="submit" class="quiz-button">Check Answer</button><div class="quiz-score-display" style="margin-top: 10px; font-weight: bold;">Score: <span class="quiz-current-score">0</span> / <span class="quiz-total-possible">1</span></div></form><section class="content hidden"><p><strong>Explanation:</strong> A row of the form $[0 \; 0 \; \dots \; 0 \; | \; b]$ where $b \neq 0$ represents the equation $0x_1 + 0x_2 + \dots + 0x_n = b$. If $b$ is non-zero, this equation is $0 = b$, which is a contradiction. Therefore, the system is inconsistent and has no solution. This relates to understanding when systems have unique, infinite, or no solutions based on their echelon form.</p></section></div>
+
+<hr />
+<div class="quiz" data-quiz-id="1"><h4>Question 2</h4><h3>Consider the matrix equation $Ax = b$. If the vector $b$ can be written as a linear combination of the columns of matrix $A$, what can be said about the system?</h3><form><fieldset><div><input type="radio" name="answer-1" value="0" id="quiz-1-0" correct><label for="quiz-1-0">The system $Ax = b$ is consistent (has at least one solution).</label></div><div><input type="radio" name="answer-1" value="1" id="quiz-1-1" ><label for="quiz-1-1">The system has no solution.</label></div><div><input type="radio" name="answer-1" value="2" id="quiz-1-2" ><label for="quiz-1-2">The columns of $A$ are linearly dependent.</label></div><div><input type="radio" name="answer-1" value="3" id="quiz-1-3" ><label for="quiz-1-3">The matrix $A$ must be invertible.</label></div><div><input type="radio" name="answer-1" value="4" id="quiz-1-4" ><label for="quiz-1-4">The system has a unique solution only if $A$ is an identity matrix.</label></div></fieldset><button type="submit" class="quiz-button">Check Answer</button><div class="quiz-score-display" style="margin-top: 10px; font-weight: bold;">Score: <span class="quiz-current-score">0</span> / <span class="quiz-total-possible">1</span></div></form><section class="content hidden"><p><strong>Explanation:</strong> The definition of $Ax$ is a linear combination of the columns of $A$ using the entries of $x$ as weights. If $b$ is in the span of the columns of $A$ (meaning $b$ <em>is</em> a linear combination of the columns of $A$), then there exists at least one vector $x$ such that $Ax = b$. This means the system is consistent.</p></section></div>
+
+<hr />
+<div class="quiz" data-quiz-id="2"><h4>Question 3</h4><h3>Which of the following sets of vectors in $\mathbb{R}^3$ is linearly dependent. Let $v_1 = \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}$, $v_2 = \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}$, $v_3 = \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}$, $v_4 = \begin{bmatrix} 2 \\ 0 \\ 0 \end{bmatrix}.$</h3><form><fieldset><div><input type="radio" name="answer-2" value="0" id="quiz-2-0" ><label for="quiz-2-0">$\{v_1, v_2, v_3\}$</label></div><div><input type="radio" name="answer-2" value="1" id="quiz-2-1" ><label for="quiz-2-1">$\{v_1, v_2\}$</label></div><div><input type="radio" name="answer-2" value="2" id="quiz-2-2" ><label for="quiz-2-2">$\{v_2, v_3\}$</label></div><div><input type="radio" name="answer-2" value="3" id="quiz-2-3" ><label for="quiz-2-3">$\{v_1, v_3\}$</label></div><div><input type="radio" name="answer-2" value="4" id="quiz-2-4" correct><label for="quiz-2-4">$\{v_1, v_4\}$</label></div></fieldset><button type="submit" class="quiz-button">Check Answer</button><div class="quiz-score-display" style="margin-top: 10px; font-weight: bold;">Score: <span class="quiz-current-score">0</span> / <span class="quiz-total-possible">1</span></div></form><section class="content hidden"><p><strong>Explanation:</strong> A set of vectors is linearly dependent if at least one vector in the set can be written as a linear combination of the others, or equivalently, if there's a non-trivial solution to $c_1\mathbf{v}_1 + c_2\mathbf{v}_2 + \dots + c_p\mathbf{v}_p = \mathbf{0}$. In this case, $v_4 = 2v_1$. Thus, $2v_1 - v_4 = \mathbf{0}$ is a non-trivial linear combination that equals the zero vector, making the set $\{v_1, v_4\}$ linearly dependent. The set $\{v_1, v_2, v_3\}$ is the standard basis for $\mathbb{R}^3$ and is linearly independent.</p></section></div>
+
+<hr />
+<div class="quiz" data-quiz-id="3"><h4>Question 4</h4><h3>A linear transformation $T: \mathbb{R}^n \to \mathbb{R}^m$ is defined by $T(x) = Ax$. If $A$ is an $m \times n$ matrix with $n$ pivot positions (i.e., a pivot in every column), what can be concluded about the columns of $A$?</h3><form><fieldset><div><input type="radio" name="answer-3" value="0" id="quiz-3-0" ><label for="quiz-3-0">The matrix $A$ has $m$ rows.</label></div><div><input type="radio" name="answer-3" value="1" id="quiz-3-1" correct><label for="quiz-3-1">The columns of $A$ are linearly independent.</label></div><div><input type="radio" name="answer-3" value="2" id="quiz-3-2" ><label for="quiz-3-2">The columns of $A$ span $\mathbb{R}^m$.</label></div><div><input type="radio" name="answer-3" value="3" id="quiz-3-3" ><label for="quiz-3-3">The transformation $T$ is onto $\mathbb{R}^m$.</label></div><div><input type="radio" name="answer-3" value="4" id="quiz-3-4" ><label for="quiz-3-4">The equation $Ax = \mathbf{0}$ has infinitely many solutions.</label></div></fieldset><button type="submit" class="quiz-button">Check Answer</button><div class="quiz-score-display" style="margin-top: 10px; font-weight: bold;">Score: <span class="quiz-current-score">0</span> / <span class="quiz-total-possible">1</span></div></form><section class="content hidden"><p><strong>Explanation:</strong> If an $m \times n$ matrix $A$ has $n$ pivot positions, it means there is a pivot in every column. This implies that the equation $Ax = \mathbf{0}$ has only the trivial solution. By definition (Theorem 7, or related concepts), this means the columns of $A$ are linearly independent. It does not guarantee that $T$ is onto unless $m=n$, nor does it guarantee that the columns span $\mathbb{R}^m$ unless $m \le n$ and there are $m$ pivots.</p></section></div>
+
+<hr />
+<div class="quiz" data-quiz-id="4"><h4>Question 5</h4><h3>Given the augmented matrix $\begin{bmatrix} 1 & 2 & 3 \\ 0 & 0 & 0 \end{bmatrix}$ which is in echelon form, how many solutions does the corresponding system of linear equations have?</h3><form><fieldset><div><input type="radio" name="answer-4" value="0" id="quiz-4-0" ><label for="quiz-4-0">Exactly two solutions.</label></div><div><input type="radio" name="answer-4" value="1" id="quiz-4-1" ><label for="quiz-4-1">No solution.</label></div><div><input type="radio" name="answer-4" value="2" id="quiz-4-2" correct><label for="quiz-4-2">Infinitely many solutions.</label></div><div><input type="radio" name="answer-4" value="3" id="quiz-4-3" ><label for="quiz-4-3">Exactly one unique solution.</label></div><div><input type="radio" name="answer-4" value="4" id="quiz-4-4" ><label for="quiz-4-4">The number of solutions cannot be determined from this form.</label></div></fieldset><button type="submit" class="quiz-button">Check Answer</button><div class="quiz-score-display" style="margin-top: 10px; font-weight: bold;">Score: <span class="quiz-current-score">0</span> / <span class="quiz-total-possible">1</span></div></form><section class="content hidden"><p><strong>Explanation:</strong> The matrix represents the system $x_1 + 2x_2 = 3$ and $0x_1 + 0x_2 = 0$. The second equation $0=0$ is always true and provides no restriction. The first column (for $x_1$) has a pivot, but the second column (for $x_2$) does not. This means $x_2$ is a free variable. Since there is at least one free variable and the system is consistent (no row like $[0 \; 0 \; | \; b]$ where $b \neq 0$), the system has infinitely many solutions. This relates to identifying pivots and basic/free variables.</p></section></div>
+
+<hr />
+<div class="quiz" data-quiz-id="5"><h4>Question 6</h4><h3>Consider the system of linear equations: $x_1 + 2x_2 - x_3 = 1$, $2x_1 + 5x_2 + x_3 = 4$, $x_1 + 3x_2 + 2x_3 = 3$. After performing row operations to bring the augmented matrix to row echelon form, one possible row echelon form is $\begin{bmatrix} 1 & 2 & -1 & | & 1 \\ 0 & 1 & 3 & | & 2 \\ 0 & 0 & 0 & | & 0 \end{bmatrix}$. Which variable is a free variable?</h3><form><fieldset><div><input type="radio" name="answer-5" value="0" id="quiz-5-0" ><label for="quiz-5-0">$x_1$</label></div><div><input type="radio" name="answer-5" value="1" id="quiz-5-1" ><label for="quiz-5-1">There are no free variables.</label></div><div><input type="radio" name="answer-5" value="2" id="quiz-5-2" correct><label for="quiz-5-2">$x_3$</label></div><div><input type="radio" name="answer-5" value="3" id="quiz-5-3" ><label for="quiz-5-3">$x_2$</label></div><div><input type="radio" name="answer-5" value="4" id="quiz-5-4" ><label for="quiz-5-4">Both $x_2$ and $x_3$ are free variables.</label></div></fieldset><button type="submit" class="quiz-button">Check Answer</button><div class="quiz-score-display" style="margin-top: 10px; font-weight: bold;">Score: <span class="quiz-current-score">0</span> / <span class="quiz-total-possible">1</span></div></form><section class="content hidden"><p><strong>Explanation:</strong> In the given row echelon form, the pivot columns are the first and second columns (corresponding to $x_1$ and $x_2$). The third column (corresponding to $x_3$) does not contain a pivot. Therefore, $x_3$ is a free variable. The system has infinitely many solutions.</p></section></div>
+
+<hr />
+<div class="quiz" data-quiz-id="6"><h4>Question 7</h4><h3>Let $A = \begin{bmatrix} 1 & -2 & 1 \\ 0 & 2 & -8 \\ -4 & 5 & 9 \end{bmatrix}$ and $b = \begin{bmatrix} 0 \\ 8 \\ -9 \end{bmatrix}$. The augmented matrix $[A|b]$ can be row reduced to $\begin{bmatrix} 1 & 0 & -7 & | & 8 \\ 0 & 1 & -4 & | & 4 \\ 0 & 0 & 0 & | & 0 \end{bmatrix}$. What is the solution $x$ to $Ax = b$ if we let the free variable be $x_3 = t$?</h3><form><fieldset><div><input type="radio" name="answer-6" value="0" id="quiz-6-0" ><label for="quiz-6-0">$x = \begin{bmatrix} 8 \\ 4 \\ 0 \end{bmatrix} + t \begin{bmatrix} -7 \\ -4 \\ 0 \end{bmatrix}$</label></div><div><input type="radio" name="answer-6" value="1" id="quiz-6-1" ><label for="quiz-6-1">$x = \begin{bmatrix} 8 \\ 4 \\ t \end{bmatrix}$</label></div><div><input type="radio" name="answer-6" value="2" id="quiz-6-2" ><label for="quiz-6-2">$x = \begin{bmatrix} -7 \\ -4 \\ 1 \end{bmatrix} + t \begin{bmatrix} 8 \\ 4 \\ 0 \end{bmatrix}$</label></div><div><input type="radio" name="answer-6" value="3" id="quiz-6-3" ><label for="quiz-6-3">The system has no solution.</label></div><div><input type="radio" name="answer-6" value="4" id="quiz-6-4" correct><label for="quiz-6-4">$x = \begin{bmatrix} 8 \\ 4 \\ 0 \end{bmatrix} + t \begin{bmatrix} 7 \\ 4 \\ 1 \end{bmatrix}$</label></div></fieldset><button type="submit" class="quiz-button">Check Answer</button><div class="quiz-score-display" style="margin-top: 10px; font-weight: bold;">Score: <span class="quiz-current-score">0</span> / <span class="quiz-total-possible">1</span></div></form><section class="content hidden"><p><strong>Explanation:</strong> From the reduced row echelon form, we have the equations: $x_1 - 7x_3 = 8$ and $x_2 - 4x_3 = 4$. Since $x_3$ is free, let $x_3 = t$. Then $x_1 = 8 + 7t$ and $x_2 = 4 + 4t$. In vector form, this is $x = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 8 + 7t \\ 4 + 4t \\ t \end{bmatrix} = \begin{bmatrix} 8 \\ 4 \\ 0 \end{bmatrix} + t \begin{bmatrix} 7 \\ 4 \\ 1 \end{bmatrix}$.</p></section></div>
+
+<hr />
+<div class="quiz" data-quiz-id="7"><h4>Question 8</h4><h3>For what value(s) of $h$ will the vectors $v_1 = \begin{bmatrix} 1 \\ -1 \\ -2 \end{bmatrix}$, $v_2 = \begin{bmatrix} 5 \\ -4 \\ -7 \end{bmatrix}$, $v_3 = \begin{bmatrix} -3 \\ 1 \\ h \end{bmatrix}$ be linearly dependent?</h3><form><fieldset><div><input type="radio" name="answer-7" value="0" id="quiz-7-0" correct><label for="quiz-7-0">$h = 0$ only</label></div><div><input type="radio" name="answer-7" value="1" id="quiz-7-1" ><label for="quiz-7-1">For all values of $h$.</label></div><div><input type="radio" name="answer-7" value="2" id="quiz-7-2" ><label for="quiz-7-2">For no values of $h$.</label></div><div><input type="radio" name="answer-7" value="3" id="quiz-7-3" ><label for="quiz-7-3">$h = -1$</label></div><div><input type="radio" name="answer-7" value="4" id="quiz-7-4" ><label for="quiz-7-4">$h = 3$</label></div></fieldset><button type="submit" class="quiz-button">Check Answer</button><div class="quiz-score-display" style="margin-top: 10px; font-weight: bold;">Score: <span class="quiz-current-score">0</span> / <span class="quiz-total-possible">1</span></div></form><section class="content hidden"><p><strong>Explanation:</strong> The vectors are linearly dependent if the matrix $A = [v_1 \ v_2 \ v_3]$ has fewer than 3 pivots, or if the augmented matrix $[A | \mathbf{0}]$ has a non-trivial solution. Here is the row reduction for the matrix
+
+$$\begin{aligned}
+&\begin{bmatrix}
+1 & 5 & -3 \\
+-1 & -4 & 1 \\
+-2 & -7 & h
+\end{bmatrix}
+\quad
+\xrightarrow{\, R_2 \mapsto R_2 + R_1 \,,\, R_3 \mapsto R_3 + 2R_1 \,}
+\quad
+\begin{bmatrix}
+1 & 5 & -3 \\
+0 & 1 & -2 \\
+0 & 3 & h - 6
+\end{bmatrix} \\[1em]
+&\xrightarrow{\, R_3 \mapsto R_3 - 3R_2 \,}
+\quad
+\begin{bmatrix}
+1 & 5 & -3 \\
+0 & 1 & -2 \\
+0 & 0 & h
+\end{bmatrix}
+\end{aligned}$$
+
+Since the last row has a pivot in the third column if $h \neq 0$, the vectors are linearly independent. If $h = 0$, the last row becomes $[0 \; 0 \; 0]$, indicating that the vectors are linearly dependent. Thus, the only value of $h$ that makes the vectors linearly dependent is $h = 0$.</p></section></div>
+
+<hr />
+<div class="quiz" data-quiz-id="8"><h4>Question 9</h4><h3>Let $T: \mathbb{R}^2 \to \mathbb{R}^2$ be a linear transformation such that $T\left(\begin{bmatrix} 1 \\ 0 \end{bmatrix}\right) = \begin{bmatrix} 2 \\ 5 \end{bmatrix}$ and $T\left(\begin{bmatrix} 0 \\ 1 \end{bmatrix}\right) = \begin{bmatrix} -1 \\ 6 \end{bmatrix}$. What is $T\left(\begin{bmatrix} 3 \\ -2 \end{bmatrix}\right)$ (you will need to do some calculations!)?</h3><form><fieldset><div><input type="radio" name="answer-8" value="0" id="quiz-8-0" ><label for="quiz-8-0">$\begin{bmatrix} 1 \\ 11 \end{bmatrix}$</label></div><div><input type="radio" name="answer-8" value="1" id="quiz-8-1" correct><label for="quiz-8-1">$\begin{bmatrix} 8 \\ 3 \end{bmatrix}$</label></div><div><input type="radio" name="answer-8" value="2" id="quiz-8-2" ><label for="quiz-8-2">$\begin{bmatrix} 4 \\ 27 \end{bmatrix}$</label></div><div><input type="radio" name="answer-8" value="3" id="quiz-8-3" ><label for="quiz-8-3">$\begin{bmatrix} 5 \\ -7 \end{bmatrix}$</label></div><div><input type="radio" name="answer-8" value="4" id="quiz-8-4" ><label for="quiz-8-4">$\begin{bmatrix} 6 \\ -10 \end{bmatrix}$</label></div></fieldset><button type="submit" class="quiz-button">Check Answer</button><div class="quiz-score-display" style="margin-top: 10px; font-weight: bold;">Score: <span class="quiz-current-score">0</span> / <span class="quiz-total-possible">1</span></div></form><section class="content hidden"><p><strong>Explanation:</strong> Since $T$ is a linear transformation, $T(x+y) = T(x) + T(y)$ and $T(cx) = cT(x)$. We can write 
+$$\begin{bmatrix} 3 \\ -2 \end{bmatrix} = 3\begin{bmatrix} 1 \\ 0 \end{bmatrix} - 2\begin{bmatrix} 0 \\ 1 \end{bmatrix}$$
+Therefore,
+$$\begin{aligned}
+T\left(\begin{bmatrix} 3 \\ -2 \end{bmatrix}\right) &= T\left(3\begin{bmatrix} 1 \\ 0 \end{bmatrix} - 2\begin{bmatrix} 0 \\ 1 \end{bmatrix}\right) \\
+&= 3T\left(\begin{bmatrix} 1 \\ 0 \end{bmatrix}\right) - 2T\left(\begin{bmatrix} 0 \\ 1 \end{bmatrix}\right) \\
+&= 3\begin{bmatrix} 2 \\ 5 \end{bmatrix} - 2\begin{bmatrix} -1 \\ 6 \end{bmatrix} \\
+&= \begin{bmatrix} 6 \\ 15 \end{bmatrix} - \begin{bmatrix} -2 \\ 12 \end{bmatrix} \\
+&= \begin{bmatrix} 6 - (-2) \\ 15 - 12 \end{bmatrix} \\
+&= \begin{bmatrix} 8 \\ 3 \end{bmatrix}
+\end{aligned}$$
+
+Alternatively, the standard matrix for $T$ is 
+$$A = \begin{bmatrix} T(e_1) & T(e_2) \end{bmatrix} = \begin{bmatrix} 2 & -1 \\ 5 & 6 \end{bmatrix}$$
+
+Then
+$$\begin{aligned}
+T(x) = Ax &= \begin{bmatrix} 2 & -1 \\ 5 & 6 \end{bmatrix} \begin{bmatrix} 3 \\ -2 \end{bmatrix} \\
+&= \begin{bmatrix} (2)(3) + (-1)(-2) \\ (5)(3) + (6)(-2) \end{bmatrix} \\
+&= \begin{bmatrix} 6+2 \\ 15-12 \end{bmatrix} \\
+&= \begin{bmatrix} 8 \\ 3 \end{bmatrix}
+\end{aligned}$$</p></section></div>
+
+<hr />
+<div class="quiz" data-quiz-id="9"><h4>Question 10</h4><h3>If $A$ is an $m \times n$ matrix whose columns span $\mathbb{R}^m$, what must be true about the echelon form of $A$? (Revisiting concepts like Theorem 2 or 4 from Lay's book context)</h3><form><fieldset><div><input type="radio" name="answer-9" value="0" id="quiz-9-0" ><label for="quiz-9-0">$A$ has a pivot position in every column.</label></div><div><input type="radio" name="answer-9" value="1" id="quiz-9-1" ><label for="quiz-9-1">$A$ has $n$ rows.</label></div><div><input type="radio" name="answer-9" value="2" id="quiz-9-2" ><label for="quiz-9-2">The equation $Ax = \mathbf{0}$ has only the trivial solution.</label></div><div><input type="radio" name="answer-9" value="3" id="quiz-9-3" ><label for="quiz-9-3">$m < n$.</label></div><div><input type="radio" name="answer-9" value="4" id="quiz-9-4" correct><label for="quiz-9-4">$A$ has a pivot position in every row.</label></div></fieldset><button type="submit" class="quiz-button">Check Answer</button><div class="quiz-score-display" style="margin-top: 10px; font-weight: bold;">Score: <span class="quiz-current-score">0</span> / <span class="quiz-total-possible">1</span></div></form><section class="content hidden"><p><strong>Explanation:</strong> If the columns of an $m \times n$ matrix $A$ span $\mathbb{R}^m$, it means that for every $b$ in $\mathbb{R}^m$, the equation $Ax = b$ has a solution. This is equivalent to stating that matrix $A$ has a pivot position in every row (according to Theorem 4 in Lay, etc., or similar theorems). This ensures there's no row of zeros in the coefficient part of the augmented matrix $[A|b]$ that could lead to an inconsistency like $0=c$ where $c \neq 0$.</p></section></div>
+
+<hr />
+<!-- 
+1.2: 1, 7, 9, 11, 33   
+1.3: 11, 13, 14, 28     
+1.4: 6, 8, 11, 17, 18​   
+1.5: 7, 15, 23, 24 
+-->
+<style type="text/css">
+    ol { list-style-type: lower-alpha; }
+</style>
+
+<h2 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h2>
+<p><strong>Exercise 1</strong> (1.2.1)</p>
+<p>Determine which matrices are in reduced echelon form and which others are only in echelon form.</p>
+<ol>
+<li><span class="arithmatex">\(\left[\begin{array}{llll}1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 1\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{llll}1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{llll}1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{lllll}1 &amp; 1 &amp; 0 &amp; 1 &amp; 1 \\ 0 &amp; 2 &amp; 0 &amp; 2 &amp; 2 \\ 0 &amp; 0 &amp; 0 &amp; 3 &amp; 3 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4\end{array}\right]\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>Reduced echelon form</li>
+<li>Reduced echelon form</li>
+<li>Not echelon form</li>
+<li>Echelon form</li>
+</ol>
+</details>
+<p><strong>Exercise 2</strong> (1.2.7)</p>
+<p>Find the general solution of the given system.</p>
+<p><span class="arithmatex">\(\left[\begin{array}{llll}1 &amp; 3 &amp; 4 &amp; 7 \\ 3 &amp; 9 &amp; 7 &amp; 6\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<div class="arithmatex">\[
+\left\{
+  \begin{array}{l}
+    x_1 = -5 - 3 x_2 \\
+    x_2 \text{ is free } \\
+    x_3 = 3
+  \end{array}
+\right.
+\]</div>
+</details>
+<p><strong>Exercise 3</strong> (1.2.9)</p>
+<p>Find the general solution of the given system.</p>
+<p><span class="arithmatex">\(\left[\begin{array}{rrrr}0 &amp; 1 &amp; -2 &amp; 3 \\ 1 &amp; -3 &amp; 4 &amp; -6\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<div class="arithmatex">\[
+\left\{
+    \begin{array}{l}
+        x_1=3+2 x_3 \\
+        x_2=3+2 x_3 \\
+        x_3 \text { is free }
+    \end{array}\right.
+\]</div>
+</details>
+<p><strong>Exercise 4</strong> (1.2.11)</p>
+<p>Find the general solution of the given system.</p>
+<p><span class="arithmatex">\(\left[\begin{array}{rrrr}3 &amp; -2 &amp; 4 &amp; 0 \\ 9 &amp; -6 &amp; 12 &amp; 0 \\ 6 &amp; -4 &amp; 8 &amp; 0\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<div class="arithmatex">\[
+\left\{
+    \begin{array}{l}
+        x_1=\frac{2}{3} x_2-\frac{4}{3} x_3 \\
+        x_2 \text { is free } \\
+        x_3 \text { is free }
+    \end{array}\right.
+\]</div>
+</details>
+<p><strong>Exercise 5</strong> (1.2.33)</p>
+<p>Find the interpolating polynomial <span class="arithmatex">\(p(t)=a_0+a_1 t+a_2 t^2\)</span> for the data <span class="arithmatex">\((1,6),(2,15),(3,28)\)</span>. That is, find <span class="arithmatex">\(a_0, a_1\)</span>, and <span class="arithmatex">\(a_2\)</span> such that</p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp; a_0+a_1(1)+a_2(1)^2=6 \\
+&amp; a_0+a_1(2)+a_2(2)^2=15 \\
+&amp; a_0+a_1(3)+a_2(3)^2=28
+\end{aligned}
+\]</div>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>The polynomial is <span class="arithmatex">\(p(t)=1+3 t+2 t^2\)</span>.</p>
+</details>
+<p><strong>Exercise 6</strong> (1.3.11)</p>
+<p>Determine if <span class="arithmatex">\(\mathbf{b}\)</span> is a linear combination of <span class="arithmatex">\(\mathbf{a}_1, \mathbf{a}_2\)</span>, and <span class="arithmatex">\(\mathbf{a}_3\)</span>.</p>
+<p><span class="arithmatex">\(\mathbf{a}_1=\left[\begin{array}{r}1 \\ -2 \\ 0\end{array}\right], \mathbf{a}_2=\left[\begin{array}{l}0 \\ 1 \\ 2\end{array}\right], \mathbf{a}_3=\left[\begin{array}{r}5 \\ -6 \\ 8\end{array}\right], \mathbf{b}=\left[\begin{array}{r}2 \\ -1 \\ 6\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\mathbf{b}\)</span> is a linear combination of <span class="arithmatex">\(\mathbf{a}_1, \mathbf{a}_2\)</span>, and <span class="arithmatex">\(\mathbf{a}_3\)</span>.</p>
+</details>
+<p><strong>Exercise 7</strong> (1.3.13)</p>
+<p>Determine if <span class="arithmatex">\(\mathbf{b}\)</span> is a linear combination of the vectors formed from the columns of the matrix <span class="arithmatex">\(A\)</span>.</p>
+<p><span class="arithmatex">\(A=\left[\begin{array}{rrr}1 &amp; -4 &amp; 2 \\ 0 &amp; 3 &amp; 5 \\ -2 &amp; 8 &amp; -4\end{array}\right], \mathbf{b}=\left[\begin{array}{r}3 \\ -7 \\ -3\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\mathbf{b}\)</span> is not a linear combination of the columns of <span class="arithmatex">\(A\)</span>.</p>
+</details>
+<p><strong>Exercise 8</strong> (1.3.14)</p>
+<p>Determine if <span class="arithmatex">\(\mathbf{b}\)</span> is a linear combination of the vectors formed from the columns of the matrix <span class="arithmatex">\(A\)</span>.</p>
+<p><span class="arithmatex">\(A=\left[\begin{array}{rrr}1 &amp; 0 &amp; 5 \\ -2 &amp; 1 &amp; -6 \\ 0 &amp; 2 &amp; 8\end{array}\right], \mathbf{b}=\left[\begin{array}{r}2 \\ -1 \\ 6\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\mathbf{b}\)</span> is a linear combination of the columns of <span class="arithmatex">\(A\)</span>.</p>
+</details>
+<p><strong>Exercise 9</strong> (1.3.28)</p>
+<p>A steam plant burns two types of coal: anthracite (A) and bituminous (B). For each ton of A burned, the plant produces 27.6 million Btu of heat, 3100 grams (g) of sulfur dioxide, and 250 g of particulate matter (solid-particle pollutants). For each ton of B burned, the plant produces 30.2 million Btu, 6400 g of sulfur dioxide, and 360 g of particulate matter.</p>
+<ol>
+<li>How much heat does the steam plant produce when it burns <span class="arithmatex">\(x_1\)</span> tons of A and <span class="arithmatex">\(x_2\)</span> tons of B ?</li>
+<li>Suppose the output of the steam plant is described by a vector that lists the amounts of heat, sulfur dioxide, and particulate matter. Express this output as a linear combination of two vectors, assuming that the plant burns <span class="arithmatex">\(x_1\)</span> tons of A and <span class="arithmatex">\(x_2\)</span> tons of B .</li>
+<li><span class="arithmatex">\([\mathbf{M}]\)</span> Over a certain time period, the steam plant produced 162 million Btu of heat, <span class="arithmatex">\(23,610 \mathrm{~g}\)</span> of sulfur dioxide, and 1623 g of particulate matter. Determine how many tons of each type of coal the steam plant must have burned. Include a vector equation as part of your solution.</li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>The amount of heat produced when the steam plant burns <span class="arithmatex">\(x_1\)</span> tons of anthracite and <span class="arithmatex">\(x_2\)</span> tons of bituminous coal is <span class="arithmatex">\(27.6 x_1+30.2 x_2\)</span> million Btu.</li>
+<li>The total output produced by <span class="arithmatex">\(x_1\)</span> tons of anthracite and <span class="arithmatex">\(x_2\)</span> tons of bituminous coal is given by the vector <span class="arithmatex">\(x_1\left[\begin{array}{c}27.6 \\ 3100 \\ 250\end{array}\right]+x_2\left[\begin{array}{c}30.2 \\ 6400 \\ 360\end{array}\right]\)</span>.</li>
+<li>The steam plant burned <span class="arithmatex">\(3.9\)</span> tons of anthracite coal and <span class="arithmatex">\(1.8\)</span> tons of bituminous coal.</li>
+</ol>
+</details>
+<p><strong>Exercise 10</strong> (1.4.6)</p>
+<p>Use the definition of <span class="arithmatex">\(A \mathbf{x}\)</span> to write the matrix equation as a vector equation, or vice versa.</p>
+<ol>
+<li><span class="arithmatex">\(\left[\begin{array}{rr}2 &amp; -3 \\ 3 &amp; 2 \\ 8 &amp; -5 \\ -2 &amp; 1\end{array}\right]\left[\begin{array}{r}-3 \\ 5\end{array}\right]=\left[\begin{array}{r}-21 \\ 1 \\ -49 \\ 11\end{array}\right]\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(-3 \cdot\left[\begin{array}{r}2 \\ 3 \\ 8 \\ -2\end{array}\right]+5 \cdot\left[\begin{array}{r}-3 \\ 2 \\ -5 \\ 1\end{array}\right]=\left[\begin{array}{r}-21 \\ 1 \\ -49 \\ 11\end{array}\right]\)</span></p>
+</details>
+<p><strong>Exercise 11</strong> (1.4.8)</p>
+<p>Use the definition of <span class="arithmatex">\(A \mathbf{x}\)</span> to write the matrix equation as a vector equation, or vice versa.</p>
+<ol>
+<li><span class="arithmatex">\(z_1\left[\begin{array}{r}2 \\ -4\end{array}\right]+z_2\left[\begin{array}{r}-1 \\ 5\end{array}\right]+z_3\left[\begin{array}{r}-4 \\ 3\end{array}\right]+z_4\left[\begin{array}{l}0 \\ 2\end{array}\right]=\left[\begin{array}{r}5 \\ 12\end{array}\right]\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\left[\begin{array}{rrrr}2 &amp; -1 &amp; -4 &amp; 0 \\ -4 &amp; 5 &amp; 3 &amp; 2\end{array}\right]\left[\begin{array}{l}z_1 \\ z_2 \\ z_3 \\ z_4\end{array}\right]=\left[\begin{array}{r}5 \\ 12\end{array}\right]\)</span></p>
+</details>
+<p><strong>Exercise 12</strong> (1.4.11)</p>
+<p>Given <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(\mathbf{b}\)</span>, write the augmented matrix for the linear system that corresponds to the matrix equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span>. Then solve the system and write the solution as a vector.</p>
+<p><span class="arithmatex">\(A=\left[\begin{array}{rrr}1 &amp; 3 &amp; -4 \\ 1 &amp; 5 &amp; 2 \\ -3 &amp; -7 &amp; 6\end{array}\right], \mathbf{b}=\left[\begin{array}{r}-2 \\ 4 \\ 12\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{l}x_1 \\ x_2 \\ x_3\end{array}\right]=\left[\begin{array}{r}-11 \\ 3 \\ 0\end{array}\right]\)</span></p>
+</details>
+<p><strong>Exercise 13</strong> (1.4.17, 1.4.18)</p>
+<p>Refer to the matrices <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> below. Make appropriate calculations that justify your answers and mention an appropriate theorem.</p>
+<div class="arithmatex">\[
+A=\left[\begin{array}{rrrr}
+1 &amp; 3 &amp; 0 &amp; 3 \\
+-1 &amp; -1 &amp; -1 &amp; 1 \\
+0 &amp; -4 &amp; 2 &amp; -8 \\
+2 &amp; 0 &amp; 3 &amp; -1
+\end{array}\right] \quad B=\left[\begin{array}{rrrr}
+1 &amp; 4 &amp; 1 &amp; 2 \\
+0 &amp; 1 &amp; 3 &amp; -4 \\
+0 &amp; 2 &amp; 6 &amp; 7 \\
+2 &amp; 9 &amp; 5 &amp; -7
+\end{array}\right]
+\]</div>
+<ol>
+<li>How many rows of <span class="arithmatex">\(A\)</span> contain a pivot position? Does the equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> have a solution for each <span class="arithmatex">\(\mathbf{b}\)</span> in <span class="arithmatex">\(\mathbb{R}^4\)</span> ?</li>
+<li>Can every vector in <span class="arithmatex">\(\mathbb{R}^4\)</span> be written as a linear combination of the columns of the matrix <span class="arithmatex">\(B\)</span> above? Do the columns of <span class="arithmatex">\(B\)</span> span <span class="arithmatex">\(\mathbb{R}^3\)</span> ?</li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li><span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> does not have a solution for each <span class="arithmatex">\(\mathbf{b}\)</span> in <span class="arithmatex">\(\mathbb{R}^4\)</span>.</li>
+<li>Not all vectors in <span class="arithmatex">\(\mathbb{R}^4\)</span> can be written as a linear combination of the columns of <span class="arithmatex">\(B\)</span>. The columns of <span class="arithmatex">\(B\)</span> certainly do not span <span class="arithmatex">\(\mathbb{R}^3\)</span>.</li>
+</ol>
+</details>
+<p><strong>Exercise 14</strong> (1.5.7)</p>
+<p>Describe all solutions of <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> in parametric vector form, where <span class="arithmatex">\(A\)</span> is row equivalent to the given matrix.</p>
+<p><span class="arithmatex">\(\left[\begin{array}{llll}1 &amp; 3 &amp; -3 &amp; 7 \\ 0 &amp; 1 &amp; -4 &amp; 5\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{l}x_1 \\ x_2 \\ x_3 \\ x_4\end{array}\right]=\left[\begin{array}{c}-9 x_3+8 x_4 \\ 4 x_3-5 x_4 \\ x_3 \\ x_4\end{array}\right]=\left[\begin{array}{c}-9 x_3 \\ 4 x_3 \\ x_3 \\ 0\end{array}\right]+\left[\begin{array}{c}8 x_4 \\ -5 x_4 \\ 0 \\ x_4\end{array}\right]=x_3\left[\begin{array}{r}-9 \\ 4 \\ 1 \\ 0\end{array}\right]+x_4\left[\begin{array}{r}8 \\ -5 \\ 0 \\ 1\end{array}\right]\)</span></p>
+</details>
+<p><strong>Exercise 15</strong> (1.5.15)</p>
+<p>Describe and compare the solution sets of <span class="arithmatex">\(x_1+5 x_2-\)</span> <span class="arithmatex">\(3 x_3=0\)</span> and <span class="arithmatex">\(x_1+5 x_2-3 x_3=-2\)</span>.</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>The solution set of the homogeneous equation is the plane through the origin in <span class="arithmatex">\(\mathbf{R}^3\)</span> spanned by <span class="arithmatex">\(\mathbf{u}\)</span> and <span class="arithmatex">\(\mathbf{v}\)</span>. The solution set of the nonhomogeneous equation is parallel to this plane and passes through the point <span class="arithmatex">\(\mathbf{p}=\left[\begin{array}{r}-2 \\ 0 \\ 0\end{array}\right]\)</span>.</p>
+</details>
+<p><strong>Exercise 16</strong> (1.5.23)</p>
+<p>Mark each statement True or False. Justify each answer.</p>
+<ol>
+<li>A homogeneous equation is always consistent.</li>
+<li>The equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> gives an explicit description of its solution set.</li>
+<li>The homogeneous equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> has the trivial solution if and only if the equation has at least one free variable.</li>
+<li>The equation <span class="arithmatex">\(\mathbf{x}=\mathbf{p}+t \mathbf{v}\)</span> describes a line through <span class="arithmatex">\(\mathbf{v}\)</span> parallel to <span class="arithmatex">\(\mathbf{p}\)</span>.</li>
+<li>The solution set of <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> is the set of all vectors of the form <span class="arithmatex">\(\mathbf{w}=\mathbf{p}+\mathbf{v}_h\)</span>, where <span class="arithmatex">\(\mathbf{v}_h\)</span> is any solution of the equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span>.</li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>True. See the first paragraph of the subsection titled Homogeneous Linear Systems.</li>
+<li>False. The equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> gives an implicit description of its solution set. See the subsection entitled Parametric Vector Form.</li>
+<li>False. The equation Ax =0 always has the trivial solution. The box before Example 1 uses the word nontrivial instead of trivial.</li>
+<li>False. The line goes through <span class="arithmatex">\(\mathbf{p}\)</span> parallel to <span class="arithmatex">\(\mathbf{v}\)</span>. See the paragraph that precedes Fig. 5.</li>
+<li>False. The solution set could be empty! The statement (from Theorem 6) is true only when there exists a vector <span class="arithmatex">\(\mathbf{p}\)</span> such that <span class="arithmatex">\(A \mathbf{p}=\mathbf{b}\)</span>.</li>
+</ol>
+</details>
+<p><strong>Exercise 17</strong> (1.5.24)</p>
+<p>Mark each statement True or False. Justify each answer.</p>
+<ol>
+<li>A homogeneous system of equations can be inconsistent.</li>
+<li>If <span class="arithmatex">\(\mathbf{x}\)</span> is a nontrivial solution of <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span>, then every entry in <span class="arithmatex">\(\mathbf{x}\)</span> is nonzero.</li>
+<li>The effect of adding <span class="arithmatex">\(\mathbf{p}\)</span> to a vector is to move the vector in a direction parallel to <span class="arithmatex">\(\mathbf{p}\)</span>.</li>
+<li>The equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> is homogeneous if the zero vector is a solution.</li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>False. The trivial solution is always a solution to a homogeneous system of linear equations.</li>
+<li>False. A nontrivial solution of <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> is any nonzero <span class="arithmatex">\(\mathbf{x}\)</span> that satisfies the equation. See the sentence before Example 2.</li>
+<li>True. See the paragraph following Example 3.</li>
+<li>True. If the zero vector is a solution, then <span class="arithmatex">\(\mathbf{b}=A \mathbf{x}=A \mathbf{0}=\mathbf{0}\)</span>.</li>
+</ol>
+</details>
+            <div id="quiz-total-score-summary" style="margin-top: 20px; padding: 10px; border-top: 1px solid #ccc;">
+                <h3>Total Score Summary</h3>
+                <p>Your total score for all quizzes on this page is:
+                    <span id="total-quiz-score-achieved">0</span> /
+                    <span id="total-quiz-score-possible">0</span>
+                </p>
+            </div>
+            <style type="text/css">.quiz {
+  padding: 1rem;
+  margin: 1rem 0;
+}
+/* Set margin-top of first quiz child */
+.quiz > *:first-child {
+  margin-top: 0;
+}
+.hidden {
+  display: none;
+}
+
+form button {
+  background-color: var(--md-primary-fg-color);
+  border: none;
+  color: var(--md-primary-bg-color);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.wrong label {
+  color: red;
+}
+.correct label {
+  color: green;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+fieldset input {
+  margin: 0 10px;
+}
+fieldset label {
+  margin: 0 10px;
+}
+
+label.correct {
+  color: green;
+}
+label.wrong {
+  color: red;
+}
+input[type='radio'].correct {
+  accent-color: green;
+}
+input[type='radio'].wrong {
+  accent-color: red;
+}
+.content {
+  margin: 10px;
+}
+
+.quiz h3 {
+    font-size: inherit;
+    margin-bottom: 0.8em;
+}
+</style><script type="text/javascript" defer>// Global score tracking
+let overallScoreAchieved = 0;
+let overallTotalPossible = 0;
+const totalScoreAchievedSpan = document.getElementById('total-quiz-score-achieved');
+const totalScorePossibleSpan = document.getElementById('total-quiz-score-possible');
+
+// Calculate initial total possible score and update display
+const allQuizzesForTotal = document.querySelectorAll('.quiz');
+allQuizzesForTotal.forEach(quizInstance => {
+    const individualTotalSpan = quizInstance.querySelector('.quiz-total-possible');
+    if (individualTotalSpan) {
+        overallTotalPossible += parseInt(individualTotalSpan.textContent) || 1;
+    } else {
+        overallTotalPossible += 1; // Fallback: assume 1 point if not specified
+    }
+});
+
+if (totalScorePossibleSpan) {
+    totalScorePossibleSpan.textContent = overallTotalPossible;
+}
+if (totalScoreAchievedSpan) {
+    totalScoreAchievedSpan.textContent = overallScoreAchieved; // Initial achieved score is 0
+}
+
+document.querySelectorAll('.quiz').forEach((quiz) => {
+  let form = quiz.querySelector('form');
+  let fieldset = form.querySelector('fieldset');
+  let quizId = quiz.dataset.quizId; // Get the unique quiz ID
+
+  // Score display elements for this quiz instance
+  let scoreDisplayElement = form.querySelector('.quiz-score-display');
+  let currentScoreSpan = scoreDisplayElement ? scoreDisplayElement.querySelector('.quiz-current-score') : null;
+  let totalPossibleSpan = scoreDisplayElement ? scoreDisplayElement.querySelector('.quiz-total-possible') : null;
+
+  // Initialize score for this quiz instance
+  let currentQuizScore = 0;
+  // For now, total possible is read from the HTML (defaulted to 1 by Python)
+  // We could make this more dynamic later if needed.
+  let totalPossibleScore = totalPossibleSpan ? parseInt(totalPossibleSpan.textContent) : 1;
+
+
+  // Initialize score display if elements exist
+  if (currentScoreSpan) {
+      currentScoreSpan.textContent = currentQuizScore;
+  }
+  if (totalPossibleSpan && isNaN(parseInt(totalPossibleSpan.textContent))) { // Ensure it's set if Python didn't
+      totalPossibleSpan.textContent = totalPossibleScore;
+  }
+
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    // Prevent re-scoring if already answered correctly
+    if (fieldset.hasAttribute('data-answered-correctly')) {
+        // console.log("Quiz " + quizId + " has already been answered correctly.");
+        // Show existing feedback but don't re-process
+        // You might want to disable the button after a correct answer too.
+        return; 
+    }
+
+    // Use the unique name for inputs for this quiz
+    let selectedAnswers = form.querySelectorAll('input[name="answer-' + quizId + '"]:checked');
+    let correctMarkedInputs = fieldset.querySelectorAll(
+      'input[name="answer-' + quizId + '"][correct]' // Inputs marked as correct by Python
+    );
+    
+    let is_submission_correct = false;
+    if (selectedAnswers.length === correctMarkedInputs.length && correctMarkedInputs.length > 0) {
+        is_submission_correct = true; // Assume correct until a mismatch is found
+        selectedAnswers.forEach(selectedInput => {
+            if (!selectedInput.hasAttribute('correct')) {
+                is_submission_correct = false;
+            }
+        });
+    } else if (correctMarkedInputs.length === 0 && selectedAnswers.length > 0) {
+        // Case: No answer is marked as correct (e.g. "select all that are wrong"),
+        // and user selected something. This is incorrect by default for this quiz type.
+        is_submission_correct = false;
+    } else if (correctMarkedInputs.length > 0 && selectedAnswers.length !== correctMarkedInputs.length) {
+        // Case: There are correct answers, but user didn't select the right number of them.
+        is_submission_correct = false;
+    }
+
+
+    // Clear previous styling on all options for this quiz
+    const allOptionDivs = fieldset.querySelectorAll('div'); // Assuming each input is wrapped in a div
+    allOptionDivs.forEach(div => {
+        div.classList.remove('correct', 'wrong');
+    });
+    
+    let section = quiz.querySelector('section.content'); // More specific selector
+
+    if (is_submission_correct) {
+      if (section) section.classList.remove('hidden');
+      
+      if (!fieldset.hasAttribute('data-answered-correctly')) {
+          currentQuizScore += 1; // Or whatever point value this quiz is worth
+          overallScoreAchieved += 1; // Increment overall score
+          fieldset.setAttribute('data-answered-correctly', 'true');
+          // Optionally disable the button
+          let submitButton = form.querySelector('button[type="submit"]');
+          if (submitButton) {
+              // submitButton.disabled = true;
+              // submitButton.textContent = "Answered";
+          }
+      }
+      
+      // Mark all selected (which are all correct in this branch)
+      selectedAnswers.forEach(selectedInput => {
+          selectedInput.parentElement.classList.add('correct');
+      });
+
+    } else { // Incorrect submission
+      if (section) section.classList.add('hidden'); // Hide explanation on wrong
+      
+      // Mark selected answers: correct if they are, wrong if they aren't
+      selectedAnswers.forEach(selectedInput => {
+        if (selectedInput.hasAttribute('correct')) {
+          selectedInput.parentElement.classList.add('correct');
+        } else {
+          selectedInput.parentElement.classList.add('wrong');
+        }
+      });
+
+      // Also, explicitly show which ones *should* have been selected if they weren't
+      correctMarkedInputs.forEach(correctInput => {
+        let isSelected = false;
+        selectedAnswers.forEach(sel => { if (sel === correctInput) isSelected = true; });
+        if (!isSelected) {
+            correctInput.parentElement.classList.add('correct'); // Show it as correct (missed)
+            // Add a specific style for "missed correct" if desired
+        }
+      });
+    }
+
+    // Update score display
+    if (currentScoreSpan) {
+      currentScoreSpan.textContent = currentQuizScore;
+    }
+    // totalPossibleSpan should remain as set initially for this quiz
+
+    // Update total score summary display
+    if (totalScoreAchievedSpan) {
+        totalScoreAchievedSpan.textContent = overallScoreAchieved;
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Sessions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Sessions">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Sessions
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../02_Matrix_Algebra/" class="md-footer__link md-footer__link--next" aria-label="Next: 02 Matrix Algebra">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                02 Matrix Algebra
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Richard Brooks
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:rib@via.dk" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/RBrooksDK/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/rbrooks-dk/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

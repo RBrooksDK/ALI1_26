@@ -1,0 +1,125 @@
+/* Dark mode ("slate") - Blue Matrix Theme (Revised Glow Color - Fixed) */
+[data-md-color-scheme="slate"] {
+  --md-hue: 217; /* Adjusted hue closer to the main blues */
+
+  /* Background and Foreground */
+  --md-default-bg-color: #0d1017;
+  --md-default-fg-color: #C0D4F0;
+  --md-default-fg-color--light: #88A1C9;
+  --md-default-fg-color--lighter: #536A94;
+
+  /* Primary color - Used for headers, active elements */
+  --md-primary-fg-color: #123161; /* Bright Electric Blue */
+  /* Define the main "glow" / secondary bright blue */
+  --md-matrix-glow-color: #2A9DF4; /* Medium Tech Blue */
+  /* Use the glow color for the secondary primary state */
+  --md-primary-fg-color--light: var(--md-matrix-glow-color);
+
+  --md-primary-bg-color: #3CACF8;
+  --md-primary-bg-color--light: #1A4A8D;
+
+  /* Accent color - Orange highlight */
+  --md-accent-fg-color: #FF8C00;
+  --md-accent-fg-color--transparent: rgba(255, 140, 0, 0.1);
+  --md-accent-bg-color: #4d2a00;
+  --md-accent-bg-color--light: #804500;
+
+  /* --- Specific Overrides --- */
+
+  /* Link color - Use the glow color */
+  --md-typeset-a-color: var(--md-matrix-glow-color);
+
+  /* Code styling */
+  --md-code-fg-color: var(--md-matrix-glow-color);
+  --md-code-bg-color: #06111F;
+  --md-code-hl-color: #FF8C00;
+  --md-code-hl-keyword-color: #3CACF8;
+  --md-code-hl-function-color: var(--md-matrix-glow-color);
+  --md-code-hl-string-color: #A6E22E;
+  --md-code-hl-number-color: #AE81FF;
+  --md-code-hl-comment-color: var(--md-default-fg-color--light);
+
+  /* Admonition (standard) */
+  --md-admonition-fg-color: #FFFFFF;
+  --md-admonition-bg-color: #123161;
+
+  /* Footer styling */
+  --md-footer-bg-color: #06111F;
+  --md-footer-fg-color: var(--md-default-fg-color--light);
+  --md-footer-fg-color--light: var(--md-default-fg-color--lighter);
+
+  /* List markers - Use the 'glow' color */
+  ul ::marker,
+  ol ::marker {
+    color: var(--md-matrix-glow-color);
+  }
+}
+
+/* --- Shared Styles & Customizations --- */
+/* (Only showing the corrected Admonition part - keep others like icons, tables, links) */
+
+/* Custom Admonitions - Use Variables (FIXED RGBA) */
+.md-typeset .admonition.answer,
+.md-typeset details.answer,
+.md-typeset .admonition.question,
+.md-typeset details.question,
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: var(--md-matrix-glow-color);
+  outline: none;
+  box-shadow: none;
+}
+
+.md-typeset .answer > .admonition-title,
+.md-typeset .answer > summary,
+.md-typeset .question > .admonition-title,
+.md-typeset .question > summary,
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+  background-color: rgba(42, 157, 244, 0.1);
+  color: var(--md-matrix-glow-color);
+  outline: none;
+  box-shadow: none;
+}
+
+/* Icon color matches border/title text */
+.md-typeset .answer > .admonition-title::before,
+.md-typeset .answer > summary::before,
+.md-typeset .question > .admonition-title::before,
+.md-typeset .question > summary::before,
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before {
+  background-color: var(--md-matrix-glow-color);
+}
+.md-typeset .answer > .admonition-title::before,
+.md-typeset .answer > summary::before {
+   -webkit-mask-image: var(--md-admonition-icon--success);
+           mask-image: var(--md-admonition-icon--success);
+}
+
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before {
+   -webkit-mask-image: var(--md-admonition-icon--tip);
+           mask-image: var(--md-admonition-icon--tip);
+}
+
+/* Indicator matches border/title text */
+.md-typeset details[open].answer summary::after,
+.md-typeset details.answer summary::after,
+.md-typeset details[open].question summary::after,
+.md-typeset details.question summary::after,
+.md-typeset details[open].tip summary::after,
+.md-typeset details.tip summary::after {
+  color: var(--md-matrix-glow-color);
+}
+.md-header__button.md-logo {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+  height: 2.4rem;
+  width: 2.4rem;
+}

@@ -1,0 +1,1439 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Course page for Applied Linear Algebra at VIA University College">
+      
+      
+        <meta name="author" content="Richard Brooks">
+      
+      
+        <link rel="canonical" href="https://rbrooksdk.github.io/ALI1_26/02_Matrix_Algebra/">
+      
+      
+        <link rel="prev" href="../01_Introduction_to_Linear_Algebra/">
+      
+      
+        <link rel="next" href="../03_Determinants/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../figures/ali.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>02 Matrix Algebra - Applied Linear Algebra</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M22%2012a10%2010%200%200%201-10%2010A10%2010%200%200%201%202%2012%2010%2010%200%200%201%2012%202a10%2010%200%200%201%2010%2010m-12%206%206-6-6-6-1.4%201.4%204.6%204.6-4.6%204.6z%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRed+Hat+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Red Hat Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config",""),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#session-material" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Applied Linear Algebra" class="md-header__button md-logo" aria-label="Applied Linear Algebra" data-md-component="logo">
+      
+  <img src="../figures/ali.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Applied Linear Algebra
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              02 Matrix Algebra
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/RBrooksDK/ALI1_26" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Applied Linear Algebra" class="md-nav__button md-logo" aria-label="Applied Linear Algebra" data-md-component="logo">
+      
+  <img src="../figures/ali.png" alt="logo">
+
+    </a>
+    Applied Linear Algebra
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/RBrooksDK/ALI1_26" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://rbrooksdk.github.io" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Richard Brooks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Sessions/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sessions
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sessions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_Introduction_to_Linear_Algebra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 Introduction to Linear Algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 Matrix Algebra
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 Matrix Algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#session-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Material:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Description
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Concepts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Determinants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 Determinants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Vector_Spaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 Vector Spaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_Eigenvalues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 Eigenvalues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_Differential_Equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 Differential Equations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_Orthogonality_I/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 Orthogonality I
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_Orthogonality_II/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 Orthogonality II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_Symmetric_Matrices_SVD_and_PCA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 Symmetric Matrices, SVD, and PCA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_Recap_and_Conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 Recap and Conclusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pages/exam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exam
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pages/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pages/online_resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Online Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/EqyrbL4eyEtPlLcHYKt3NfIBLLBs2xWNa4CtjvvZb5dKTw?e=HGyFGo" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Resources ALI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#session-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Material:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Description
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Concepts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 align="center">Matrix Algebra</h1>
+
+<h2 id="session-material">Session Material:<a class="headerlink" href="#session-material" title="Permanent link">&para;</a></h2>
+<p>Lay: 2.1-2.7 (2.4 + 2.6-2.7 self-study)</p>
+<p><a href="https://drive.google.com/file/d/1kPmXMfygFPIiEaka_L3amf9x1tgVFg1I/view?usp=sharing">Recap and Exercises</a></p>
+<p><a href="https://drive.google.com/file/d/1EbLmjsCjzl_-HmPwmdwT_uVLzA6rPWbo/view?usp=sharing">Session Notes</a></p>
+<p><a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/EgCkADot6NBNgecwld6KLpwBki3OkF32RFBmtB_xbwSBoQ?e=DY1uNJ">Session Material</a></p>
+<hr />
+<h2 id="session-description">Session Description<a class="headerlink" href="#session-description" title="Permanent link">&para;</a></h2>
+<p>Now that we’ve learned to represent and solve systems with matrices, this session focuses on doing algebra with matrices themselves. We’ll start with basic operations like addition, scalar multiplication, and then tackle matrix multiplication — both its definition and the practical row-column rule.</p>
+<p>We’ll explore special matrices (zero, identity, diagonal), powers, and transposes, and discuss how matrix operations differ from regular arithmetic. Key theorems (1–3 for operations, 5–7 for inverses) will guide us through the rules. A central idea is the invertible matrix and to find it using row reduction.</p>
+<p>We’ll finish with the Invertible Matrix Theorem (Theorem 8), which ties together many core ideas.</p>
+<h3 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Matrix Operations</li>
+<li>Matrix Multiplication</li>
+<li>Special Matrices: Zero, Identity, Diagonal</li>
+<li>Matrix Powers</li>
+<li>Matrix Transpose</li>
+<li>Invertible Matrices</li>
+<li>Invertible Matrix Theorem</li>
+<li>Matrix Algebra</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Learning Objectives</p>
+<ul>
+<li>Perform matrix addition, scalar multiplication, and matrix multiplication using the row-column rule.</li>
+<li>Identify and use special matrices (zero, identity, diagonal) and their properties.</li>
+<li>Compute and interpret matrix inverses and transposes.</li>
+<li>Apply the Invertible Matrix Theorem</li>
+<li>Analyze and solve problems using matrix algebra concepts.</li>
+</ul>
+</div>
+<hr />
+<h2 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h2>
+<!-- 
+1.7: 11, 15-20, 41​​​  
+1.8: 3-6, 10  
+1.9: 15      
+2.1: 1, 2, 10, 13, 40, 41   
+2.2: 9, 30, 31, 32   
+​2.3: 11, 12, 15, 17  
+-->
+<style type="text/css">
+    ol { list-style-type: lower-alpha; }
+</style>
+
+<p><strong>Exercise 1</strong> (1.7.11)</p>
+<p>Find the value(s) of <span class="arithmatex">\(h\)</span> for which the vectors are linearly dependent. Justify your answer.</p>
+<p><span class="arithmatex">\(\left[\begin{array}{r}2 \\ -2 \\ 4\end{array}\right],\left[\begin{array}{r}4 \\ -6 \\ 7\end{array}\right],\left[\begin{array}{r}-2 \\ 2 \\ h\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>The vectors are linearly dependent if and only if <span class="arithmatex">\(h=-4\)</span>.</p>
+</details>
+<p><strong>Exercise 2</strong> (1.7.15-1.7.20)</p>
+<p>Determine by inspection whether the vectors in Exercises a-f are linearly independent. Justify each answer.</p>
+<ol>
+<li><span class="arithmatex">\(\left[\begin{array}{l}5 \\ 1\end{array}\right],\left[\begin{array}{l}2 \\ 8\end{array}\right],\left[\begin{array}{l}1 \\ 3\end{array}\right],\left[\begin{array}{r}-1 \\ 7\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{r}2 \\ -4 \\ 8\end{array}\right],\left[\begin{array}{r}-3 \\ 6 \\ -12\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{r}5 \\ -3 \\ -1\end{array}\right],\left[\begin{array}{l}0 \\ 0 \\ 0\end{array}\right],\left[\begin{array}{r}-7 \\ 2 \\ 4\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{l}3 \\ 4\end{array}\right],\left[\begin{array}{r}-1 \\ 5\end{array}\right],\left[\begin{array}{l}3 \\ 5\end{array}\right],\left[\begin{array}{l}7 \\ 1\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{r}-8 \\ 12 \\ -4\end{array}\right],\left[\begin{array}{r}2 \\ -3 \\ -1\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{r}1 \\ 4 \\ -7\end{array}\right],\left[\begin{array}{r}-2 \\ 5 \\ 3\end{array}\right],\left[\begin{array}{l}0 \\ 0 \\ 0\end{array}\right]\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>The set is linearly dependent, by Theorem 8, because there are four vectors in the set but only two entries in each vector.</li>
+<li>The set is linearly dependent because the second vector is <span class="arithmatex">\(-3 / 2\)</span> times the first vector.</li>
+<li>The set is linearly dependent, by Theorem 9, because the list of vectors contains a zero vector.</li>
+<li>The set is linearly dependent, by Theorem 8, because there are four vectors in the set but only two entries in each vector.</li>
+<li>The set is linearly independent because neither vector is a multiple of the other vector. [Two of the entries in the first vector are -4 times the corresponding entry in the second vector. But this multiple does not work for the third entries.]</li>
+<li>The set is linearly dependent, by Theorem 9, because the list of vectors contains a zero vector.</li>
+</ol>
+</details>
+<p><strong>Exercise 3</strong> (1.7.41)</p>
+<p>[M] Use as many columns of <span class="arithmatex">\(A\)</span> as possible to construct a matrix <span class="arithmatex">\(B\)</span> with the property that the equation <span class="arithmatex">\(B \mathbf{x}=\mathbf{0}\)</span> has only the trivial solution. Solve <span class="arithmatex">\(B \mathbf{x}=\mathbf{0}\)</span> to verify your work.</p>
+<p><span class="arithmatex">\(A=\left[\begin{array}{rrrrr}3 &amp; -4 &amp; 10 &amp; 7 &amp; -4 \\ -5 &amp; -3 &amp; -7 &amp; -11 &amp; 15 \\ 4 &amp; 3 &amp; 5 &amp; 2 &amp; 1 \\ 8 &amp; -7 &amp; 23 &amp; 4 &amp; 15\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<div class="arithmatex">\[
+B=\left[\begin{array}{rrr}
+3 &amp; -4 &amp; 7 \\
+-5 &amp; -3 &amp; -11 \\
+4 &amp; 3 &amp; 2 \\
+8 &amp; -7 &amp; 4
+\end{array}\right] . \text { Other choices are possible. }
+\]</div>
+</details>
+<p><strong>Exercise 4</strong> (1.8.3-1.8.6)</p>
+<p>In Exercises a-d, with <span class="arithmatex">\(T\)</span> defined by <span class="arithmatex">\(T(\mathbf{x})=A \mathbf{x}\)</span>, find a vector <span class="arithmatex">\(\mathbf{x}\)</span> whose image under <span class="arithmatex">\(T\)</span> is <span class="arithmatex">\(\mathbf{b}\)</span>, and determine whether <span class="arithmatex">\(\mathbf{x}\)</span> is unique.</p>
+<ol>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rrr}1 &amp; 0 &amp; -3 \\ -3 &amp; 1 &amp; 6 \\ 2 &amp; -2 &amp; -1\end{array}\right], \mathbf{b}=\left[\begin{array}{r}-2 \\ 3 \\ -1\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rrr}1 &amp; -2 &amp; 3 \\ 0 &amp; 1 &amp; -3 \\ 2 &amp; -5 &amp; 6\end{array}\right], \mathbf{b}=\left[\begin{array}{l}-6 \\ -4 \\ -5\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rrr}1 &amp; -5 &amp; -7 \\ -3 &amp; 7 &amp; 5\end{array}\right], \mathbf{b}=\left[\begin{array}{l}-2 \\ -2\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rrr}1 &amp; -3 &amp; 2 \\ 3 &amp; -8 &amp; 8 \\ 0 &amp; 1 &amp; 2 \\ 1 &amp; 0 &amp; 8\end{array}\right], \mathbf{b}=\left[\begin{array}{r}1 \\ 6 \\ 3 \\ 10\end{array}\right]\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li><span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{l}7 \\ 6 \\ 1\end{array}\right]\)</span>, unique solution</li>
+<li><span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{r}-17 \\ -7 \\ -1\end{array}\right]\)</span>, unique solution</li>
+<li>The general solution is <span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{c}x_1 \\ x_2 \\ x_3\end{array}\right]=\left[\begin{array}{c}3-3 x_3 \\ 1-2 x_3 \\ x_3\end{array}\right]=\left[\begin{array}{l}3 \\ 1 \\ 0\end{array}\right]+x_3\left[\begin{array}{r}-3 \\ -2 \\ 1\end{array}\right]\)</span>. For a particular solution, one might choose <span class="arithmatex">\(x_3=0\)</span> and <span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{l}3 \\ 1 \\ 0\end{array}\right]\)</span>.</li>
+<li>The general solution is <span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{c}x_1 \\ x_2 \\ x_3\end{array}\right]=\left[\begin{array}{c}10-8 x_3 \\ 3-2 x_3 \\ x_3\end{array}\right]=\left[\begin{array}{r}10 \\ 3 \\ 0\end{array}\right]+x_3\left[\begin{array}{r}-8 \\ -2 \\ 1\end{array}\right]\)</span>. For a particular solution, one might choose <span class="arithmatex">\(x_3=0\)</span> and <span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{c}10 \\ 3 \\ 0\end{array}\right]\)</span>.</li>
+</ol>
+</details>
+<p><strong>Exercise 5</strong> (1.8.10)</p>
+<p>Find all <span class="arithmatex">\(\mathbf{x}\)</span> in <span class="arithmatex">\(\mathbb{R}^4\)</span> that are mapped into the zero vector by the transformation <span class="arithmatex">\(\mathbf{x} \mapsto A \mathbf{x}\)</span> for the given matrix <span class="arithmatex">\(A\)</span>.</p>
+<p><span class="arithmatex">\(A=\left[\begin{array}{rrrr}3 &amp; 2 &amp; 10 &amp; -6 \\ 1 &amp; 0 &amp; 2 &amp; -4 \\ 0 &amp; 1 &amp; 2 &amp; 3 \\ 1 &amp; 4 &amp; 10 &amp; 8\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\left\{\begin{array}{l}x_1=-2 x_3+4 x_4 \\ x_2=-2 x_3-3 x_4 \\ x_3 \text { is free } \\ x_4 \text { is free }\end{array} \quad \quad \mathbf{x}=\left[\begin{array}{c}-2 x_3 \\ -2 x_3 \\ x_3 \\ 0\end{array}\right]+\left[\begin{array}{c}4 x_4 \\ -3 x_4 \\ 0 \\ x_4\end{array}\right]=x_3\left[\begin{array}{r}-2 \\ -2 \\ 1 \\ 0\end{array}\right]+x_4\left[\begin{array}{r}4 \\ -3 \\ 0 \\ 1\end{array}\right]\right.\)</span></p>
+</details>
+<p><strong>Exercise 6</strong> (1.9.15)</p>
+<p>Fill in the missing entries of the matrix, assuming that the equation holds for all values of the variables.</p>
+<p><span class="arithmatex">\(\left[\begin{array}{lll}? &amp; ? &amp; ? \\ ? &amp; ? &amp; ? \\ ? &amp; ? &amp; ?\end{array}\right]\left[\begin{array}{l}x_1 \\ x_2 \\ x_3\end{array}\right]=\left[\begin{array}{c}2 x_1-4 x_2 \\ x_1-x_3 \\ -x_2+3 x_3\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>By inspection, <span class="arithmatex">\(\left[\begin{array}{rrr}2 &amp; -4 &amp; 0 \\ 1 &amp; 0 &amp; -1 \\ 0 &amp; -1 &amp; 3\end{array}\right]\left[\begin{array}{l}x_1 \\ x_2 \\ x_3\end{array}\right]=\left[\begin{array}{c}2 x_1-4 x_2 \\ x_1-x_3 \\ -x_2+3 x_3\end{array}\right]\)</span></p>
+</details>
+<p><strong>Exercise 7</strong> (2.1.1-2.1.2)</p>
+<p>Compute each matrix sum or product if it is defined. If an expression is undefined, explain why. Let</p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp; A=\left[\begin{array}{rrr}
+2 &amp; 0 &amp; -1 \\
+4 &amp; -5 &amp; 2
+\end{array}\right], \quad B=\left[\begin{array}{rrr}
+7 &amp; -5 &amp; 1 \\
+1 &amp; -4 &amp; -3
+\end{array}\right], \\
+&amp; C=\left[\begin{array}{rr}
+1 &amp; 2 \\
+-2 &amp; 1
+\end{array}\right], \quad D=\left[\begin{array}{rr}
+3 &amp; 5 \\
+-1 &amp; 4
+\end{array}\right], \quad E=\left[\begin{array}{r}
+-5 \\
+3
+\end{array}\right]
+\end{aligned}
+\]</div>
+<ol>
+<li><span class="arithmatex">\(-2 A, B-2 A, A C, C D\)</span></li>
+<li><span class="arithmatex">\(A+3 B, 2 C-3 E, D B, E C\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>The product <span class="arithmatex">\(A C\)</span> is not defined because the number of columns of <span class="arithmatex">\(A\)</span> does not match the number of rows of <span class="arithmatex">\(C. 
+C D=\left[\begin{array}{rr}1 &amp; 2 \\ -2 &amp; 1\end{array}\right]\left[\begin{array}{rr}3 &amp; 5 \\ -1 &amp; 4\end{array}\right]=\left[\begin{array}{rr}1 \cdot 3+2(-1) &amp; 1 \cdot 5+2 \cdot 4 \\ -2 \cdot 3+1(-1) &amp; -2 \cdot 5+1 \cdot 4\end{array}\right]=\left[\begin{array}{rr}1 &amp; 13 \\ -7 &amp; -6\end{array}\right]\)</span>. For mental computation, the row-column rule is probably easier to use than the definition.</li>
+<li>The sum <span class="arithmatex">\(2C-3E\)</span> is not defined because the entries do not match. The product <span class="arithmatex">\(E C\)</span> is not defined because the number of columns of <span class="arithmatex">\(E\)</span> does not match the number of rows of <span class="arithmatex">\(C\)</span>.</li>
+</ol>
+</details>
+<p><strong>Exercise 8</strong> (2.1.10)</p>
+<p>Assume that each matrix expression is defined. That is, the sizes of the matrices (and vectors) involved "match" appropriately.</p>
+<p>Let <span class="arithmatex">\(\quad A=\left[\begin{array}{rr}3 &amp; -6 \\ -1 &amp; 2\end{array}\right], \quad B=\left[\begin{array}{rr}-1 &amp; 1 \\ 3 &amp; 4\end{array}\right], \quad\)</span> and <span class="arithmatex">\(\quad C=\)</span> <span class="arithmatex">\(\left[\begin{array}{rr}-3 &amp; -5 \\ 2 &amp; 1\end{array}\right]\)</span>. Verify that <span class="arithmatex">\(A B=A C\)</span> and yet <span class="arithmatex">\(B \neq C\)</span>.</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(A B=\left[\begin{array}{rr}3 &amp; -6 \\ -1 &amp; 2\end{array}\right]\left[\begin{array}{rr}-1 &amp; 1 \\ 3 &amp; 4\end{array}\right]=\left[\begin{array}{rr}-21 &amp; -21 \\ 7 &amp; 7\end{array}\right], A C=\left[\begin{array}{rr}3 &amp; -6 \\ -1 &amp; 2\end{array}\right]\left[\begin{array}{rr}-3 &amp; -5 \\ 2 &amp; 1\end{array}\right]=\left[\begin{array}{rr}-21 &amp; -21 \\ 7 &amp; 7\end{array}\right]\)</span></p>
+</details>
+<p><strong>Exercise 9</strong> (2.1.13)</p>
+<p>Assume that each matrix expression is defined. That is, the sizes of the matrices (and vectors) involved "match" appropriately.</p>
+<p>Let <span class="arithmatex">\(\mathbf{r}_1, \ldots, \mathbf{r}_p\)</span> be vectors in <span class="arithmatex">\(\mathbb{R}^n\)</span>, and let <span class="arithmatex">\(Q\)</span> be an <span class="arithmatex">\(m \times n\)</span> matrix. Write the matrix <span class="arithmatex">\(\left[\begin{array}{lll}Q \mathbf{r}_1 &amp; \cdots &amp; Q \mathbf{r}_p\end{array}\right]\)</span> as a product of two matrices (neither of which is an identity matrix).</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>Use the definition of <span class="arithmatex">\(A B\)</span> written in reverse order: <span class="arithmatex">\(\left[A \mathbf{b}_1 \cdots A \mathbf{b}_p\right]=A\left[\mathbf{b}_1 \cdots \mathbf{b}_p\right]\)</span>. Thus <span class="arithmatex">\(\left[Q \mathbf{r}_1 \cdots Q \mathbf{r}_p\right]=Q R\)</span>, when <span class="arithmatex">\(R=\left[\begin{array}{lll}\mathbf{r}_1 &amp; \cdots &amp; \mathbf{r}_p\end{array}\right]\)</span>.</p>
+</details>
+<p><strong>Exercise 10</strong> (2.1.40)</p>
+<p><span class="arithmatex">\([\mathbf{M}]\)</span> Let</p>
+<div class="arithmatex">\[
+S=\left[\begin{array}{lllll}
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right]
+\]</div>
+<p>Compute <span class="arithmatex">\(S^k\)</span> for <span class="arithmatex">\(k=2, \ldots, 6\)</span>.</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(S^2=\left[\begin{array}{lllll}0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]\)</span></p>
+<p><span class="arithmatex">\(S^3=\left[\begin{array}{lllll}0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]\)</span></p>
+<p><span class="arithmatex">\(S^4=\left[\begin{array}{lllll}0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]\)</span></p>
+<p><span class="arithmatex">\(S^5\)</span> is the <span class="arithmatex">\(5 \times 5\)</span> zero matrix.   </p>
+<p><span class="arithmatex">\(S^6\)</span> is also the <span class="arithmatex">\(5 \times 5\)</span> zero matrix.</p>
+</details>
+<p><strong>Exercise 11</strong> (2.1.41)</p>
+<p>Assume that each matrix expression is defined. That is, the sizes of the matrices (and vectors) involved "match" appropriately.</p>
+<p><span class="arithmatex">\([\mathbf{M}]\)</span> Describe in words what happens when <span class="arithmatex">\(A^5, A^{10}, A^{20}\)</span>, and <span class="arithmatex">\(A^{30}\)</span> are computed for</p>
+<div class="arithmatex">\[
+A=\left[\begin{array}{rrr}
+1 / 4 &amp; 1 / 2 &amp; 1 / 4 \\
+1 / 2 &amp; 1 / 3 &amp; 1 / 6 \\
+1 / 4 &amp; 1 / 6 &amp; 7 / 12
+\end{array}\right]
+\]</div>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>The entries in <span class="arithmatex">\(A^{20}\)</span> all agree with .3333333333 to 8 or 9 decimal places. The entries in <span class="arithmatex">\(A^{30}\)</span> all agree with .33333333333333 to at least 14 decimal places. The matrices appear to approach the matrix <span class="arithmatex">\(\left[\begin{array}{lll}1 / 3 &amp; 1 / 3 &amp; 1 / 3 \\ 1 / 3 &amp; 1 / 3 &amp; 1 / 3 \\ 1 / 3 &amp; 1 / 3 &amp; 1 / 3\end{array}\right]\)</span>. Further exploration of this behavior appears in Sections 4.9 and 5.2.</p>
+</details>
+<p><strong>Exercise 12</strong> (2.2.9)</p>
+<p>Mark each statement True or False. Justify each answer.</p>
+<ol>
+<li>In order for a matrix <span class="arithmatex">\(B\)</span> to be the inverse of <span class="arithmatex">\(A\)</span>, the equations <span class="arithmatex">\(A B=I\)</span> and <span class="arithmatex">\(B A=I\)</span> must both be true.</li>
+<li>If <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> are <span class="arithmatex">\(n \times n\)</span> and invertible, then <span class="arithmatex">\(A^{-1} B^{-1}\)</span> is the inverse of <span class="arithmatex">\(A B\)</span>.</li>
+<li>If <span class="arithmatex">\(A=\left[\begin{array}{ll}a &amp; b \\ c &amp; d\end{array}\right]\)</span> and <span class="arithmatex">\(a b-c d \neq 0\)</span>, then <span class="arithmatex">\(A\)</span> is invertible.</li>
+<li>If <span class="arithmatex">\(A\)</span> is an invertible <span class="arithmatex">\(n \times n\)</span> matrix, then the equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> is consistent for each <span class="arithmatex">\(\mathbf{b}\)</span> in <span class="arithmatex">\(\mathbb{R}^n\)</span>.</li>
+<li>Each elementary matrix is invertible.</li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>True, by definition of invertible.</li>
+<li>False. See Theorem 6(b).</li>
+<li>False. If <span class="arithmatex">\(A=\left[\begin{array}{ll}1 &amp; 1 \\ 0 &amp; 0\end{array}\right]\)</span>, then <span class="arithmatex">\(a b-c d=1-0 \neq 0\)</span>, but Theorem 4 shows that this matrix is not invertible, because <span class="arithmatex">\(a d-b c=0\)</span>.</li>
+<li>True. This follows from Theorem 5, which also says that the solution of <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> is unique, for each <span class="arithmatex">\(\mathbf{b}\)</span>.</li>
+<li>True, by the box just before Example 6 .</li>
+</ol>
+</details>
+<p><strong>Exercise 13</strong> (2.2.30-2.2.32)</p>
+<p>Find the inverses of the matrices, if they exist. Use the algorithm introduced in this section.</p>
+<ol>
+<li><span class="arithmatex">\(\left[\begin{array}{ll}3 &amp; 6 \\ 4 &amp; 7\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{rrr}1 &amp; 0 &amp; -2 \\ -3 &amp; 1 &amp; 4 \\ 2 &amp; -3 &amp; 4\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{rrr}1 &amp; 2 &amp; -1 \\ -4 &amp; -7 &amp; 3 \\ -2 &amp; -6 &amp; 4\end{array}\right]\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li><span class="arithmatex">\(A^{-1}=\left[\begin{array}{rr}-7 / 3 &amp; 2 \\ 4 / 3 &amp; -1\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(A^{-1}=\left[\begin{array}{ccc}8 &amp; 3 &amp; 1 \\ 10 &amp; 4 &amp; 1 \\ 7 / 2 &amp; 3 / 2 &amp; 1 / 2\end{array}\right]\)</span></li>
+<li>The matrix <span class="arithmatex">\(A\)</span> is not invertible.</li>
+</ol>
+</details>
+<p><strong>Exercise 14</strong> (2.3.11)</p>
+<p>The matrices are all <span class="arithmatex">\(n \times n\)</span>. Each part of the exercises is an implication of the form "If 〈statement 1〉, then <span class="arithmatex">\(\langle\)</span> statement 2<span class="arithmatex">\(\rangle\)</span>." Mark an implication as True if the truth of〈statement 2〉 always follows whenever 〈statement 1〉 happens to be true. An implication is False if there is an instance in which 〈statement 2 〉 is false but <span class="arithmatex">\(\langle\)</span> statement 1<span class="arithmatex">\(\rangle\)</span> is true. Justify each answer.</p>
+<ol>
+<li>If the equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> has only the trivial solution, then <span class="arithmatex">\(A\)</span> is row equivalent to the <span class="arithmatex">\(n \times n\)</span> identity matrix.</li>
+<li>If the columns of <span class="arithmatex">\(A\)</span> span <span class="arithmatex">\(\mathbb{R}^n\)</span>, then the columns are linearly independent.</li>
+<li>If <span class="arithmatex">\(A\)</span> is an <span class="arithmatex">\(n \times n\)</span> matrix, then the equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> has at least one solution for each <span class="arithmatex">\(\mathbf{b}\)</span> in <span class="arithmatex">\(\mathbb{R}^n\)</span>.</li>
+<li>If the equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> has a nontrivial solution, then <span class="arithmatex">\(A\)</span> has fewer than <span class="arithmatex">\(n\)</span> pivot positions.</li>
+<li>If <span class="arithmatex">\(A^T\)</span> is not invertible, then <span class="arithmatex">\(A\)</span> is not invertible.</li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>True, by the IMT. If statement (d) of the IMT is true, then so is statement (b).</li>
+<li>True. If statement (h) of the IMT is true, then so is statement (e).</li>
+<li>False. Statement (g) of the IMT is true only for invertible matrices.</li>
+<li>True, by the IMT. If the equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> has a nontrivial solution, then statement (d) of the IMT is false. In this case, all the lettered statements in the IMT are false, including statement &copy;, which means that <span class="arithmatex">\(A\)</span> must have fewer than <span class="arithmatex">\(n\)</span> pivot positions.</li>
+<li>True, by the IMT. If <span class="arithmatex">\(A^T\)</span> is not invertible, then statement (1) of the IMT is false, and hence statement (a) must also be false.</li>
+</ol>
+</details>
+<p><strong>Exercise 15</strong> (2.3.12)</p>
+<p>The matrices are all <span class="arithmatex">\(n \times n\)</span>. Each part of the exercises is an implication of the form "If 〈statement 1〉, then <span class="arithmatex">\(\langle\)</span> statement 2<span class="arithmatex">\(\rangle\)</span>." Mark an implication as True if the truth of〈statement 2〉 always follows whenever 〈statement 1〉 happens to be true. An implication is False if there is an instance in which 〈statement 2 〉 is false but <span class="arithmatex">\(\langle\)</span> statement 1<span class="arithmatex">\(\rangle\)</span> is true. Justify each answer.</p>
+<ol>
+<li>If there is an <span class="arithmatex">\(n \times n\)</span> matrix <span class="arithmatex">\(D\)</span> such that <span class="arithmatex">\(A D=I\)</span>, then <span class="arithmatex">\(D A=I\)</span>.</li>
+<li>If the linear transformation <span class="arithmatex">\(\mathbf{x} \mapsto A \mathbf{x}\)</span> maps <span class="arithmatex">\(\mathbb{R}^n\)</span> into <span class="arithmatex">\(\mathbb{R}^n\)</span>, then the row reduced echelon form of <span class="arithmatex">\(A\)</span> is <span class="arithmatex">\(I\)</span>.</li>
+<li>If the columns of <span class="arithmatex">\(A\)</span> are linearly independent, then the columns of <span class="arithmatex">\(A\)</span> span <span class="arithmatex">\(\mathbb{R}^n\)</span>.</li>
+<li>If the equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> has at least one solution for each <span class="arithmatex">\(\mathbf{b}\)</span> in <span class="arithmatex">\(\mathbb{R}^n\)</span>, then the transformation <span class="arithmatex">\(\mathbf{x} \mapsto A \mathbf{x}\)</span> is not one-to-one.</li>
+<li>If there is a <span class="arithmatex">\(\mathbf{b}\)</span> in <span class="arithmatex">\(\mathbb{R}^n\)</span> such that the equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> is consistent, then the solution is unique.</li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>True. If statement <span class="arithmatex">\((\mathrm{k})\)</span> of the IMT is true, then so is statement <span class="arithmatex">\((\mathrm{j})\)</span>. Use the first box after the IMT.</li>
+<li>False. Notice that (i) if the IMT uses the work onto rather than the word into.</li>
+<li>True. If statement (e) of the IMT is true, then so is statement (h).</li>
+<li>False. Since (g) if the IMT is true, so is (f).</li>
+<li>False, by the IMT. The fact that there is a <span class="arithmatex">\(\mathbf{b}\)</span> in <span class="arithmatex">\(\mathbb{R}^n\)</span> such that the equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> is consistent, does not imply that statement (g) of the IMT is true, and hence there could be more than one solution.</li>
+</ol>
+</details>
+<p><strong>Exercise 16</strong> (2.3.15)</p>
+<p>Is it possible for a <span class="arithmatex">\(4 \times 4\)</span> matrix to be invertible when its columns do not span <span class="arithmatex">\(\mathbb{R}^4\)</span> ? Why or why not?</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>Part (h) of the IMT shows that a <span class="arithmatex">\(4 \times 4\)</span> matrix cannot be invertible when its columns do not span <span class="arithmatex">\(\mathbf{R}^4\)</span>.</p>
+</details>
+<p><strong>Exercise 17</strong> (2.3.17)</p>
+<p>Can a square matrix with two identical columns be invertible? Why or why not?</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>If <span class="arithmatex">\(A\)</span> has two identical columns then its columns are linearly dependent. Part (e) of the IMT shows that <span class="arithmatex">\(A\)</span> cannot be invertible.</p>
+</details>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../01_Introduction_to_Linear_Algebra/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 01 Introduction to Linear Algebra">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                01 Introduction to Linear Algebra
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../03_Determinants/" class="md-footer__link md-footer__link--next" aria-label="Next: 03 Determinants">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                03 Determinants
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Richard Brooks
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:rib@via.dk" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/RBrooksDK/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/rbrooks-dk/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
