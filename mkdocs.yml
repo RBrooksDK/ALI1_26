@@ -16,15 +16,13 @@ copyright: Copyright &copy; 2026 Richard Brooks
 theme:
   name: material
   language: en
+  default_theme: default
   # custom_dir: overrides
-  favicon: figures/ali.png
-  logo: figures/ali.png
+  favicon: figures/vialogo_white.png
+  logo: figures/vialogo.png
   icon:
     repo: fontawesome/brands/github
     annotation: material/chevron-right-circle
-  font:
-    text: Roboto
-    code: Red Hat Mono
   features:
     - announce.dismiss
     - content.code.annotate
@@ -42,7 +40,7 @@ theme:
     - navigation.instant.progress
     - navigation.prune
     # - navigation.sections
-    # - navigation.tabs
+    - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
@@ -52,26 +50,27 @@ theme:
     - toc.follow
     # - toc.integrate
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: custom
+    - scheme: default
       accent: orange
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: custom
       accent: orange
       toggle:
         icon: material/toggle-switch-off
         name: Switch to light mode
+  font:
+    text: "VIA Type"
+    code: "Roboto Mono"
 
 plugins:
   - same-dir
   - blog
   - search
-  - mkdocs_quiz
+  - mkdocs_quiz:
+      lang: en
 
 # Extensions
 markdown_extensions:
@@ -83,6 +82,7 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+      toc_depth: 3
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
@@ -115,6 +115,7 @@ markdown_extensions:
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js
 
 extra:
   status:
@@ -135,7 +136,6 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Richard Brooks: https://rbrooksdk.github.io
   - Home: README.md
   - Sessions:
     - Sessions/README.md
@@ -151,7 +151,8 @@ nav:
     - 10 Symmetric Matrices, SVD, and PCA: 10_Symmetric_Matrices_SVD_and_PCA/README.md
     - 11 SVD and PCA: 11_SVD_and_PCA/README.md
     - 12 Recap and Conclusion: 12_Recap_and_Conclusion/README.md    
-  - Exam: pages/exam.md
-  - FAQ: pages/faq.md
   - Online Resources: pages/online_resources.md
   - General Resources ALI: https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/EqyrbL4eyEtPlLcHYKt3NfIBLLBs2xWNa4CtjvvZb5dKTw?e=HGyFGo
+  - Exam: pages/exam.md
+  - FAQ: pages/faq.md
+  - About: https://rbrooksdk.github.io

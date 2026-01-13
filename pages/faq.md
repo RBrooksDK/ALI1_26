@@ -52,13 +52,13 @@
     Please see the "Exam" section in the menu to the left for detailed information about the exam.
 
 ??? question "When will the exam and re-exam be held?"
-    The exam is held August 22 and the re-exam is August 29. Feel free to contact the [Study Service](mailto: studieservice.hs@via.dk) for more information.
+    The exam is held in June and will be announced later. Feel free to contact the [Study Service](mailto: studieservice.hs@via.dk) for more information.
 
 ??? question "What is the grading scale for the course?"
     The grading scale for the course is the 7-point grading scale.
 
 ??? question "How is the final grade calculated?"
-    The final grade is calculated based on the exam. The exam has two parts: a Flowlock exam in Wiseflow and a Wiseflow exam without Flowlock. Part 1 weighs 75% and Part 2 weighs 25% in the final grade. Please see the "Exam" section in the menu to the left for more information.
+    The final grade is calculated based on the exam and will be an overall assesment of both parts of the exam. Please see the "Exam" section in the menu to the left for more information.
 
 ??? question "What is the re-exam procedure?"
     Re-exams may be oral. Please see the "Exam" section in the menu to the left for more information.

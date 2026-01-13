@@ -1,29 +1,27 @@
 <p align="center">
-    <h1 align="center">Applied Linear Algebra - 2025</h1>
-    <p align="center">Repository for <a href="https://www.via.dk/TMH/Courses/applied-linear-algebra?education">ALI1-S25</a> at VIA</p>
-    <p align="center"><strong><a href="https://rbrooksdk.github.io/ALI1_25">Checkout the homepage!</a></strong></p>
+    <h1 align="center">Applied Linear Algebra - 2026</h1>
+    <p align="center">Repository for <a href="https://www.via.dk/TMH/Courses/applied-linear-algebra?education">ALI1-S26</a> at VIA</p>
+    <p align="center"><strong><a href="https://rbrooksdk.github.io/ALI1_26">Checkout the homepage!</a></strong></p>
 </p>
 
 <p align="center">
-  <a href="https://rbrooksdk.github.io/ALI1_25">
-    <video class="custom-video" width="600" autoplay loop muted>
-      <source src="figures/introvid.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+  <a href="https://rbrooksdk.github.io/ALI1_26">
+    <video class="video-light custom-video" width="700" autoplay loop muted src="figures/introvid2.mp4"></video>
+    <video class="video-dark custom-video" width="700" autoplay loop muted src="figures/introvid.mp4"></video>
   </a>
 </p>
 
 
-## :fontawesome-solid-circle-info:{ .fa-circle-info} Course information
+## <i class="fas fa-circle-info" style="color:#6CA2C6"></i> Course information
 
 * Course responsible: Associate Professor [Richard Brooks](https://rbrooksdk.github.io), <rib@via.dk>
 * 5 ECTS (European Credit Transfer System), corresponding to 130 hours of work
-* 12 sessions, each with a duration of 4 lessons
+* 11 sessions, each with a duration of 4 lessons + 1 session for the exam
 * Bachelor level course
 * Grade: 7-step scale
 * Type of assessment: 4-hour written exam (see exam description in the menu to the left)
 
-## :fontawesome-solid-book:{ .fa-book-closed} Prerequisites
+## <i class="fas fa-book" style="color:#6CA2C6"></i> Prerequisites
 It is important that you recap some of your high-school math. Most importantly:
 
 - Linear equations
@@ -31,7 +29,7 @@ It is important that you recap some of your high-school math. Most importantly:
 - Vectors and vector operations
 - Differential equations
 
-## :fontawesome-solid-chalkboard-teacher:{ .fa-chalkboard-teacher} Lectures and course organization
+## <i class="fas fa-chalkboard-teacher" style="color:#6CA2C6"></i> Lectures and course organization
 
 The course is scheduled to start Friday February 6 and will continue up until and including May 1. All sessions are from **8:20 to 11:50** in room **C05.15**. In general, each session is made up of four activities:
 
@@ -44,7 +42,7 @@ This then loops back to (1) at the beginning of the next session.
 
 There are no mandatory assignments, but it is highly recommended to work on the exercises for each session. No instruction is provided for the exercises so you will have to work on them on your own or form study groups.
 
-## :fontawesome-solid-wave-square:{ .fa-wave-square} Course content and learning objectives
+## <i class="fas fa-wave-square" style="color:#6CA2C6"></i> Course content and learning objectives
 Applied Linear Algebra focuses on understanding and applying the core concepts of linear algebra to solve real-world problems. The course explores vector spaces, matrices, eigenvalues, and eigenvectors, emphasising their practical applications in fields such as computer graphics, machine learning, and engineering. The course is designed to provide students with a solid foundation in linear algebra, enabling them to tackle complex problems and develop analytical skills.
 
 ---
@@ -54,16 +52,24 @@ Applied Linear Algebra focuses on understanding and applying the core concepts o
 - **Linear Systems**: Understand the concept of a linear system of equations, how to represent them with matrices, and how to solve them using row reduction.
 - **Matrix Algebra**: Perform matrix operations including addition, multiplication, and inversion. Understand matrices as transformations and systems of linear equations, and learn to use matrices for practical problem solving.
 - **Determinants and Invertibility**: Compute determinants of matrices and understand their geometric and algebraic significance. Use determinants to assess matrix invertibility and to solve linear systems.
+- - **Linear Transformations**: Understand the concept of linear transformations. Learn to represent linear transformations with matrices and how to compose linear transformations.
 - **Vectors and Vector Spaces**: Understand the fundamental concepts of vectors, vector operations, and vector spaces. Learn to interpret vectors algebraically and geometrically, and reason about spans, bases, dimensions, and linear independence.
-- **Markov Chains**: Understand the concept of a Markov chain, how to represent them with matrices, and how to solve them using row reduction.
-- **Linear Transformations and Eigenanalysis**: Understand linear transformations through matrix multiplication. Learn to find eigenvalues and eigenvectors, diagonalise matrices when possible, and interpret eigenanalysis in practical contexts.
+- **Coordinate Mappings and Change of Basis**: Understand the concept of coordinate mappings and change of basis. Learn to represent vectors in different bases and how to change the basis of a vector space.
+- **Eigen-Basics**: Understand the concept of eigenvalues and eigenvectors. Learn to find eigenvalues and eigenvectors of a matrix and how to diagonalize a matrix.
 - **Systems of Differential Equations**: Apply linear algebra techniques to solve systems of first-order differential equations. Understand the connection between eigenvalues, eigenvectors, and the behaviour of dynamic systems.
 - **Orthogonality and Least Squares**: Explore orthogonality in vector spaces, apply the Gram-Schmidt process, and solve least squares problems. Understand projections and their role in approximating inconsistent systems and fitting models to data.
 - **Symmetric Matrices, SVD, and PCA**: Analyse symmetric matrices, perform Singular Value Decomposition (SVD), and understand its application to data reduction and Principal Component Analysis (PCA).
 
+**Changes from 2025**
+- Added more emphasis on Linear Transformations.
+- Added Coordinate Mappings and Change of Basis.
+- Added explicit reference to PCA
+
+These topics were not present in previous exam cases but are now included in the exam.
 
 
-## :fontawesome-solid-book-open:{ .fa-book-open} Resources
+
+## <i class="fas fa-book-open" style="color:#6CA2C6"></i> Resources
 
 Lay: Lay, David C. Linear Algebra and its applications, 4th edition. (e-book, up to students to retrieve a copy). All chapters and exercises referenced will be to the 4th edition. Make sure you have the correct edition or else the exercise numbers will not match.
 
@@ -73,7 +79,7 @@ Note, for each lesson I have uploaded the presentations that accompany the book.
 
 Non-session specific resources such as the exercises from the book, solutions, old exam cases, etc. can be found her:
 
-[General Resources ALI]()
+[General Resources ALI](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/EqyrbL4eyEtPlLcHYKt3NfIBLLBs2xWNa4CtjvvZb5dKTw?e=HGyFGo)
 
 This folder is always accessible in the menu to the left.
 
