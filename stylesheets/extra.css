@@ -1,35 +1,103 @@
-/* Dark mode ("slate") - Blue Matrix Theme (Revised Glow Color - Fixed) */
-[data-md-color-scheme="slate"] {
-  --md-hue: 217; /* Adjusted hue closer to the main blues */
+/* ========================================================================
+   VIA Type Font Definitions
+   ------------------------------------------------------------------------
+   These font faces define the VIA Type font family with various weights and styles.
+   You can add or remove font weights/styles as needed.
+   ======================================================================== */
 
-  /* Background and Foreground */
-  --md-default-bg-color: #0d1017;
-  --md-default-fg-color: #C0D4F0;
+/* VIA Type Regular Family */
+@font-face {
+  font-family: 'VIA Type';
+  src: url('../assets/font/VIA Type Light.otf') format('opentype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'VIA Type';
+  src: url('../assets/font/VIA Type Regular.otf') format('opentype');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'VIA Type';
+  src: url('../assets/font/VIA Type Regular Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic; /* Regular Italic */
+}
+@font-face {
+  font-family: 'VIA Type';
+  src: url('../assets/font/VIA Type Bold.otf') format('opentype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'VIA Type';
+  src: url('../assets/font/VIA Type Black.otf') format('opentype');
+  font-weight: 800; /* Black */
+  font-style: normal;
+}
+
+/* VIA Type Display Family */
+@font-face {
+  font-family: 'VIA Type Display';
+  src: url('../assets/font/VIA Type Display.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'VIA Type Display';
+  src: url('../assets/font/VIA Type Display B.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* ========================================================================
+   Root Variables and Typography Settings
+   ------------------------------------------------------------------------
+   Modify these variables to change the overall look of the site.
+   - --md-primary-color: Main accent color (VIA blue)
+   - --md-accent-color:  Secondary accent color (orange)
+   ======================================================================== */
+:root {
+  --md-text-font: 'VIA Type', Arial, sans-serif;
+  --md-code-font: 'Roboto Mono', 'Fira Mono', 'Consolas', monospace;
+  --md-primary-color: #6CA2C6; /* Change for main accent color */
+  --md-accent-color: #FF8C00;  /* Change for secondary accent color */
+}
+
+/* ========================================================================
+   Global Typography Settings
+   ------------------------------------------------------------------------
+   Controls the base font appearance across the site.
+   - font-weight: 300 = light, 400 = regular, 600 = bold
+   ======================================================================== */
+body, .md-typeset, .md-content, .md-main, .md-typeset p, .md-typeset li, .md-typeset span, .md-typeset div {
+  font-family: 'VIA Type', Arial, sans-serif !important;
+  font-weight: 400 !important; /* Change to 400 for regular */
+}
+
+/* ========================================================================
+   Theme: Dark Mode ("slate")
+   ------------------------------------------------------------------------
+   Blue Matrix Theme with customizable glow effects.
+   You can adjust the --md-hue and color variables for a different look.
+   ======================================================================== */
+[data-md-color-scheme="slate"] {
+  --md-hue: 217; /* Main blue hue for dark mode */
+  --md-default-bg-color: #0d1017; /* Background */
+  --md-default-fg-color: #C0D4F0; /* Foreground text */
   --md-default-fg-color--light: #88A1C9;
   --md-default-fg-color--lighter: #536A94;
-
-  /* Primary color - Used for headers, active elements */
-  --md-primary-fg-color: #123161; /* Bright Electric Blue */
-  /* Define the main "glow" / secondary bright blue */
-  --md-matrix-glow-color: #2A9DF4; /* Medium Tech Blue */
-  /* Use the glow color for the secondary primary state */
+  --md-primary-fg-color: #123161; /* Header/active elements */
+  --md-matrix-glow-color: #2A9DF4; /* Glow/secondary blue */
   --md-primary-fg-color--light: var(--md-matrix-glow-color);
-
   --md-primary-bg-color: #3CACF8;
   --md-primary-bg-color--light: #1A4A8D;
-
-  /* Accent color - Orange highlight */
-  --md-accent-fg-color: #FF8C00;
+  --md-accent-fg-color: #FF8C00; /* Orange accent */
   --md-accent-fg-color--transparent: rgba(255, 140, 0, 0.1);
   --md-accent-bg-color: #4d2a00;
   --md-accent-bg-color--light: #804500;
-
-  /* --- Specific Overrides --- */
-
-  /* Link color - Use the glow color */
-  --md-typeset-a-color: var(--md-matrix-glow-color);
-
-  /* Code styling */
+  --md-typeset-a-color: var(--md-matrix-glow-color); /* Link color */
   --md-code-fg-color: var(--md-matrix-glow-color);
   --md-code-bg-color: #06111F;
   --md-code-hl-color: #FF8C00;
@@ -38,88 +106,242 @@
   --md-code-hl-string-color: #A6E22E;
   --md-code-hl-number-color: #AE81FF;
   --md-code-hl-comment-color: var(--md-default-fg-color--light);
-
-  /* Admonition (standard) */
   --md-admonition-fg-color: #FFFFFF;
   --md-admonition-bg-color: #123161;
-
-  /* Footer styling */
   --md-footer-bg-color: #06111F;
   --md-footer-fg-color: var(--md-default-fg-color--light);
   --md-footer-fg-color--light: var(--md-default-fg-color--lighter);
-
-  /* List markers - Use the 'glow' color */
   ul ::marker,
   ol ::marker {
     color: var(--md-matrix-glow-color);
   }
 }
 
-/* --- Shared Styles & Customizations --- */
-/* (Only showing the corrected Admonition part - keep others like icons, tables, links) */
+/* Video swap for light/dark theme */
+.video-dark { display: none; }
+[data-md-color-scheme="slate"] .video-dark { display: inline !important; }
+[data-md-color-scheme="slate"] .video-light { display: none !important; }
 
-/* Custom Admonitions - Use Variables (FIXED RGBA) */
-.md-typeset .admonition.answer,
-.md-typeset details.answer,
-.md-typeset .admonition.question,
-.md-typeset details.question,
-.md-typeset .admonition.tip,
-.md-typeset details.tip {
-  border-color: var(--md-matrix-glow-color);
-  outline: none;
-  box-shadow: none;
-}
-
-.md-typeset .answer > .admonition-title,
-.md-typeset .answer > summary,
-.md-typeset .question > .admonition-title,
-.md-typeset .question > summary,
-.md-typeset .tip > .admonition-title,
-.md-typeset .tip > summary {
-  background-color: rgba(42, 157, 244, 0.1);
-  color: var(--md-matrix-glow-color);
-  outline: none;
-  box-shadow: none;
-}
-
-/* Icon color matches border/title text */
-.md-typeset .answer > .admonition-title::before,
-.md-typeset .answer > summary::before,
-.md-typeset .question > .admonition-title::before,
-.md-typeset .question > summary::before,
-.md-typeset .tip > .admonition-title::before,
-.md-typeset .tip > summary::before {
-  background-color: var(--md-matrix-glow-color);
-}
-.md-typeset .answer > .admonition-title::before,
-.md-typeset .answer > summary::before {
-   -webkit-mask-image: var(--md-admonition-icon--success);
-           mask-image: var(--md-admonition-icon--success);
+/* ========================================================================
+   Theme: Light Mode ("default")
+   ------------------------------------------------------------------------
+   Customize the appearance of the site in light mode.
+   Adjust the color values below to change the theme.
+   ======================================================================== */
+[data-md-color-scheme="default"] {
+  --md-color-primary: #FFFFFF; /* Header background */
+  --md-color-primary-rgb: 255, 255, 255;
+  --md-primary-fg-color: #6CA2C6; /* VIA blue for links, accents */
+  --md-default-background-color: #FFFFFF;
+  --md-default-fg-color: #363636;
+  --md-typeset-body-font-weight: 300; /* Main text weight */
+  --md-typeset-heading-font-weight: 400; /* Heading weight */
+  --md-code-font-family: 'Roboto Mono', monospace;
+  --md-header-background-color: #FFFFFF;
+  --md-footer-background-color: #363636;
+  --md-footer-fg-color: #FFFFFF;
+  --md-footer-bg-color: #222;
+  --md-footer-fg-color--light: var(--md-default-fg-color--lighter);
+  ul ::marker,
+  ol ::marker {
+    color: var(--md-primary-fg-color);
+  }
+  color: #363636 !important;
 }
 
-.md-typeset .tip > .admonition-title::before,
-.md-typeset .tip > summary::before {
-   -webkit-mask-image: var(--md-admonition-icon--tip);
-           mask-image: var(--md-admonition-icon--tip);
+/* ========================================================================
+   Header, Footer, and Navigation Styling
+   ------------------------------------------------------------------------
+   Controls the appearance of the site header, logo, and navigation elements.
+   ======================================================================== */
+[data-md-color-scheme="default"] .md-header {
+  background-color: var(--md-color-primary) !important;
+}
+[data-md-color-scheme="default"] .md-header, 
+[data-md-color-scheme="default"] .md-header * {
+  color: #363636 !important;
+  fill: #363636 !important;
+}
+[data-md-color-scheme="default"] .md-footer {
+  color: #FFFFFF !important;
+}
+[data-md-color-scheme="default"] .md-footer-meta * {
+  color: #FFFFFF !important;
+  fill: #FFFFFF !important;
 }
 
-/* Indicator matches border/title text */
-.md-typeset details[open].answer summary::after,
-.md-typeset details.answer summary::after,
-.md-typeset details[open].question summary::after,
-.md-typeset details.question summary::after,
-.md-typeset details[open].tip summary::after,
-.md-typeset details.tip summary::after {
-  color: var(--md-matrix-glow-color);
-}
+/* Logo Sizing and Positioning
+   - Change height/width to adjust logo size in header */
 .md-header__button.md-logo {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
-
-.md-header__button.md-logo img, .md-header__button.md-logo svg {
-  height: 2.4rem;
+.md-header__button.md-logo img, 
+.md-header__button.md-logo svg {
+  height: 2.4rem; /* Logo size */
   width: 2.4rem;
+}
+
+/* Header Typography
+   - font-weight: 400 = regular, 600 = bold */
+.md-header__title, 
+.md-header__topic, 
+.md-header-nav__title {
+  font-family: 'VIA Type', Arial, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* Sidebar Typography */
+.md-nav__title, 
+.md-nav__topic {
+  font-family: 'VIA Type', Arial, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* ========================================================================
+   Search Bar Styling
+   ------------------------------------------------------------------------
+   Controls the background color of the search bar on focus/hover.
+   Change the background value to adjust highlight color.
+   ======================================================================== */
+[data-md-color-scheme="default"] .md-search__form:focus-within,
+[data-md-color-scheme="default"] .md-search__form:hover {
+  background: #FF8C00 !important; /* Search bar highlight color */
+}
+
+/* ========================================================================
+   Font Awesome Icon Sizing in Headings
+   ------------------------------------------------------------------------
+   Controls the appearance of Font Awesome icons in h2 headings.
+   - font-size: Icon size relative to text
+   - width/height: Icon dimensions
+   - vertical-align: Icon alignment with text
+   ======================================================================== */
+[data-md-color-scheme="default"] .md-typeset h2 i.fas,
+[data-md-color-scheme="default"] .md-typeset h2 svg.svg-inline--fa,
+[data-md-color-scheme="slate"] .md-typeset h2 i.fas,
+[data-md-color-scheme="slate"] .md-typeset h2 svg.svg-inline--fa {
+  font-size: 1.3em !important;
+  width: 1.3em !important;
+  height: 1.3em !important;
+  vertical-align: middle;
+}
+[data-md-color-scheme="default"] .md-typeset h2 .fa,
+[data-md-color-scheme="slate"] .md-typeset h2 .fa {
+  font-size: 1.2em;
+}
+
+/* ========================================================================
+   Sidebar Positioning Adjustment
+   ------------------------------------------------------------------------
+   Moves both the navigation sidebar (left) and table of contents sidebar (right)
+   closer to the edges of the viewport. Adjust the percentage to control how much.
+   ======================================================================== */
+@media screen and (min-width: 1220px) {
+  .md-sidebar--primary {
+    left: 0.5vw !important; /* Default is ~2vw, reduce for closer to edge */
+  }
+  .md-sidebar--secondary {
+    right: 0.5vw !important; /* Default is ~2vw, reduce for closer to edge */
+  }
+  .md-content {
+    border-left: 1px solid #e0e0e0 !important;
+  }
+}
+
+/* ========================================================================
+   Tabs Bar Styling
+   ------------------------------------------------------------------------
+   Makes the navigation tabs bar the same color as the header (white).
+   ======================================================================== */
+[data-md-color-scheme="default"] .md-tabs {
+  background-color: #fff !important;
+  color: #363636 !important;
+  border-bottom: 1px solid #e0e0e0;
+}
+[data-md-color-scheme="default"] .md-tabs__link {
+  color: #363636 !important;
+}
+[data-md-color-scheme="default"] .md-tabs__link--active {
+  color: var(--md-primary-fg-color) !important;
+}
+
+/* 1) Disable the sidebar's own scrolling & let the window scroll instead */
+[data-md-color-scheme="default"] .md-sidebar__scrollwrap {
+  overflow-y: visible !important;
+  height: auto         !important;
+}
+
+/* 2) Hide any leftover scrollbar UI in WebKit/Blink */
+[data-md-color-scheme="default"] .md-sidebar__scrollwrap::-webkit-scrollbar {
+  display: none;
+}
+
+/* 3) And for Firefox */
+[data-md-color-scheme="default"] .md-sidebar__scrollwrap {
+  scrollbar-width: none;    /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+[data-md-color-scheme="default"] {
+
+/* Change the border color for the "answer" admonition */
+.md-typeset .admonition.answer,
+.md-typeset details.answer {
+  border-color: #E5AB48; /* Green border for "answer" */
+  outline: none; /* Remove any focus outline */
+  box-shadow: none; /* Remove any default box shadow */
+}
+
+/* Change the background color of the title for "answer" admonitions */
+.md-typeset .answer > .admonition-title,
+.md-typeset .answer > summary {
+  background-color: #FFEFD3; /* Light green background for title */
+  outline: none; /* Remove any focus outline */
+  box-shadow: none; /* Remove any default box shadow */
+}
+
+/* Change the icon color for "answer" admonitions */
+.md-typeset .answer > .admonition-title::before,
+.md-typeset .answer > summary::before {
+  background-color: #E5AB48; /* Green icon color */
+  -webkit-mask-image: var(--md-admonition-icon--success); /* Default icon */
+          mask-image: var(--md-admonition-icon--success);
+}
+
+/* Change color for collapsible indicator in "answer" */
+.md-typeset details[open].answer summary::after,
+.md-typeset details.answer summary::after {
+  color: #E5AB48; /* Green for collapsible indicator */
+}
+
+/* Change the border color for the "question" admonition */
+.md-typeset .admonition.question,
+.md-typeset details.question {
+  border-color: #2DB499; /* Green border for "question" */
+  outline: none; /* Remove any focus outline */
+  box-shadow: none; /* Remove any default box shadow */
+}
+
+/* Change the background color of the title for "question" admonitions */
+.md-typeset .question > .admonition-title,
+.md-typeset .question > summary {
+  background-color: #CCF1EA; /* Light green background for title */
+  outline: none; /* Remove any focus outline */
+  box-shadow: none; /* Remove any default box shadow */
+}
+
+/* Change the icon color for "question" admonitions */
+.md-typeset .question > .admonition-title::before,
+.md-typeset .question > summary::before {
+  background-color: #2DB499; /* Green icon color */
+}
+
+/* Change color for collapsible indicator in "question" */
+.md-typeset details[open].question summary::after,
+.md-typeset details.question summary::after {
+  color: #2DB499; /* Green for collapsible indicator */
+}
 }
