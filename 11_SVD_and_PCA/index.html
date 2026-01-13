@@ -12,13 +12,13 @@
         <meta name="author" content="Richard Brooks">
       
       
-        <link rel="canonical" href="https://rbrooksdk.github.io/ALI1_26/08_Orthogonality_II/">
+        <link rel="canonical" href="https://rbrooksdk.github.io/ALI1_26/11_SVD_and_PCA/">
       
       
-        <link rel="prev" href="../07_Orthogonality_I/">
+        <link rel="prev" href="../10_Symmetric_Matrices_SVD_and_PCA/">
       
       
-        <link rel="next" href="../09_Symmetric_Matrices_SVD_and_PCA/">
+        <link rel="next" href="../12_Recap_and_Conclusion/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>08 Orthogonality II - Applied Linear Algebra</title>
+        <title>11 SVD and PCA - Applied Linear Algebra</title>
       
     
     
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              08 Orthogonality II
+              11 SVD and PCA
             
           </span>
         </div>
@@ -367,6 +367,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -453,14 +457,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../02_Matrix_Algebra/" class="md-nav__link">
+      <a href="../02_Independence_and_Linear_Transformations/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    02 Matrix Algebra
+    02 Independence and Linear Transformations
   
 
     
@@ -481,14 +485,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../03_Determinants/" class="md-nav__link">
+      <a href="../03_Matrix_Algebra/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    03 Determinants
+    03 Matrix Algebra
   
 
     
@@ -509,14 +513,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../04_Vector_Spaces/" class="md-nav__link">
+      <a href="../04_Determinants/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    04 Vector Spaces
+    04 Determinants
   
 
     
@@ -537,14 +541,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../05_Eigenvalues/" class="md-nav__link">
+      <a href="../05_Vector_Spaces/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    05 Eigenvalues
+    05 Vector Spaces
   
 
     
@@ -565,14 +569,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../06_Differential_Equations/" class="md-nav__link">
+      <a href="../06_Eigenvalues/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    06 Differential Equations
+    06 Eigenvalues
   
 
     
@@ -593,14 +597,98 @@
   
   
     <li class="md-nav__item">
-      <a href="../07_Orthogonality_I/" class="md-nav__link">
+      <a href="../07_Differential_Equations/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    07 Orthogonality I
+    07 Differential Equations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_Orthogonality_I/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 Orthogonality I
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_Orthogonality_II/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 Orthogonality II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_Symmetric_Matrices_SVD_and_PCA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 Symmetric Matrices, SVD, and PCA
   
 
     
@@ -635,7 +723,7 @@
   <span class="md-ellipsis">
     
   
-    08 Orthogonality II
+    11 SVD and PCA
   
 
     
@@ -653,7 +741,7 @@
   <span class="md-ellipsis">
     
   
-    08 Orthogonality II
+    11 SVD and PCA
   
 
     
@@ -742,42 +830,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../09_Symmetric_Matrices_SVD_and_PCA/" class="md-nav__link">
+      <a href="../12_Recap_and_Conclusion/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    09 Symmetric Matrices, SVD, and PCA
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../10_Recap_and_Conclusion/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    10 Recap and Conclusion
+    12 Recap and Conclusion
   
 
     
@@ -1000,186 +1060,26 @@
   
 
 
-<h1 align="center">Orthogonality II</h1>
+<h1 align="center">SVD and PCA</h1>
 
 <h2 id="session-material">Session Material:<a class="headerlink" href="#session-material" title="Permanent link">&para;</a></h2>
-<p>Lay: ​​​6.4-6.6</p>
-<p><a href="https://drive.google.com/file/d/1BJFDHxnCy20o-mvCEuUkAotAKEnSBrVY/view?usp=sharing">Recap and Exercises</a></p>
-<p><a href="https://drive.google.com/file/d/18le_DiM9wy9t3RGteK82Mfgn-E79v6yZ/view?usp=sharing">Session Notes</a></p>
-<p><a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/EtRCyXB5jWNAvJv9H0Uo-_8BEsXd36hxB3TOHflc7XSGjw?e=M8MUba">Session Material</a></p>
+<p>Lay: </p>
+<p><a href="">Session Notes</a></p>
+<p><a href="">Session Material</a></p>
 <hr />
 <h2 id="session-description">Session Description<a class="headerlink" href="#session-description" title="Permanent link">&para;</a></h2>
-<p>Building on our understanding of orthogonal vectors and bases, this session focuses on powerful techniques and applications related to orthogonality. First, we'll learn the "Gram-Schmidt process" – a step-by-step method to turn <em>any</em> basis for a subspace into an orthogonal (or orthonormal) one. This is a fundamental algorithm! Related to Gram-Schmidt is the "QR factorization," a way to break down certain matrices into a product of a matrix with orthonormal columns and an upper triangular matrix.</p>
-<p>Then, we'll tackle a super common problem in real-world data: what do you do when a linear system <span class="arithmatex">\(A\mathbf{x}=\mathbf{b}\)</span> has <em>no</em> exact solution? We'll introduce "least-squares" solutions – the 'best possible' approximate solutions that minimize the error. Geometrically, finding the least-squares solution involves projecting the vector <span class="arithmatex">\(\mathbf{b}\)</span> onto the column space of matrix <span class="arithmatex">\(A\)</span>. We'll see how these least-squares ideas are applied, especially in fitting models to data (like finding the 'best' line through a set of points).</p>
 <h3 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Gram-Schmidt Process</li>
-<li>Orthogonalization</li>
-<li>Least Squares</li>
-<li>Inconsistent Systems</li>
-<li>Projections</li>
-<li>Data Fitting</li>
+<li></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Learning Objectives</p>
 <ul>
-<li>Apply the Gram-Schmidt process to construct orthogonal and orthonormal bases.</li>
-<li>Solve least-squares problems and interpret best-fit solutions.</li>
-<li>Analyze projections and their role in data fitting and inconsistent systems.</li>
-<li>Connect orthogonality concepts to practical applications in modeling and data analysis.</li>
+<li></li>
 </ul>
 </div>
+<hr />
 <h2 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h2>
-<!--
-6.4: 1, 6 12, 24
-6.5: 1, 3, 5, 7, 12, 25
-6.6: 3, 4, 7, 13 
--->
-<style type="text/css">
-    ol { list-style-type: lower-alpha; }
-</style>
-
-<p><strong>Exercise 1</strong> (6.4.1, 6.4.6)</p>
-<p>In the following exercises, the given set is a basis for a subspace <span class="arithmatex">\(W\)</span>. Use the Gram-Schmidt process to produce an orthogonal basis for <span class="arithmatex">\(W\)</span>.</p>
-<ol>
-<li><span class="arithmatex">\(\left[\begin{array}{r}3 \\ 0 \\ -1\end{array}\right],\left[\begin{array}{r}8 \\ 5 \\ -6\end{array}\right]\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{r}3 \\ -1 \\ 2 \\ -1\end{array}\right],\left[\begin{array}{r}-5 \\ 9 \\ -9 \\ 3\end{array}\right]\)</span></li>
-</ol>
-<details class="answer">
-<summary>&nbsp;</summary>
-<ol>
-<li><span class="arithmatex">\(\left\{\left[\begin{array}{r}3 \\ 0 \\ -1\end{array}\right],\left[\begin{array}{r}-1 \\ 5 \\ -3\end{array}\right]\right\}\)</span></li>
-<li><span class="arithmatex">\(\left\{\left[\begin{array}{r}3 \\ -1 \\ 2 \\ -1\end{array}\right],\left[\begin{array}{r}4 \\ 6 \\ -3 \\ 0\end{array}\right]\right\}\)</span></li>
-</ol>
-</details>
-<p><strong>Exercise 2</strong> (6.4.12)</p>
-<p>Find an orthogonal basis for the column space of the following matrix:</p>
-<p><span class="arithmatex">\(\left[\begin{array}{rrr}1 &amp; 3 &amp; 5 \\ -1 &amp; -3 &amp; 1 \\ 0 &amp; 2 &amp; 3 \\ 1 &amp; 5 &amp; 2 \\ 1 &amp; 5 &amp; 8\end{array}\right]\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(\left\{\left[\begin{array}{r}1 \\ -1 \\ 0 \\ 1 \\ 1\end{array}\right],\left[\begin{array}{r}-1 \\ 1 \\ 2 \\ 1 \\ 1\end{array}\right],\left[\begin{array}{r}3 \\ 3 \\ 0 \\ -3 \\ 3\end{array}\right]\right\}\)</span></p>
-</details>
-<p><strong>Exercise 3</strong> (6.4.24)</p>
-<p>[M] Use the Gram-Schmidt process as in Example 2 to produce an orthogonal basis for the column space of</p>
-<div class="arithmatex">\[
-A=\left[\begin{array}{rrrr}
--10 &amp; 13 &amp; 7 &amp; -11 \\
-2 &amp; 1 &amp; -5 &amp; 3 \\
--6 &amp; 3 &amp; 13 &amp; -3 \\
-16 &amp; -16 &amp; -2 &amp; 5 \\
-2 &amp; 1 &amp; -5 &amp; -7
-\end{array}\right]
-\]</div>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(\left\{\left[\begin{array}{r}-10 \\ 2 \\ -6 \\ 16 \\ 2\end{array}\right],\left[\begin{array}{r}3 \\ 3 \\ -3 \\ 0 \\ 3\end{array}\right],\left[\begin{array}{l}6 \\ 0 \\ 6 \\ 6 \\ 0\end{array}\right],\left[\begin{array}{r}0 \\ 5 \\ 0 \\ 0 \\ -5\end{array}\right]\right\}\)</span></p>
-</details>
-<p><strong>Exercise 4</strong> (6.5.1, 6.5.3) <!-- NOTE: Formulation may be a bit confusing because we are using a and b also for labeling the exercises --></p>
-<p>Find a least-squares solution of <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> by (a) constructing the normal equations for <span class="arithmatex">\(\hat{\mathbf{x}}\)</span> and (b) solving for <span class="arithmatex">\(\hat{\mathbf{x}}\)</span>.</p>
-<ol>
-<li><span class="arithmatex">\(A=\left[\begin{array}{rr}-1 &amp; 2 \\ 2 &amp; -3 \\ -1 &amp; 3\end{array}\right], \mathbf{b}=\left[\begin{array}{l}4 \\ 1 \\ 2\end{array}\right]\)</span></li>
-<li><span class="arithmatex">\(A=\left[\begin{array}{rr}1 &amp; -2 \\ -1 &amp; 2 \\ 0 &amp; 3 \\ 2 &amp; 5\end{array}\right], \mathbf{b}=\left[\begin{array}{r}3 \\ 1 \\ -4 \\ 2\end{array}\right]\)</span></li>
-</ol>
-<details class="answer">
-<summary>&nbsp;</summary>
-<ol>
-<li>
-<p>(a) The normal equations are <span class="arithmatex">\(\left(A^T A\right) \mathbf{x}=A^T \mathbf{b}:\left[\begin{array}{rr}6 &amp; -11 \\ -11 &amp; 22\end{array}\right]\left[\begin{array}{c}x_1 \\ x_2\end{array}\right]=\left[\begin{array}{c}-4 \\ 11\end{array}\right]\)</span>.</p>
-<p>(b) <span class="arithmatex">\(\frac{1}{11}\left[\begin{array}{l}33 \\ 22\end{array}\right]=\left[\begin{array}{l}3 \\ 2\end{array}\right]\)</span></p>
-</li>
-<li>
-<p>(a) The normal equations are <span class="arithmatex">\(\left(A^T A\right) \mathbf{x}=A^T \mathbf{b}:\left[\begin{array}{rr}6 &amp; 6 \\ 6 &amp; 42\end{array}\right]\left[\begin{array}{l}x_1 \\ x_2\end{array}\right]=\left[\begin{array}{r}6 \\ -6\end{array}\right]\)</span></p>
-<p>(b) <span class="arithmatex">\(\frac{1}{216}\left[\begin{array}{l}288 \\ -72\end{array}\right]=\left[\begin{array}{r}4 / 3 \\ -1 / 3\end{array}\right]\)</span></p>
-</li>
-</ol>
-</details>
-<p><strong>Exercise 5</strong> (6.5.5)</p>
-<p>Describe all least-squares solutions of the equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span>.</p>
-<p><span class="arithmatex">\(A=\left[\begin{array}{lll}1 &amp; 1 &amp; 0 \\ 1 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 1 \\ 1 &amp; 0 &amp; 1\end{array}\right], \mathbf{b}=\left[\begin{array}{l}1 \\ 3 \\ 8 \\ 2\end{array}\right]\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p>all vectors of the form <span class="arithmatex">\(\hat{\mathbf{x}}=\left[\begin{array}{r}5 \\ -3 \\ 0\end{array}\right]+x_3\left[\begin{array}{r}-1 \\ 1 \\ 1\end{array}\right]\)</span> are the least-squares solutions of <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span>.</p>
-</details>
-<p><strong>Exercise 6</strong> (6.5.7)</p>
-<p>Compute the least-squares error associated with the leastsquares solution found in Exercise 4b.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p>The least squares error is <span class="arithmatex">\(\|A \hat{\mathbf{x}}-\mathbf{b}\|=\sqrt{20}=2 \sqrt{5}\)</span>.</p>
-</details>
-<p><strong>Exercise 7</strong> (6.5.12)</p>
-<p>Find </p>
-<ol>
-<li>The orthogonal projection of <span class="arithmatex">\(\mathbf{b}\)</span> onto <span class="arithmatex">\(\mathrm{Col} A\)</span> and </li>
-<li>A least-squares solution of <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span>.</li>
-</ol>
-<p><span class="arithmatex">\(A=\left[\begin{array}{rrr}1 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; -1 \\ 0 &amp; 1 &amp; 1 \\ -1 &amp; 1 &amp; -1\end{array}\right], \mathbf{b}=\left[\begin{array}{l}2 \\ 5 \\ 6 \\ 6\end{array}\right]\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<ol>
-<li>
-<p><span class="arithmatex">\(\frac{1}{3}\left[\begin{array}{c}1 \\ 1 \\ 0 \\ -1\end{array}\right]+\frac{14}{3}\left[\begin{array}{l}1 \\ 0 \\ 1 \\ 1\end{array}\right]-\frac{5}{3}\left[\begin{array}{c}0 \\ -1 \\ 1 \\ -1\end{array}\right]=\left[\begin{array}{l}5 \\ 2 \\ 3 \\ 6\end{array}\right]\)</span></p>
-</li>
-<li>
-<p><span class="arithmatex">\(\hat{\mathbf{x}}=\left[\begin{array}{r}1 / 3 \\ 14 / 3 \\ -5 / 3\end{array}\right]\)</span></p>
-</li>
-</ol>
-</details>
-<p><strong>Exercise 8</strong> (6.5.25)</p>
-<p>Describe all least-squares solutions of the system</p>
-<div class="arithmatex">\[
-\begin{aligned}
-&amp; x+y=2 \\
-&amp; x+y=4
-\end{aligned}
-\]</div>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p>The normal equations are <span class="arithmatex">\(\left[\begin{array}{ll}2 &amp; 2 \\ 2 &amp; 2\end{array}\right]\left[\begin{array}{l}x \\ y\end{array}\right]=\left[\begin{array}{l}6 \\ 6\end{array}\right]\)</span>, whose solution is the set of all <span class="arithmatex">\((x, y)\)</span> such that <span class="arithmatex">\(x+y=\)</span> 3. The solutions correspond to the points on the line midway between the lines <span class="arithmatex">\(x+y=2\)</span> and <span class="arithmatex">\(x+y=\)</span> 4.</p>
-</details>
-<p><strong>Exercise 9</strong> (6.6.3-6.6.4)</p>
-<p>Find the equation <span class="arithmatex">\(y=\beta_0+\beta_1 x\)</span> of the leastsquares line that best fits the given data points.</p>
-<ol>
-<li><span class="arithmatex">\((-1,0),(0,1),(1,2),(2,4)\)</span></li>
-<li><span class="arithmatex">\((2,3),(3,2),(5,1),(6,0)\)</span></li>
-</ol>
-<details class="answer">
-<summary>&nbsp;</summary>
-<ol>
-<li>The least-squares line <span class="arithmatex">\(y=\beta_0+\beta_1 x\)</span> is thus <span class="arithmatex">\(y=1.1+1.3 x\)</span>.</li>
-<li>The least-squares line <span class="arithmatex">\(y=\beta_0+\beta_1 x\)</span> is thus <span class="arithmatex">\(y=4.3-.7 x\)</span>.</li>
-</ol>
-</details>
-<p><strong>Exercise 10</strong> (6.6.7)</p>
-<p>A certain experiment produces the data <span class="arithmatex">\((1,1.8),(2,2.7)\)</span>, <span class="arithmatex">\((3,3.4),(4,3.8),(5,3.9)\)</span>. Describe the model that produces a least-squares fit of these points by a function of the form <span class="arithmatex">\(y=\beta_1 x+\beta_2 x^2\)</span>
-Such a function might arise, for example, as the revenue from the sale of <span class="arithmatex">\(x\)</span> units of a product, when the amount offered for sale affects the price to be set for the product.</p>
-<ol>
-<li>Give the design matrix, the observation vector, and the unknown parameter vector.</li>
-<li>[M] Find the associated least-squares curve for the data.</li>
-</ol>
-<details class="answer">
-<summary>&nbsp;</summary>
-<ol>
-<li>
-<p><span class="arithmatex">\(\mathbf{y}=X \beta+\epsilon\)</span>, where <span class="arithmatex">\(X=\left[\begin{array}{rr}1 &amp; 1 \\ 2 &amp; 4 \\ 3 &amp; 9 \\ 4 &amp; 16 \\ 5 &amp; 25\end{array}\right], \mathbf{y}=\left[\begin{array}{l}1.8 \\ 2.7 \\ 3.4 \\ 3.8 \\ 3.9\end{array}\right], {\beta}=\left[\begin{array}{l}\beta_1 \\ \beta_2\end{array}\right]\)</span>, and <span class="arithmatex">\(\epsilon=\left[\begin{array}{l}\epsilon_1 \\ \epsilon_2 \\ \epsilon_3 \\ \epsilon_4 \\ \epsilon_5\end{array}\right]\)</span></p>
-</li>
-<li>
-<p>[M] One computes that (to two decimal places) <span class="arithmatex">\(\hat{{\beta}}=\left[\begin{array}{c}1.76 \\ -.20\end{array}\right]\)</span>, so the desired least-squares equation is <span class="arithmatex">\(y=1.76 x-.20 x^2\)</span>.</p>
-</li>
-</ol>
-</details>
-<p><strong>Exercise 11</strong> (6.6.13)</p>
-<p>[M] To measure the takeoff performance of an airplane, the horizontal position of the plane was measured every second, from <span class="arithmatex">\(t=0\)</span> to <span class="arithmatex">\(t=12\)</span>. The positions (in feet) were: <span class="arithmatex">\(0,8.8\)</span>, <span class="arithmatex">\(29.9,62.0,104.7,159.1,222.0,294.5,380.4,471.1,571.7\)</span>, 686.8 , and 809.2.</p>
-<ol>
-<li>Find the least-squares cubic curve <span class="arithmatex">\(y=\beta_0+\beta_1 t+\)</span> <span class="arithmatex">\(\beta_2 t^2+\beta_3 t^3\)</span> for these data.</li>
-<li>Use the result of part (a) to estimate the velocity of the plane when <span class="arithmatex">\(t=4.5\)</span> seconds.</li>
-</ol>
-<details class="answer">
-<summary>&nbsp;</summary>
-<ol>
-<li>The desired least-squares polynomial is <span class="arithmatex">\(y(t)=-.8558+4.7025 t+5.5554 t^2-.0274 t^3\)</span>.</li>
-<li>The velocity <span class="arithmatex">\(v(t)\)</span> is the derivative of the position function <span class="arithmatex">\(y(t)\)</span>, so <span class="arithmatex">\(v(t)=4.7025+11.1108 t-.0822 t^2\)</span>, and <span class="arithmatex">\(v(4.5)=53.0 \mathrm{ft} / \mathrm{sec}\)</span>.</li>
-</ol>
-</details>
 
 
 
@@ -1217,7 +1117,7 @@ Such a function might arise, for example, as the revenue from the sale of <span 
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../07_Orthogonality_I/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 07 Orthogonality I">
+          <a href="../10_Symmetric_Matrices_SVD_and_PCA/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 10 Symmetric Matrices, SVD, and PCA">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1227,20 +1127,20 @@ Such a function might arise, for example, as the revenue from the sale of <span 
                 Previous
               </span>
               <div class="md-ellipsis">
-                07 Orthogonality I
+                10 Symmetric Matrices, SVD, and PCA
               </div>
             </div>
           </a>
         
         
           
-          <a href="../09_Symmetric_Matrices_SVD_and_PCA/" class="md-footer__link md-footer__link--next" aria-label="Next: 09 Symmetric Matrices, SVD, and PCA">
+          <a href="../12_Recap_and_Conclusion/" class="md-footer__link md-footer__link--next" aria-label="Next: 12 Recap and Conclusion">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                09 Symmetric Matrices, SVD, and PCA
+                12 Recap and Conclusion
               </div>
             </div>
             <div class="md-footer__button md-icon">

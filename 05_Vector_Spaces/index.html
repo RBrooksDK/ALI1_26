@@ -12,13 +12,13 @@
         <meta name="author" content="Richard Brooks">
       
       
-        <link rel="canonical" href="https://rbrooksdk.github.io/ALI1_26/Sessions/">
+        <link rel="canonical" href="https://rbrooksdk.github.io/ALI1_26/05_Vector_Spaces/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../04_Determinants/">
       
       
-        <link rel="next" href="../01_Introduction_to_Linear_Algebra/">
+        <link rel="next" href="../06_Eigenvalues/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Sessions - Applied Linear Algebra</title>
+        <title>05 Vector Spaces - Applied Linear Algebra</title>
       
     
     
@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sessions" class="md-skip">
+        <a href="#session-material" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Sessions
+              05 Vector Spaces
             
           </span>
         </div>
@@ -385,7 +385,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../Sessions/" class="md-nav__link ">
               
   
   
@@ -403,7 +403,7 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -538,10 +538,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../05_Vector_Spaces/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 Vector Spaces
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -557,6 +582,74 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#session-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Material:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Description
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Concepts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -890,8 +983,64 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#session-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Material:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Description
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Concepts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -911,81 +1060,235 @@
   
 
 
-<h1 id="sessions">Sessions<a class="headerlink" href="#sessions" title="Permanent link">&para;</a></h1>
-<p>Click on a session to the left (or below) to access a plan of a specific session and additional resources for that session. All sessions are scheduled from <strong>8:20 to 11:50</strong> in room <strong>C03.12</strong>, except the first session, which is from <strong>8:20 to 14:20</strong>. The sessions are as follows:</p>
-<div style="text-align:center;">
-<table>
-<thead>
-<tr>
-<th>Session</th>
-<th style="text-align: center;">Date</th>
-<th>Topic</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>01</td>
-<td style="text-align: center;">4 Aug 08:20 – 14:20</td>
-<td><a href="/ALI1_26/01_Introduction_to_Linear_Algebra/">Introduction to Linear Algebra</a></td>
-</tr>
-<tr>
-<td>02</td>
-<td style="text-align: center;">5 Aug 08:20 – 11:50</td>
-<td><a href="/ALI1_26/02_Independence_and_Linear_Transformations/">Independence and Linear Transformations</a></td>
-</tr>
-<tr>
-<td>03</td>
-<td style="text-align: center;">6 Aug 08:20 – 11:50</td>
-<td><a href="/ALI1_26/03_Matrix_Algebra/">Matrix Algebra</a></td>
-</tr>
-<tr>
-<td>04</td>
-<td style="text-align: center;">7 Aug 08:20 – 11:50</td>
-<td><a href="/ALI1_26/04_Determinants/">Determinants</a></td>
-</tr>
-<tr>
-<td>05</td>
-<td style="text-align: center;">8 Aug 08:20 – 11:50</td>
-<td><a href="/ALI1_26/05_Vector_Spaces/">Vector Spaces</a></td>
-</tr>
-<tr>
-<td>06</td>
-<td style="text-align: center;">11 Aug 08:20 – 11:50</td>
-<td><a href="/ALI1_26/06_Eigenvalues/">Eigenvalues</a></td>
-</tr>
-<tr>
-<td>07</td>
-<td style="text-align: center;">12 Aug 08:20 – 11:50</td>
-<td><a href="/ALI1_26/07_Differential_Equations/">Differential Equations</a></td>
-</tr>
-<tr>
-<td>08</td>
-<td style="text-align: center;">13 Aug 08:20 – 11:50</td>
-<td><a href="/ALI1_26/08_Orthogonality_I/">Orthogonality 1</a></td>
-</tr>
-<tr>
-<td>09</td>
-<td style="text-align: center;">14 Aug 08:20 – 11:50</td>
-<td><a href="/ALI1_26/09_Orthogonality_II/">Orthogonality 2</a></td>
-</tr>
-<tr>
-<td>10</td>
-<td style="text-align: center;">15 Aug 08:20 – 11:50</td>
-<td><a href="/ALI1_26/10_Symmetric_Matrices_SVD_and_PCA/">Symmetric Matrices, SVD and PCA</a></td>
-</tr>
-<tr>
-<td>11</td>
-<td style="text-align: center;">18 Aug 08:20 – 11:50</td>
-<td><a href="/ALI1_26/11_SVD_and_PCA/">SVD and PCA</a></td>
-</tr>
-<tr>
-<td>12</td>
-<td style="text-align: center;">19 Aug 08:20 – 11:50</td>
-<td><a href="/ALI1_26/12_Recap_and_Conclusion/">Recap and Conclusion</a></td>
-</tr>
-</tbody>
-</table>
+<h1 align="center">Vector Spaces</h1>
+
+<h2 id="session-material">Session Material:<a class="headerlink" href="#session-material" title="Permanent link">&para;</a></h2>
+<p><a href="https://drive.google.com/file/d/1aV4KGTyLo9xG6Nggc-_ITgNbp0LL-_XC/view?usp=sharing">Recap and Exercises</a></p>
+<p><a href="https://drive.google.com/file/d/1xAHL9RSgd2lWDU-LaGRtwrbEG9U78h9m/view?usp=sharing">Session Notes</a></p>
+<p><a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/EgXzFwcFf_tBh8mwVvN0UycBh_gTnjRq8A5x15bFaLKCTg?e=eGwSEq">Session Material</a></p>
+<hr />
+<h2 id="session-description">Session Description<a class="headerlink" href="#session-description" title="Permanent link">&para;</a></h2>
+<p>Moving beyond just vectors in <span class="arithmatex">\(\mathbb{R}^n\)</span>, this session introduces the more general idea of "vector spaces" – abstract collections of objects that behave like vectors. We'll look at special subsets within these spaces called "subspaces." A major focus will be on two important subspaces connected to any matrix: the "Null Space" (all the vectors that get mapped to zero) and the "Column Space" (everything that can be reached by combining the matrix's columns). We'll also touch on how these relate to linear transformations.</p>
+<p>A crucial concept we'll build up to is finding the most efficient way to describe or generate a space – this leads us to the idea of a "basis," which is a minimal set of vectors that spans the entire space and is linearly independent. Once we have a basis, we can define unique "coordinate systems" within the space. We'll then use the basis to define the "dimension" of a vector space – essentially, how many independent directions you need to move within it. Finally, we'll define the "rank" of a matrix, which is closely tied to the dimension of its column space and tells us a lot about the structure of the matrix and related linear systems.</p>
+<h3 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Vector Spaces</li>
+<li>Subspaces</li>
+<li>Null Space</li>
+<li>Column Space</li>
+<li>Basis</li>
+<li>Coordinate Systems</li>
+<li>Dimension</li>
+<li>Rank</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Learning Objectives</p>
+<ul>
+<li>Define and identify vector spaces and subspaces.</li>
+<li>Determine and construct the null space and column space of a matrix.</li>
+<li>Construct and use a basis to describe vector spaces and coordinate systems.</li>
+<li>Calculate the dimension and rank of vector spaces and matrices.</li>
+<li>Analyze the relationship between basis, dimension, and solutions to linear systems.</li>
+</ul>
 </div>
+<h2 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h2>
+<!--
+4.2.: 2-6, 17-20, 24
+4.3.: 9-10, 13, 17, 18, 36        
+4.5: 6, 11, 14, 17      
+4.6: 2, 4, 35     
+-->
+<style type="text/css">
+    ol { list-style-type: lower-alpha; }
+</style>
+
+<p><strong>Exercise 1</strong> (4.2.2)</p>
+<p>Determine if <span class="arithmatex">\(w=\left[\begin{array}{r}1 \\ -1 \\ 1\end{array}\right]\)</span> is in <span class="arithmatex">\(\operatorname{Nul} A\)</span>, where</p>
+<div class="arithmatex">\[
+A=\left[\begin{array}{rrr}
+2 &amp; 6 &amp; 4 \\
+-3 &amp; 2 &amp; 5 \\
+-5 &amp; -4 &amp; 1
+\end{array}\right]
+\]</div>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\mathbf{w}\)</span> is in <span class="arithmatex">\(\operatorname{Nul} A\)</span></p>
+</details>
+<p><strong>Exercise 2</strong> (4.2.3-4.2.6)</p>
+<p>In the following exercises, find an explicit description of Nul A, by listing vectors that span the null space.</p>
+<ol>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rrrr}1 &amp; 2 &amp; 4 &amp; 0 \\ 0 &amp; 1 &amp; 3 &amp; -2\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rrrr}1 &amp; -3 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 3 &amp; 0\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rrrrr}1 &amp; -4 &amp; 0 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; -5 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 2\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rrrrr}1 &amp; 3 &amp; -4 &amp; -3 &amp; 1 \\ 0 &amp; 1 &amp; -3 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li><span class="arithmatex">\(\left\{\left[\begin{array}{r}2 \\ -3 \\ 1 \\ 0\end{array}\right],\left[\begin{array}{r}-4 \\ 2 \\ 0 \\ 1\end{array}\right]\right\}\)</span></li>
+<li><span class="arithmatex">\(\left\{\left[\begin{array}{l}3 \\ 1 \\ 0 \\ 0\end{array}\right],\left[\begin{array}{l}0 \\ 0 \\ 0 \\ 1\end{array}\right]\right\}\)</span></li>
+<li><span class="arithmatex">\(\left\{\left[\begin{array}{l}4 \\ 1 \\ 0 \\ 0 \\ 0\end{array}\right],\left[\begin{array}{r}-2 \\ 0 \\ 5 \\ 1 \\ 0\end{array}\right]\right\}\)</span></li>
+<li><span class="arithmatex">\(\left\{\left[\begin{array}{r}-5 \\ 3 \\ 1 \\ 0 \\ 0\end{array}\right],\left[\begin{array}{r}6 \\ -1 \\ 0 \\ 1 \\ 0\end{array}\right],\left[\begin{array}{r}-1 \\ 0 \\ 0 \\ 0 \\ 1\end{array}\right]\right\}\)</span></li>
+</ol>
+</details>
+<p><strong>Exercise 3</strong> (4.2.17-4.2.20)</p>
+<p>For the matrices in the following exercises, (a) find <span class="arithmatex">\(k\)</span> such that <span class="arithmatex">\(\mathrm{Nul} A\)</span> is a subspace of <span class="arithmatex">\(\mathbb{R}^k\)</span>, and (b) find <span class="arithmatex">\(k\)</span> such that <span class="arithmatex">\(\operatorname{Col} A\)</span> is a subspace of <span class="arithmatex">\(\mathbb{R}^k\)</span>.</p>
+<ol>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rr}6 &amp; -4 \\ -3 &amp; 2 \\ -9 &amp; 6 \\ 9 &amp; -6\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rrr}5 &amp; -2 &amp; 3 \\ -1 &amp; 0 &amp; -1 \\ 0 &amp; -2 &amp; -2 \\ -5 &amp; 7 &amp; 2\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rrrrr}4 &amp; 5 &amp; -2 &amp; 6 &amp; 0 \\ 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(A=\left[\begin{array}{lllll}1 &amp; -3 &amp; 2 &amp; 0 &amp; -5\end{array}\right]\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>The matrix <span class="arithmatex">\(A\)</span> is a <span class="arithmatex">\(4 \times 2\)</span> matrix. Thus
+    (a) <span class="arithmatex">\(\operatorname{Nul} A\)</span> is a subspace of <span class="arithmatex">\(\mathbb{R}^2\)</span>, and
+    (b) <span class="arithmatex">\(\operatorname{Col} A\)</span> is a subspace of <span class="arithmatex">\(\mathbb{R}^4\)</span>.</li>
+<li>The matrix <span class="arithmatex">\(A\)</span> is a <span class="arithmatex">\(4 \times 3\)</span> matrix. Thus
+    (a) <span class="arithmatex">\(\operatorname{Nul} A\)</span> is a subspace of <span class="arithmatex">\(\mathbb{R}^3\)</span>, and
+    (b) <span class="arithmatex">\(\operatorname{Col} A\)</span> is a subspace of <span class="arithmatex">\(\mathbb{R}^4\)</span>.</li>
+<li>The matrix <span class="arithmatex">\(A\)</span> is a <span class="arithmatex">\(2 \times 5\)</span> matrix. Thus
+    (a) <span class="arithmatex">\(\operatorname{Nul} A\)</span> is a subspace of <span class="arithmatex">\(\mathbb{R}^5\)</span>, and
+    (b) <span class="arithmatex">\(\operatorname{Col} A\)</span> is a subspace of <span class="arithmatex">\(\mathbb{R}^2\)</span>.</li>
+<li>The matrix <span class="arithmatex">\(A\)</span> is a <span class="arithmatex">\(1 \times 5\)</span> matrix. Thus
+    (a) <span class="arithmatex">\(\operatorname{Nul} A\)</span> is a subspace of <span class="arithmatex">\(\mathbb{R}^5\)</span>, and
+    (b) <span class="arithmatex">\(\operatorname{Col} A\)</span> is a subspace of <span class="arithmatex">\(\mathbb{R}^1=\mathbb{R}\)</span>.</li>
+</ol>
+</details>
+<p><strong>Exercise 4</strong> (4.2.24)</p>
+<p>Let <span class="arithmatex">\(A=\left[\begin{array}{rrrr}10 &amp; -8 &amp; -2 &amp; -2 \\ 0 &amp; 2 &amp; 2 &amp; -2 \\ 1 &amp; -1 &amp; 6 &amp; 0 \\ 1 &amp; 1 &amp; 0 &amp; -2\end{array}\right]\)</span> and <span class="arithmatex">\(\mathbf{w}=\left[\begin{array}{l}2 \\ 2 \\ 0 \\ 2\end{array}\right]\)</span>. Determine if <span class="arithmatex">\(\mathbf{w}\)</span> is in <span class="arithmatex">\(\operatorname{Col} A\)</span>. Is <span class="arithmatex">\(\mathbf{w}\)</span> in <span class="arithmatex">\(\operatorname{Nul} A\)</span> ?</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\mathbf{w}\)</span> is in <span class="arithmatex">\(\operatorname{Nul} A\)</span></p>
+</details>
+<p><strong>Exercise 5</strong> (4.3.9-4.3.10)</p>
+<p>Find bases for the null spaces of the given matrices. Refer to the remarks that follow Example 3 in Section 4.2.</p>
+<ol>
+<li><span class="arithmatex">\(\left[\begin{array}{rrrr}1 &amp; 0 &amp; -2 &amp; -2 \\ 0 &amp; 1 &amp; 1 &amp; 4 \\ 3 &amp; -1 &amp; -7 &amp; 3\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{rrrrr}1 &amp; 1 &amp; -2 &amp; 1 &amp; 5 \\ 0 &amp; 1 &amp; 0 &amp; -1 &amp; -2 \\ 0 &amp; 0 &amp; -8 &amp; 0 &amp; 16\end{array}\right]\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li><span class="arithmatex">\(\left\{\left[\begin{array}{r}2 \\ -1 \\ 1 \\ 0\end{array}\right]\right\}\)</span></li>
+<li><span class="arithmatex">\(\left\{\left[\begin{array}{r}-2 \\ 1 \\ 0 \\ 1 \\ 0\end{array}\right],\left[\begin{array}{r}9 \\ -10 \\ 2 \\ 0 \\ 1\end{array}\right]\right\}\)</span></li>
+</ol>
+</details>
+<p><strong>Exercise 6</strong> (4.3.13)</p>
+<p>Assume that <span class="arithmatex">\(A\)</span> is row equivalent to <span class="arithmatex">\(B\)</span>. Find the base for <span class="arithmatex">\(\operatorname{Nul} A\)</span> and <span class="arithmatex">\(\operatorname{Col} A\)</span>.</p>
+<p><span class="arithmatex">\(A=\left[\begin{array}{rrrr}-2 &amp; 4 &amp; -2 &amp; -4 \\ 2 &amp; -6 &amp; -3 &amp; 1 \\ -3 &amp; 8 &amp; 2 &amp; -3\end{array}\right], B=\left[\begin{array}{llll}1 &amp; 0 &amp; 6 &amp; 5 \\ 0 &amp; 2 &amp; 5 &amp; 3 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\left\{\left[\begin{array}{r}-6 \\ -5 / 2 \\ 1 \\ 0\end{array}\right],\left[\begin{array}{r}-5 \\ -3 / 2 \\ 0 \\ 1\end{array}\right]\right\}\)</span></p>
+</details>
+<p><strong>Exercise 7</strong> (4.3.17-4.3.18)</p>
+<p>Find a basis for the space spanned by the given vectors, <span class="arithmatex">\(\mathbf{v}_1, \ldots, \mathbf{v}_5\)</span>.</p>
+<ol>
+<li><span class="arithmatex">\([\mathbf{M}]\left[\begin{array}{r}2 \\ 0 \\ -4 \\ -6 \\ 0\end{array}\right],\left[\begin{array}{r}4 \\ 0 \\ 2 \\ -4 \\ 4\end{array}\right],\left[\begin{array}{r}-2 \\ -4 \\ 0 \\ 1 \\ -7\end{array}\right],\left[\begin{array}{r}8 \\ 4 \\ 8 \\ -3 \\ 15\end{array}\right],\left[\begin{array}{r}-8 \\ 4 \\ 0 \\ 0 \\ 1\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\([\mathbf{M}]\left[\begin{array}{r}-3 \\ 2 \\ 6 \\ 0 \\ -7\end{array}\right],\left[\begin{array}{r}3 \\ 0 \\ -9 \\ 0 \\ 6\end{array}\right],\left[\begin{array}{r}0 \\ 2 \\ -4 \\ 0 \\ -1\end{array}\right],\left[\begin{array}{r}6 \\ -2 \\ -14 \\ 0 \\ 13\end{array}\right],\left[\begin{array}{r}-6 \\ 3 \\ 0 \\ -1 \\ 0\end{array}\right]\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li><span class="arithmatex">\(\left\{\left[\begin{array}{r}2 \\ 0 \\ -4 \\ -6 \\ 0\end{array}\right],\left[\begin{array}{r}4 \\ 0 \\ 2 \\ -4 \\ 4\end{array}\right],\left[\begin{array}{r}-2 \\ -4 \\ 0 \\ 1 \\ -7\end{array}\right],\left[\begin{array}{r}-8 \\ 4 \\ 0 \\ 0 \\ 1\end{array}\right]\right\}\)</span></li>
+<li><span class="arithmatex">\(\left\{\left[\begin{array}{r}-3 \\ 2 \\ 6 \\ 0 \\ -7\end{array}\right],\left[\begin{array}{r}3 \\ 0 \\ -9 \\ 0 \\ 6\end{array}\right],\left[\begin{array}{r}0 \\ 2 \\ -4 \\ 0 \\ -1\end{array}\right],\left[\begin{array}{r}-6 \\ 3 \\ 0 \\ -1 \\ 0\end{array}\right]\right\}\)</span></li>
+</ol>
+</details>
+<p><strong>Exercise 8</strong> (4.3.36)</p>
+<p>[M] Let <span class="arithmatex">\(H=\operatorname{Span}\left\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3\right\}\)</span> and <span class="arithmatex">\(K=\operatorname{Span}\left\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\right\}\)</span>, where</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\mathbf{u}_1 &amp;= \begin{bmatrix}1\\2\\0\\-1\end{bmatrix}, &amp;
+\mathbf{u}_2 &amp;= \begin{bmatrix}0\\2\\-1\\1\end{bmatrix}, &amp;
+\mathbf{u}_3 &amp;= \begin{bmatrix}3\\4\\1\\-4\end{bmatrix},\\
+\mathbf{v}_1 &amp;= \begin{bmatrix}-2\\-2\\-1\\3\end{bmatrix}, &amp;
+\mathbf{v}_2 &amp;= \begin{bmatrix}2\\3\\2\\-6\end{bmatrix}, &amp;
+\mathbf{v}_3 &amp;= \begin{bmatrix}-1\\4\\6\\-2\end{bmatrix}.
+\end{aligned}
+\]</div>
+<p>Find bases for <span class="arithmatex">\(H, K\)</span>, and <span class="arithmatex">\(H+K\)</span>. (See Exercises 33 and 34 in Section 4.1.)</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\left\{\mathbf{u}_1, \mathbf{u}_2\right\}\)</span> is a basis for <span class="arithmatex">\(H\)</span></p>
+<p><span class="arithmatex">\(\left\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\right\}\)</span> is a basis for <span class="arithmatex">\(K\)</span></p>
+<p><span class="arithmatex">\(\left\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{v}_2, \mathbf{v}_3\right\}\)</span> is a basis for <span class="arithmatex">\(H+K\)</span></p>
+</details>
+<p><strong>Exercise 9</strong> (4.5.6)</p>
+<ol>
+<li>find a basis for this subspace, and </li>
+<li>state the dimension.</li>
+</ol>
+<p><span class="arithmatex">\(\left\{\left[\begin{array}{c}3 a-c \\ -b-3 c \\ -7 a+6 b+5 c \\ -3 a+c\end{array}\right]: a, b, c\right.\)</span> in <span class="arithmatex">\(\left.\mathbb{R}\right\}\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\left\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\right\}\)</span> is linearly independent and is thus a basis for <span class="arithmatex">\(H\)</span>. Hence the dimension of <span class="arithmatex">\(H\)</span> is 3.</p>
+</details>
+<p><strong>Exercise 10</strong> (4.5.11)</p>
+<p>Find the dimension of the subspace spanned by the given vectors.</p>
+<p><span class="arithmatex">\(\left[\begin{array}{l}1 \\ 0 \\ 2\end{array}\right],\left[\begin{array}{l}3 \\ 1 \\ 1\end{array}\right],\left[\begin{array}{r}-2 \\ -1 \\ 1\end{array}\right],\left[\begin{array}{l}5 \\ 2 \\ 2\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>3</p>
+</details>
+<p><strong>Exercise 11</strong> (4.5.14, 4.5.17)</p>
+<p>Determine the dimensions of <span class="arithmatex">\(\operatorname{Nul} A\)</span> and <span class="arithmatex">\(\operatorname{Col} A\)</span> for the following matricies.</p>
+<ol>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rrrrrrr}1 &amp; 2 &amp; -4 &amp; 3 &amp; -2 &amp; 6 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; -3 &amp; 7 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 4 &amp; -2 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rrr}1 &amp; -1 &amp; 0 \\ 0 &amp; 1 &amp; 3 \\ 0 &amp; 0 &amp; 1\end{array}\right]\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>The matrix <span class="arithmatex">\(A\)</span> is in echelon form. There are four pivot columns, so the dimension of <span class="arithmatex">\(\operatorname{Col} A\)</span> is 4 . There are three columns without pivots, so the equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> has three free variables. Thus the dimension of <span class="arithmatex">\(\operatorname{Nul} A\)</span> is 3 .</li>
+<li>The matrix <span class="arithmatex">\(A\)</span> is in echelon form. There are three pivot columns, so the dimension of <span class="arithmatex">\(\operatorname{Col} A\)</span> is 3 . There are no columns without pivots, so the equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> has only the trivial solution <span class="arithmatex">\(\mathbf{0}\)</span>. Thus Nul <span class="arithmatex">\(A=\{\mathbf{0}\}\)</span>, and the dimension of <span class="arithmatex">\(\operatorname{Nul} A\)</span> is 0.</li>
+</ol>
+</details>
+<p><strong>Exercise 12</strong> (4.6.2, 4.6.4)</p>
+<p>Assume that the matrix <span class="arithmatex">\(A\)</span> is row equivalent to <span class="arithmatex">\(B\)</span>. Without calculations, list <span class="arithmatex">\(\operatorname{rank} A\)</span> and <span class="arithmatex">\(\operatorname{dim} \operatorname{Nul} A\)</span>. Then find bases for <span class="arithmatex">\(\operatorname{Col} A, \operatorname{Row} A\)</span>, and <span class="arithmatex">\(\operatorname{Nul} A\)</span>.</p>
+<ol>
+<li><span class="arithmatex">\(\begin{aligned} A &amp; =\left[\begin{array}{rrrrr}1 &amp; 3 &amp; 4 &amp; -1 &amp; 2 \\ 2 &amp; 6 &amp; 6 &amp; 0 &amp; -3 \\ 3 &amp; 9 &amp; 3 &amp; 6 &amp; -3 \\ 3 &amp; 9 &amp; 0 &amp; 9 &amp; 0\end{array}\right], \\ B &amp; =\left[\begin{array}{rrrrr}1 &amp; 3 &amp; 4 &amp; -1 &amp; 2 \\ 0 &amp; 0 &amp; 1 &amp; -1 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; -5 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right],\end{aligned}\)</span></li>
+<li><span class="arithmatex">\(\begin{aligned} A &amp; =\left[\begin{array}{rrrrrr}1 &amp; 1 &amp; -2 &amp; 0 &amp; 1 &amp; -2 \\ 1 &amp; 2 &amp; -3 &amp; 0 &amp; -2 &amp; -3 \\ 1 &amp; -1 &amp; 0 &amp; 0 &amp; 1 &amp; 6 \\ 1 &amp; -2 &amp; 2 &amp; 1 &amp; -3 &amp; 0 \\ 1 &amp; -2 &amp; 1 &amp; 0 &amp; 2 &amp; -1\end{array}\right], \\ B &amp; =\left[\begin{array}{rrrrrr}1 &amp; 1 &amp; -2 &amp; 0 &amp; 1 &amp; -2 \\ 0 &amp; 1 &amp; -1 &amp; 0 &amp; -3 &amp; -1 \\ 0 &amp; 0 &amp; 1 &amp; 1 &amp; -13 &amp; -1 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; -1 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1\end{array}\right]\end{aligned}\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>
+<p>The matrix <span class="arithmatex">\(B\)</span> is in echelon form. There are three pivot columns, so the dimension of <span class="arithmatex">\(\operatorname{Col} A\)</span> is 3 . There are three pivot rows, so the dimension of Row <span class="arithmatex">\(A\)</span> is 3 . There are two columns without pivots, so the equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> has two free variables. Thus the dimension of <span class="arithmatex">\(\operatorname{Nul} A\)</span> is 2 . A basis for <span class="arithmatex">\(\operatorname{Col} A\)</span> is the pivot columns of <span class="arithmatex">\(A\)</span> :</p>
+<p><span class="arithmatex">\(\left\{\left[\begin{array}{l}1 \\ 2 \\ 3 \\ 3\end{array}\right],\left[\begin{array}{l}4 \\ 6 \\ 3 \\ 0\end{array}\right],\left[\begin{array}{r}2 \\ -3 \\ -3 \\ 0\end{array}\right]\right\}\)</span></p>
+<p>A basis for Row <span class="arithmatex">\(A\)</span> is the pivot rows of <span class="arithmatex">\(B:\{(1,3,4,-1,2),(0,0,1,-1,1),(0,0,0,0,-5)\}\)</span>.</p>
+<p>A basis for <span class="arithmatex">\(\operatorname{Nul} A\)</span> is <span class="arithmatex">\(\left\{\left[\begin{array}{r}-3 \\ 1 \\ 0 \\ 0 \\ 0\end{array}\right],\left[\begin{array}{r}-3 \\ 0 \\ 1 \\ 1 \\ 0\end{array}\right]\right\}\)</span></p>
+</li>
+<li>
+<p>The matrix <span class="arithmatex">\(B\)</span> is in echelon form. There are five pivot columns, so the dimension of <span class="arithmatex">\(\operatorname{Col} A\)</span> is 5 . There are five pivot rows, so the dimension of Row <span class="arithmatex">\(A\)</span> is 5 . There is one column without a pivot, so the equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{0}\)</span> has one free variable. Thus the dimension of <span class="arithmatex">\(\operatorname{Nul} A\)</span> is 1 . A basis for <span class="arithmatex">\(\operatorname{Col} A\)</span> is the pivot columns of <span class="arithmatex">\(A\)</span> :</p>
+<p><span class="arithmatex">\(\left\{\left[\begin{array}{l}1 \\ 1 \\ 1 \\ 1 \\ 1\end{array}\right],\left[\begin{array}{r}1 \\ 2 \\ -1 \\ -2 \\ -2\end{array}\right],\left[\begin{array}{r}-2 \\ -3 \\ 0 \\ 2 \\ 1\end{array}\right],\left[\begin{array}{r}1 \\ -2 \\ 1 \\ -3 \\ 2\end{array}\right],\left[\begin{array}{r}-2 \\ -3 \\ 6 \\ 0 \\ -1\end{array}\right]\right\}\)</span></p>
+<p>A basis for Row <span class="arithmatex">\(A\)</span> is the pivot rows of <span class="arithmatex">\(B\)</span> : <span class="arithmatex">\(\{(1,1,-2,0,1,-2),(0,1,-1,0,-3,-1),(0,0,1,1,-13,-1),(0,0,0,0,1,-1),(0,0,0,0,0,1)\}\)</span></p>
+<p>Thus a basis for <span class="arithmatex">\(\operatorname{Nul} A\)</span> is</p>
+<p><span class="arithmatex">\(\left\{\left[\begin{array}{r}-1 \\ -1 \\ -1 \\ 1 \\ 0 \\ 0\end{array}\right]\right\}\)</span></p>
+</li>
+</ol>
+</details>
+<p><strong>Exercise 13</strong> (4.6.35)</p>
+<p>[M] Let <span class="arithmatex">\(A=\left[\begin{array}{rrrrrrr}7 &amp; -9 &amp; -4 &amp; 5 &amp; 3 &amp; -3 &amp; -7 \\ -4 &amp; 6 &amp; 7 &amp; -2 &amp; -6 &amp; -5 &amp; 5 \\ 5 &amp; -7 &amp; -6 &amp; 5 &amp; -6 &amp; 2 &amp; 8 \\ -3 &amp; 5 &amp; 8 &amp; -1 &amp; -7 &amp; -4 &amp; 8 \\ 6 &amp; -8 &amp; -5 &amp; 4 &amp; 4 &amp; 9 &amp; 3\end{array}\right]\)</span>.</p>
+<ol>
+<li>Construct matrices <span class="arithmatex">\(C\)</span> and <span class="arithmatex">\(N\)</span> whose columns are bases for <span class="arithmatex">\(\operatorname{Col} A\)</span> and <span class="arithmatex">\(\operatorname{Nul} A\)</span>, respectively, and construct a matrix <span class="arithmatex">\(R\)</span> whose rows form a basis for Row <span class="arithmatex">\(A\)</span>.</li>
+<li>Construct a matrix <span class="arithmatex">\(M\)</span> whose columns form a basis for <span class="arithmatex">\(\operatorname{Nul} A^T\)</span>, form the matrices <span class="arithmatex">\(S=\left[\begin{array}{ll}R^T &amp; N\end{array}\right]\)</span> and <span class="arithmatex">\(T=\left[\begin{array}{ll}C &amp; M\end{array}\right]\)</span>, and explain why <span class="arithmatex">\(S\)</span> and <span class="arithmatex">\(T\)</span> should be square. Verify that both <span class="arithmatex">\(S\)</span> and <span class="arithmatex">\(T\)</span> are invertible.</li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>
+<p><span class="arithmatex">\(C=\left[\begin{array}{rrrr}7 &amp; -9 &amp; 5 &amp; -3 \\ -4 &amp; 6 &amp; -2 &amp; -5 \\ 5 &amp; -7 &amp; 5 &amp; 2 \\ -3 &amp; 5 &amp; -1 &amp; -4 \\ 6 &amp; -8 &amp; 4 &amp; 9\end{array}\right]\)</span>.</p>
+<p><span class="arithmatex">\(R=\left[\begin{array}{rrrrrrr}1 &amp; 0 &amp; 13 / 2 &amp; 0 &amp; 5 &amp; 0 &amp; -3 \\ 0 &amp; 1 &amp; 11 / 2 &amp; 0 &amp; 1 / 2 &amp; 0 &amp; 2 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; -11 / 2 &amp; 0 &amp; 7 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1\end{array}\right]\)</span>.</p>
+<p><span class="arithmatex">\(N=\left[\begin{array}{rrr}-13 / 2 &amp; -5 &amp; 3 \\ -11 / 2 &amp; -1 / 2 &amp; -2 \\ 1 &amp; 0 &amp; 0 \\ 0 &amp; 11 / 2 &amp; -7 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; -1 \\ 0 &amp; 0 &amp; 1\end{array}\right]\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(M=\left[\begin{array}{r}2 / 11 \\ 41 / 11 \\ 0 \\ -28 / 11 \\ 1\end{array}\right]\)</span></p>
+<p>The matrix <span class="arithmatex">\(S=\left[\begin{array}{ll}R^T &amp; N\end{array}\right]\)</span> is <span class="arithmatex">\(7 \times 7\)</span> because the columns of <span class="arithmatex">\(R^T\)</span> and <span class="arithmatex">\(N\)</span> are in <span class="arithmatex">\(\mathbb{R}^7\)</span> and <span class="arithmatex">\(\operatorname{dimRow} A\)</span> <span class="arithmatex">\(+\operatorname{dimNul} A=7\)</span>. The matrix <span class="arithmatex">\(T=\left[\begin{array}{ll}C &amp; M\end{array}\right]\)</span> is <span class="arithmatex">\(5 \times 5\)</span> because the columns of <span class="arithmatex">\(C\)</span> and <span class="arithmatex">\(M\)</span> are in <span class="arithmatex">\(\mathbb{R}^5\)</span> and <span class="arithmatex">\(\operatorname{dimCol} A+\operatorname{dimNul} A^T=5\)</span>. Both <span class="arithmatex">\(S\)</span> and <span class="arithmatex">\(T\)</span> are invertible because their columns are linearly independent. This fact will be proven in general in Theorem 3 of Section 6.1.</p>
+</li>
+</ol>
+</details>
 
 
 
@@ -1023,7 +1326,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+          <a href="../04_Determinants/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 04 Determinants">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1033,20 +1336,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Home
+                04 Determinants
               </div>
             </div>
           </a>
         
         
           
-          <a href="../01_Introduction_to_Linear_Algebra/" class="md-footer__link md-footer__link--next" aria-label="Next: 01 Introduction to Linear Algebra">
+          <a href="../06_Eigenvalues/" class="md-footer__link md-footer__link--next" aria-label="Next: 06 Eigenvalues">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                01 Introduction to Linear Algebra
+                06 Eigenvalues
               </div>
             </div>
             <div class="md-footer__button md-icon">

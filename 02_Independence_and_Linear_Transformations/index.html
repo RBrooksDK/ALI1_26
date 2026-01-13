@@ -12,29 +12,31 @@
         <meta name="author" content="Richard Brooks">
       
       
-        <link rel="canonical" href="https://rbrooksdk.github.io/ALI1_26/">
+        <link rel="canonical" href="https://rbrooksdk.github.io/ALI1_26/02_Independence_and_Linear_Transformations/">
       
       
+        <link rel="prev" href="../01_Introduction_to_Linear_Algebra/">
       
-        <link rel="next" href="Sessions/">
+      
+        <link rel="next" href="../03_Matrix_Algebra/">
       
       
         
       
       
-      <link rel="icon" href="figures/ali.png">
+      <link rel="icon" href="../figures/ali.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Applied Linear Algebra</title>
+        <title>02 Independence and Linear Transformations - Applied Linear Algebra</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -59,9 +61,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -96,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#course-information" class="md-skip">
+        <a href="#session-material" class="md-skip">
           Skip to content
         </a>
       
@@ -112,9 +114,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Applied Linear Algebra" class="md-header__button md-logo" aria-label="Applied Linear Algebra" data-md-component="logo">
+    <a href=".." title="Applied Linear Algebra" class="md-header__button md-logo" aria-label="Applied Linear Algebra" data-md-component="logo">
       
-  <img src="figures/ali.png" alt="logo">
+  <img src="../figures/ali.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -131,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              02 Independence and Linear Transformations
             
           </span>
         </div>
@@ -254,9 +256,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Applied Linear Algebra" class="md-nav__button md-logo" aria-label="Applied Linear Algebra" data-md-component="logo">
+    <a href=".." title="Applied Linear Algebra" class="md-nav__button md-logo" aria-label="Applied Linear Algebra" data-md-component="logo">
       
-  <img src="figures/ali.png" alt="logo">
+  <img src="../figures/ali.png" alt="logo">
 
     </a>
     Applied Linear Algebra
@@ -307,6 +309,151 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Sessions/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sessions
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sessions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_Introduction_to_Linear_Algebra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 Introduction to Linear Algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -324,7 +471,7 @@
   <span class="md-ellipsis">
     
   
-    Home
+    02 Independence and Linear Transformations
   
 
     
@@ -335,14 +482,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Home
+    02 Independence and Linear Transformations
   
 
     
@@ -366,10 +513,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#course-information" class="md-nav__link">
+  <a href="#session-material" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Course information
+        Session Material:
       
     </span>
   </a>
@@ -377,54 +524,38 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#session-description" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Prerequisites
+        Session Description
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Concepts
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#lectures-and-course-organization" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lectures and course organization
-      
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#course-content-and-learning-objectives" class="md-nav__link">
+  <a href="#exercises" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Course content and learning objectives
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Resources
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#historical-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Historical Notes
+        Exercises
       
     </span>
   </a>
@@ -438,67 +569,23 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
   
-    
-    
-      
+    <li class="md-nav__item">
+      <a href="../03_Matrix_Algebra/" class="md-nav__link">
         
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="Sessions/" class="md-nav__link">
-      
   
   
   <span class="md-ellipsis">
     
   
-    Sessions
+    03 Matrix Algebra
   
 
     
@@ -506,12 +593,266 @@
   
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
+      </a>
+    </li>
   
 
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Determinants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 Determinants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_Vector_Spaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 Vector Spaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_Eigenvalues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 Eigenvalues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_Differential_Equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 Differential Equations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_Orthogonality_I/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 Orthogonality I
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_Orthogonality_II/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 Orthogonality II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_Symmetric_Matrices_SVD_and_PCA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 Symmetric Matrices, SVD, and PCA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_SVD_and_PCA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 SVD and PCA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_Recap_and_Conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12 Recap and Conclusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -524,7 +865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pages/exam/" class="md-nav__link">
+      <a href="../pages/exam/" class="md-nav__link">
         
   
   
@@ -551,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pages/faq/" class="md-nav__link">
+      <a href="../pages/faq/" class="md-nav__link">
         
   
   
@@ -578,7 +919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pages/online_resources/" class="md-nav__link">
+      <a href="../pages/online_resources/" class="md-nav__link">
         
   
   
@@ -650,10 +991,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#course-information" class="md-nav__link">
+  <a href="#session-material" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Course information
+        Session Material:
       
     </span>
   </a>
@@ -661,54 +1002,38 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#session-description" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Prerequisites
+        Session Description
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Concepts
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#lectures-and-course-organization" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lectures and course organization
-      
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#course-content-and-learning-objectives" class="md-nav__link">
+  <a href="#exercises" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Course content and learning objectives
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Resources
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#historical-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Historical Notes
+        Exercises
       
     </span>
   </a>
@@ -735,100 +1060,26 @@
   
 
 
-<p align="center">
-    <h1 align="center">Applied Linear Algebra - 2025</h1>
-    <p align="center">Repository for <a href="https://www.via.dk/TMH/Courses/applied-linear-algebra?education">ALI1-S25</a> at VIA</p>
-    <p align="center"><strong><a href="https://rbrooksdk.github.io/ALI1_25">Checkout the homepage!</a></strong></p>
-</p>
+<h1 align="center">Independence and Linear Transformations</h1>
 
-<p align="center">
-  <a href="https://rbrooksdk.github.io/ALI1_25">
-    <video class="custom-video" width="600" autoplay loop muted>
-      <source src="figures/introvid.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </a>
-</p>
-
-<h2 id="course-information"><span class="twemoji fa-circle-info"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512m-32-352a32 32 0 1 1 64 0 32 32 0 1 1-64 0m-8 64h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24h24v-64h-24c-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg></span> Course information<a class="headerlink" href="#course-information" title="Permanent link">&para;</a></h2>
+<h2 id="session-material">Session Material:<a class="headerlink" href="#session-material" title="Permanent link">&para;</a></h2>
+<p>Lay: </p>
+<p><a href="">Session Notes</a></p>
+<p><a href="">Session Material</a></p>
+<hr />
+<h2 id="session-description">Session Description<a class="headerlink" href="#session-description" title="Permanent link">&para;</a></h2>
+<h3 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Course responsible: Associate Professor <a href="https://rbrooksdk.github.io">Richard Brooks</a>, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#105;&#98;&#64;&#118;&#105;&#97;&#46;&#100;&#107;">&#114;&#105;&#98;&#64;&#118;&#105;&#97;&#46;&#100;&#107;</a></li>
-<li>5 ECTS (European Credit Transfer System), corresponding to 130 hours of work</li>
-<li>12 sessions, each with a duration of 4 lessons</li>
-<li>Bachelor level course</li>
-<li>Grade: 7-step scale</li>
-<li>Type of assessment: 4-hour written exam (see exam description in the menu to the left)</li>
+<li></li>
 </ul>
-<h2 id="prerequisites"><span class="twemoji fa-book-closed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M384 512H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h304c26.5 0 48 21.5 48 48v288c0 20.9-13.4 38.7-32 45.3V448c17.7 0 32 14.3 32 32s-14.3 32-32 32zM96 384c-17.7 0-32 14.3-32 32s14.3 32 32 32h256v-64zm32-232c0 13.3 10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24H152c-13.3 0-24 10.7-24 24m24 72c-13.3 0-24 10.7-24 24s10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/></svg></span> Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
-<p>It is important that you recap some of your high-school math. Most importantly:</p>
+<div class="admonition tip">
+<p class="admonition-title">Learning Objectives</p>
 <ul>
-<li>Linear equations</li>
-<li>Systems of linear equations</li>
-<li>Vectors and vector operations</li>
-<li>Differential equations</li>
+<li></li>
 </ul>
-<h2 id="lectures-and-course-organization"><span class="twemoji fa-chalkboard-teacher"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M128 96c0-35.3 28.7-64 64-64h352c35.3 0 64 28.7 64 64v240h-96v-16c0-17.7-14.3-32-32-32h-64c-17.7 0-32 14.3-32 32v16H254.9c10.9-18.8 17.1-40.7 17.1-64 0-70.7-57.3-128-128-128-5.4 0-10.8.3-16 1zm205 352c-5.1-24.2-16.3-46.1-32.1-64H608c0 35.3-28.7 64-64 64zM64 272a80 80 0 1 1 160 0 80 80 0 1 1-160 0M0 480c0-53 43-96 96-96h96c53 0 96 43 96 96 0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32"/></svg></span> Lectures and course organization<a class="headerlink" href="#lectures-and-course-organization" title="Permanent link">&para;</a></h2>
-<p>The course is scheduled to start Friday February 6 and will continue up until and including May 1. All sessions are from <strong>8:20 to 11:50</strong> in room <strong>C05.15</strong>. In general, each session is made up of four activities:</p>
-<ol>
-<li>At the beginning of each session, there will be a short recap of the previous session.</li>
-<li>We then go through the exercises from the previous session.</li>
-<li>We will go through the theory of the current session.</li>
-<li>After classes, and before the next session, you will have to solve exercises from the current session.</li>
-</ol>
-<p>This then loops back to (1) at the beginning of the next session.</p>
-<p>There are no mandatory assignments, but it is highly recommended to work on the exercises for each session. No instruction is provided for the exercises so you will have to work on them on your own or form study groups.</p>
-<h2 id="course-content-and-learning-objectives"><span class="twemoji fa-wave-square"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M64 96c0-17.7 14.3-32 32-32h160c17.7 0 32 14.3 32 32v288h96V256c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32s-14.3 32-32 32h-32v128c0 17.7-14.3 32-32 32H256c-17.7 0-32-14.3-32-32V128h-96v128c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h32z"/></svg></span> Course content and learning objectives<a class="headerlink" href="#course-content-and-learning-objectives" title="Permanent link">&para;</a></h2>
-<p>Applied Linear Algebra focuses on understanding and applying the core concepts of linear algebra to solve real-world problems. The course explores vector spaces, matrices, eigenvalues, and eigenvectors, emphasising their practical applications in fields such as computer graphics, machine learning, and engineering. The course is designed to provide students with a solid foundation in linear algebra, enabling them to tackle complex problems and develop analytical skills.</p>
+</div>
 <hr />
-<p><strong>Learning Objectives</strong></p>
-<ul>
-<li><strong>Linear Systems</strong>: Understand the concept of a linear system of equations, how to represent them with matrices, and how to solve them using row reduction.</li>
-<li><strong>Matrix Algebra</strong>: Perform matrix operations including addition, multiplication, and inversion. Understand matrices as transformations and systems of linear equations, and learn to use matrices for practical problem solving.</li>
-<li><strong>Determinants and Invertibility</strong>: Compute determinants of matrices and understand their geometric and algebraic significance. Use determinants to assess matrix invertibility and to solve linear systems.</li>
-<li><strong>Vectors and Vector Spaces</strong>: Understand the fundamental concepts of vectors, vector operations, and vector spaces. Learn to interpret vectors algebraically and geometrically, and reason about spans, bases, dimensions, and linear independence.</li>
-<li><strong>Markov Chains</strong>: Understand the concept of a Markov chain, how to represent them with matrices, and how to solve them using row reduction.</li>
-<li><strong>Linear Transformations and Eigenanalysis</strong>: Understand linear transformations through matrix multiplication. Learn to find eigenvalues and eigenvectors, diagonalise matrices when possible, and interpret eigenanalysis in practical contexts.</li>
-<li><strong>Systems of Differential Equations</strong>: Apply linear algebra techniques to solve systems of first-order differential equations. Understand the connection between eigenvalues, eigenvectors, and the behaviour of dynamic systems.</li>
-<li><strong>Orthogonality and Least Squares</strong>: Explore orthogonality in vector spaces, apply the Gram-Schmidt process, and solve least squares problems. Understand projections and their role in approximating inconsistent systems and fitting models to data.</li>
-<li><strong>Symmetric Matrices, SVD, and PCA</strong>: Analyse symmetric matrices, perform Singular Value Decomposition (SVD), and understand its application to data reduction and Principal Component Analysis (PCA).</li>
-</ul>
-<h2 id="resources"><span class="twemoji fa-book-open"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"/></svg></span> Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
-<p>Lay: Lay, David C. Linear Algebra and its applications, 4<sup>th</sup> edition. (e-book, up to students to retrieve a copy). All chapters and exercises referenced will be to the 4<sup>th</sup> edition. Make sure you have the correct edition or else the exercise numbers will not match.</p>
-<p>Note, for each lesson I have uploaded the presentations that accompany the book. I will in no way use these during classes and they are merely uploaded for your notes/convenience. The notes that I have uploaded are an electronic version of my personal lecture notes and contain most of the (relevant) material for the sections in questions. Since some of the exercises are from the book, you may see <strong>[M]</strong> associated with exercises. This means that you are supposed to solve the exercise using Matlab. Disregard this and use Python.</p>
-<hr />
-<p>Non-session specific resources such as the exercises from the book, solutions, old exam cases, etc. can be found her:</p>
-<p><a href="">General Resources ALI</a></p>
-<p>This folder is always accessible in the menu to the left.</p>
-<hr />
-<p>The Wiseflow code for all flows that are used during the course is always 0000. This is not the code for the actual exam in June, though.</p>
-<hr />
-<p>Suggested online resources can be found in the menu to the left. These are not mandatory, but they can be useful for some students.</p>
-<hr />
-<p>Make sure you install a working version of Jupyter Notebook and Python version 3.7 or higher. You can choose whichever IDE you want to work in as long as it can handle Jupyter Notebooks. Installing VS Code with a Jupyter Notebook extension seems to be a popular choice.</p>
-<h2 id="historical-notes">Historical Notes<a class="headerlink" href="#historical-notes" title="Permanent link">&para;</a></h2>
-<p>Applied Linear Algebra was first offered in 2014 and is scheduled to be taught 1–2 times per year. The course responsible is <a href="https://rbrooksdk.github.io">Richard Brooks (RIB)</a> who has been the only lecturer teaching the course.</p>
-<center>
-  <strong>Grade Distribution 2025 (includes re-exams from 2023 and 2024)</strong>
-  <br><br>
-
-  <table>
-    <thead>
-      <tr>
-        <th style="text-align:center;">Grade</th>
-        <th style="text-align:center;">Count</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td style="text-align:center;">12</td><td style="text-align:center;">8</td></tr>
-      <tr><td style="text-align:center;">10</td><td style="text-align:center;">5</td></tr>
-      <tr><td style="text-align:center;">7</td><td style="text-align:center;">3</td></tr>
-      <tr><td style="text-align:center;">4</td><td style="text-align:center;">4</td></tr>
-      <tr><td style="text-align:center;">02</td><td style="text-align:center;">2</td></tr>
-      <tr><td style="text-align:center;">00</td><td style="text-align:center;">8</td></tr>
-      <tr><td style="text-align:center;">-3</td><td style="text-align:center;">0</td></tr>
-    </tbody>
-  </table>
-</center>
+<h2 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h2>
 
 
 
@@ -865,15 +1116,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
+          
+          <a href="../01_Introduction_to_Linear_Algebra/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 01 Introduction to Linear Algebra">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                01 Introduction to Linear Algebra
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="Sessions/" class="md-footer__link md-footer__link--next" aria-label="Next: Sessions">
+          <a href="../03_Matrix_Algebra/" class="md-footer__link md-footer__link--next" aria-label="Next: 03 Matrix Algebra">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Sessions
+                03 Matrix Algebra
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -951,12 +1218,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="javascripts/mathjax.js"></script>
+        <script src="../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

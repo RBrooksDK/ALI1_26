@@ -12,13 +12,13 @@
         <meta name="author" content="Richard Brooks">
       
       
-        <link rel="canonical" href="https://rbrooksdk.github.io/ALI1_26/05_Eigenvalues/">
+        <link rel="canonical" href="https://rbrooksdk.github.io/ALI1_26/08_Orthogonality_I/">
       
       
-        <link rel="prev" href="../04_Vector_Spaces/">
+        <link rel="prev" href="../07_Differential_Equations/">
       
       
-        <link rel="next" href="../06_Differential_Equations/">
+        <link rel="next" href="../09_Orthogonality_II/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>05 Eigenvalues - Applied Linear Algebra</title>
+        <title>08 Orthogonality I - Applied Linear Algebra</title>
       
     
     
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              05 Eigenvalues
+              08 Orthogonality I
             
           </span>
         </div>
@@ -367,6 +367,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -453,14 +457,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../02_Matrix_Algebra/" class="md-nav__link">
+      <a href="../02_Independence_and_Linear_Transformations/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    02 Matrix Algebra
+    02 Independence and Linear Transformations
   
 
     
@@ -481,14 +485,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../03_Determinants/" class="md-nav__link">
+      <a href="../03_Matrix_Algebra/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    03 Determinants
+    03 Matrix Algebra
   
 
     
@@ -509,14 +513,98 @@
   
   
     <li class="md-nav__item">
-      <a href="../04_Vector_Spaces/" class="md-nav__link">
+      <a href="../04_Determinants/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    04 Vector Spaces
+    04 Determinants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_Vector_Spaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 Vector Spaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_Eigenvalues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 Eigenvalues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_Differential_Equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 Differential Equations
   
 
     
@@ -551,7 +639,7 @@
   <span class="md-ellipsis">
     
   
-    05 Eigenvalues
+    08 Orthogonality I
   
 
     
@@ -569,7 +657,7 @@
   <span class="md-ellipsis">
     
   
-    05 Eigenvalues
+    08 Orthogonality I
   
 
     
@@ -658,14 +746,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../06_Differential_Equations/" class="md-nav__link">
+      <a href="../09_Orthogonality_II/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    06 Differential Equations
+    09 Orthogonality II
   
 
     
@@ -686,14 +774,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../07_Orthogonality_I/" class="md-nav__link">
+      <a href="../10_Symmetric_Matrices_SVD_and_PCA/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    07 Orthogonality I
+    10 Symmetric Matrices, SVD, and PCA
   
 
     
@@ -714,14 +802,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../08_Orthogonality_II/" class="md-nav__link">
+      <a href="../11_SVD_and_PCA/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    08 Orthogonality II
+    11 SVD and PCA
   
 
     
@@ -742,42 +830,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../09_Symmetric_Matrices_SVD_and_PCA/" class="md-nav__link">
+      <a href="../12_Recap_and_Conclusion/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    09 Symmetric Matrices, SVD, and PCA
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../10_Recap_and_Conclusion/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    10 Recap and Conclusion
+    12 Recap and Conclusion
   
 
     
@@ -1000,193 +1060,190 @@
   
 
 
-<h1 align="center">Eigenvalues</h1>
+<h1 align="center">Orthogonality I</h1>
 
 <h2 id="session-material">Session Material:<a class="headerlink" href="#session-material" title="Permanent link">&para;</a></h2>
-<p>Lay: ​5.1-5.3</p>
-<p><a href="https://drive.google.com/file/d/1wNL5E-jT3YuMJqcTAerjT93qPsChGpOc/view?usp=sharing">Recap and Exercises</a></p>
-<p><a href="https://drive.google.com/file/d/1B9R3FF0Xz6bitUmtA7I_0IjbwJuhYa0_/view?usp=sharing">Session Notes</a></p>
-<p><a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/ErEbWej73CxBiXGFKP-mtx4BzkmBdQWAJOwzWIuvuzoBZw?e=oCjf1Z">Session Material</a></p>
+<p>Lay: 6.1-6.3</p>
+<p><a href="https://drive.google.com/file/d/1-dTU3V-AQwzTVMj91JG1BigrllA5Cze9/view?usp=sharing">Recap and Exercises</a></p>
+<p><a href="https://drive.google.com/file/d/1zXPM_pQHZRK51D9d-J4pQj6p3l8ExaRX/view?usp=sharing">Session Notes</a></p>
+<p><a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/EsTiRlgRBLpMku31mwnbViIBHTOgpvFeUWhBaN0WGJJMkA?e=KYrKvB">Session Material</a></p>
 <hr />
 <h2 id="session-description">Session Description<a class="headerlink" href="#session-description" title="Permanent link">&para;</a></h2>
-<p>This session introduces some of the most powerful and fascinating concepts in linear algebra: eigenvalues and eigenvectors! We'll explore what these special vectors (eigenvectors) and scalars (eigenvalues) are – basically, vectors that only get scaled (not changed in direction) when a matrix transformation is applied. We'll learn how to find eigenvalues by solving the "characteristic equation" and then find the corresponding eigenvectors by solving a system of equations.</p>
-<p>Understanding the set of all eigenvectors for a specific eigenvalue (the "eigenspace") is also key. Finally, we'll tackle the concept of "diagonalization" – a super useful technique where we can transform certain matrices into simpler diagonal forms using their eigenvectors and eigenvalues. This process, often called similarity transformation, simplifies many calculations and reveals deeper properties of the matrix and the transformation it represents.</p>
+<p>Let's add some geometry back into our vector spaces! This session introduces the idea of the "inner product" (or dot product in <span class="arithmatex">\(\mathbb{R}^n\)</span>) as a way to measure things like the "length" of a vector and the "distance" between vectors. Most importantly, it gives us a precise way to define "orthogonal" (or perpendicular) vectors. We'll explore orthogonal complements – the set of all vectors truly perpendicular to a given subspace, and see how they connect fundamental spaces we've already studied.</p>
+<p>Building on this, we'll look at "orthogonal sets" of vectors, where every pair is perpendicular. These sets are really special because they're automatically linearly independent, and if they also span the space, they form an "orthogonal basis" – which makes finding coordinates ridiculously easy! Finally, we'll learn how to "orthogonally project" a vector onto a subspace. Think of this as finding the closest point in that subspace to the original vector, a super useful tool with lots of applications (related to the Best Approximation Theorem).</p>
 <h3 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Eigenvalues</li>
-<li>Eigenvectors</li>
-<li>Characteristic Equation</li>
-<li>Eigenspaces</li>
-<li>Diagonalization</li>
-<li>Matrix Similarity</li>
+<li>Inner Product / Dot Product</li>
+<li>Vector Length and Distance</li>
+<li>Orthogonal Vectors, Complements, Sets, Bases, and Projection</li>
+<li>Best Approximation</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Learning Objectives</p>
 <ul>
-<li>Define and compute eigenvalues and eigenvectors for matrices.</li>
-<li>Solve the characteristic equation and construct eigenspaces.</li>
-<li>Diagonalize matrices and explain the process of similarity transformation.</li>
-<li>Analyze the significance of eigenvalues and eigenvectors in matrix transformations.</li>
-<li>Apply diagonalization to simplify matrix computations and interpret results.</li>
+<li>Compute inner products, vector lengths, and distances in vector spaces.</li>
+<li>Identify and construct orthogonal and orthonormal sets and bases.</li>
+<li>Determine orthogonal complements and analyze their properties.</li>
+<li>Apply orthogonal projection to find best approximations in subspaces.</li>
+<li>Interpret the geometric meaning of orthogonality in linear algebra.</li>
 </ul>
 </div>
+<hr />
 <h2 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h2>
-<!--
-​​5.1: 1, 3, 5, 7, 13, 16, 40
-5.2: 1, 3, 6, 10, 11
-5.3: 1, 6, 10-14, 35, 36
--->
 <style type="text/css">
     ol { list-style-type: lower-alpha; }
 </style>
 
-<p><strong>Exercise 1</strong> (5.1.1)</p>
-<p>Is <span class="arithmatex">\(\lambda=2\)</span> an eigenvalue of <span class="arithmatex">\(\left[\begin{array}{ll}3 &amp; 2 \\ 3 &amp; 8\end{array}\right]\)</span> ? Why or why not?</p>
+<p><strong>Exercise 0</strong></p>
+<p><a href="https://viaucdk-my.sharepoint.com/:b:/g/personal/rib_viauc_dk/EfVeTGnf_6dGu4Pozd45Z1gBf86W3BOdPiSdvMvwO4XHUw?e=cs0QrB">Do this exercise first.pdf</a></p>
+<p><strong>Exercise 1</strong> (6.1.1)</p>
+<p>Compute the quantities using the vectors</p>
+<div class="arithmatex">\[
+\mathbf{u}=\left[\begin{array}{r}
+-1 \\
+2
+\end{array}\right], \quad \mathbf{v}=\left[\begin{array}{l}
+4 \\
+6
+\end{array}\right], \quad \mathbf{w}=\left[\begin{array}{r}
+3 \\
+-1 \\
+-5
+\end{array}\right], \quad \mathbf{x}=\left[\begin{array}{r}
+6 \\
+-2 \\
+3
+\end{array}\right]
+\]</div>
+<p><span class="arithmatex">\(\mathbf{u} \cdot \mathbf{u}, \mathbf{v} \cdot \mathbf{u}\)</span>, and <span class="arithmatex">\(\frac{\mathbf{v} \cdot \mathbf{u}}{\mathbf{u} \cdot \mathbf{u}}\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p>2 is an eigenvalue of <span class="arithmatex">\(A\)</span>.</p>
+<p><span class="arithmatex">\(\mathbf{u} \cdot \mathbf{u}=(-1)^2+2^2=5, \mathbf{v} \cdot \mathbf{u}=4(-1)+6(2)=8\)</span>, and <span class="arithmatex">\(\frac{\mathbf{v} \cdot \mathbf{u}}{\mathbf{u} \cdot \mathbf{u}}=\frac{8}{5}\)</span>.</p>
 </details>
-<p><strong>Exercise 2</strong> (5.1.3)</p>
-<p>Is <span class="arithmatex">\(\left[\begin{array}{l}1 \\ 3\end{array}\right]\)</span> an eigenvector of <span class="arithmatex">\(\left[\begin{array}{ll}1 &amp; -1 \\ 6 &amp; -4\end{array}\right]\)</span> ? If so, find the eigenvalue.</p>
+<p><strong>Exercise 2</strong> (6.1.11)</p>
+<p>Find a unit vector in the direction of the given vector.</p>
+<p><span class="arithmatex">\(\left[\begin{array}{c}7 / 4 \\ 1 / 2 \\ 1\end{array}\right]\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p><span class="arithmatex">\(\left[\begin{array}{l}1 \\ 3\end{array}\right]\)</span> is an eigenvector of <span class="arithmatex">\(A\)</span> with eigenvalue -2 .</p>
+<p><span class="arithmatex">\(\frac{1}{\sqrt{(7 / 4)^2+(1 / 2)^2+1^2}}\left[\begin{array}{r}7 / 4 \\ 1 / 2 \\ 1\end{array}\right]=\frac{1}{\sqrt{69 / 16}}\left[\begin{array}{r}7 / 4 \\ 1 / 2 \\ 1\end{array}\right]=\left[\begin{array}{l}7 / \sqrt{69} \\ 2 / \sqrt{69} \\ 4 / \sqrt{69}\end{array}\right]\)</span></p>
 </details>
-<p><strong>Exercise 3</strong> (5.1.5)</p>
-<p>Is <span class="arithmatex">\(\left[\begin{array}{r}3 \\ -2 \\ 1\end{array}\right]\)</span> an eigenvector of <span class="arithmatex">\(\left[\begin{array}{rrr}-4 &amp; 3 &amp; 3 \\ 2 &amp; -3 &amp; -2 \\ -1 &amp; 0 &amp; -2\end{array}\right]\)</span> ? If so, find the eigenvalue.</p>
+<p><strong>Exercise 3</strong> (6.1.13)</p>
+<p>Find the distance between <span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{r}10 \\ -3\end{array}\right]\)</span> and <span class="arithmatex">\(\mathbf{y}=\left[\begin{array}{l}-1 \\ -5\end{array}\right]\)</span>.</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p><span class="arithmatex">\(\left[\begin{array}{r}3 \\ -2 \\ 1\end{array}\right]\)</span> is an eigenvector of <span class="arithmatex">\(A\)</span> for the eigenvalue -5.</p>
+<p>Since <span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{c}10 \\ -3\end{array}\right]\)</span> and <span class="arithmatex">\(\mathbf{y}=\left[\begin{array}{l}-1 \\ -5\end{array}\right],\|\mathbf{x}-\mathbf{y}\|^2=[10-(-1)]^2+[-3-(-5)]^2=125\)</span> and <span class="arithmatex">\(\operatorname{dist}(\mathbf{x}, \mathbf{y})=\sqrt{125}=5 \sqrt{5}\)</span>.</p>
 </details>
-<p><strong>Exercise 4</strong> (5.1.7)</p>
-<p>Is <span class="arithmatex">\(\lambda=4\)</span> an eigenvalue of <span class="arithmatex">\(\left[\begin{array}{rrr}3 &amp; 0 &amp; -1 \\ 2 &amp; 3 &amp; 1 \\ -3 &amp; 4 &amp; 5\end{array}\right]\)</span> ? If so, find one corresponding eigenvector.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p>Yes, <span class="arithmatex">\(\lambda=4\)</span> is an eigenvalue of <span class="arithmatex">\(A\)</span>. The general solution is not requested, so to save time, simply take any nonzero value for <span class="arithmatex">\(x_3\)</span> to produce an eigenvector. If <span class="arithmatex">\(x_3=1\)</span>, then <span class="arithmatex">\(\mathbf{x}=(-1,-1,1)\)</span>.</p>
-</details>
-<p><strong>Exercise 5</strong> (5.1.13, 5.1.16)</p>
-<p>Find a basis for the eigenspace corresponding to both listed eigenvalues.</p>
+<p><strong>Exercise 4</strong> (6.1.15-6.1.18)</p>
+<p>Determine which pairs of vectors in the following exercises are orthogonal.</p>
 <ol>
-<li><span class="arithmatex">\(A=\left[\begin{array}{rrr}4 &amp; 0 &amp; 1 \\ -2 &amp; 1 &amp; 0 \\ -2 &amp; 0 &amp; 1\end{array}\right], \lambda=1,2,3\)</span></li>
-<li><span class="arithmatex">\(A=\left[\begin{array}{rrrr}5 &amp; 0 &amp; -1 &amp; 0 \\ 1 &amp; 3 &amp; 0 &amp; 0 \\ 2 &amp; -1 &amp; 3 &amp; 0 \\ 4 &amp; -2 &amp; -2 &amp; 4\end{array}\right], \lambda=4\)</span></li>
+<li><span class="arithmatex">\(\mathbf{a}=\left[\begin{array}{r}8 \\ -5\end{array}\right], \mathbf{b}=\left[\begin{array}{l}-2 \\ -3\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\mathbf{u}=\left[\begin{array}{r}12 \\ 3 \\ -5\end{array}\right], \mathbf{v}=\left[\begin{array}{r}2 \\ -3 \\ 3\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\mathbf{u}=\left[\begin{array}{r}3 \\ 2 \\ -5 \\ 0\end{array}\right], \mathbf{v}=\left[\begin{array}{r}-4 \\ 1 \\ -2 \\ 6\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\mathbf{y}=\left[\begin{array}{r}-3 \\ 7 \\ 4 \\ 0\end{array}\right], \mathbf{z}=\left[\begin{array}{r}1 \\ -8 \\ 15 \\ -7\end{array}\right]\)</span></li>
 </ol>
 <details class="answer">
 <summary>&nbsp;</summary>
 <ol>
-<li>
-<p>For <span class="arithmatex">\(\lambda=1\)</span> : The general solution of <span class="arithmatex">\((A-I) \mathbf{x}=\mathbf{0}\)</span> is <span class="arithmatex">\(x_2 \mathbf{e}_2\)</span>, where <span class="arithmatex">\(\mathbf{e}_2=\left[\begin{array}{l}0 \\ 1 \\ 0\end{array}\right]\)</span>, and so <span class="arithmatex">\(\mathbf{e}_2\)</span> provides a basis for the eigenspace.</p>
-<p>For <span class="arithmatex">\(\lambda=2\)</span> : The general solution of <span class="arithmatex">\((A-2 I) \mathbf{x}=\mathbf{0}\)</span> is <span class="arithmatex">\(x_3\left[\begin{array}{c}-1 / 2 \\ 1 \\ 1\end{array}\right]\)</span>. A nice basis vector for the eigenspace is <span class="arithmatex">\(\left[\begin{array}{r}-1 \\ 2 \\ 2\end{array}\right]\)</span>.</p>
-<p>For <span class="arithmatex">\(\lambda=3\)</span> : A basis vector for the eigenspace is <span class="arithmatex">\(\left[\begin{array}{r}-1 \\ 1 \\ 1\end{array}\right]\)</span>.</p>
-</li>
-<li>
-<p>Basis for the eigenspace : <span class="arithmatex">\(\left\{\left[\begin{array}{l}1 \\ 1 \\ 1 \\ 0\end{array}\right],\left[\begin{array}{l}0 \\ 0 \\ 0 \\ 1\end{array}\right]\right\}\)</span></p>
-</li>
+<li>Since <span class="arithmatex">\(\mathbf{a} \cdot \mathbf{b}=8(-2)+(-5)(-3)=-1 \neq 0, \mathbf{a}\)</span> and <span class="arithmatex">\(\mathbf{b}\)</span> are not orthogonal.</li>
+<li>Since <span class="arithmatex">\(\mathbf{u} \cdot \mathbf{v}=12(2)+(3)(-3)+(-5)(3)=0, \mathbf{u}\)</span> and <span class="arithmatex">\(\mathbf{v}\)</span> are orthogonal.</li>
+<li>Since <span class="arithmatex">\(\mathbf{u} \cdot \mathbf{v}=3(-4)+2(1)+(-5)(-2)+0(6)=0, \mathbf{u}\)</span> and <span class="arithmatex">\(\mathbf{v}\)</span> are orthogonal.</li>
+<li>Since <span class="arithmatex">\(\mathbf{y} \cdot \mathbf{z}=(-3)(1)+7(-8)+4(15)+0(-7)=1 \neq 0, \mathbf{y}\)</span> and <span class="arithmatex">\(\mathbf{z}\)</span> are not orthogonal.</li>
 </ol>
 </details>
-<p><strong>Exercise 6</strong> (5.1.40)</p>
-<p>[M] Use a matrix program to find the eigenvalues of the matrix. Then use the method of Example 4 with a row reduction routine to produce a basis for the eigenspace.</p>
-<p><span class="arithmatex">\(\left[\begin{array}{rrrrr}-23 &amp; 57 &amp; -9 &amp; -15 &amp; -59 \\ -10 &amp; 12 &amp; -10 &amp; 2 &amp; -22 \\ 11 &amp; 5 &amp; -3 &amp; -19 &amp; -15 \\ -27 &amp; 31 &amp; -27 &amp; 25 &amp; -37 \\ -5 &amp; -15 &amp; -5 &amp; 1 &amp; 31\end{array}\right]\)</span></p>
+<p><strong>Exercise 5</strong> (6.2.1)</p>
+<p>Determine whether the set of vectors is orthogonal.</p>
+<p><span class="arithmatex">\(\left[\begin{array}{r}-1 \\ 4 \\ -3\end{array}\right],\left[\begin{array}{l}5 \\ 2 \\ 1\end{array}\right],\left[\begin{array}{r}3 \\ -4 \\ -7\end{array}\right]\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p>[M] For <span class="arithmatex">\(\lambda=-14\)</span>, basis: <span class="arithmatex">\(\left\{\left[\begin{array}{r}-1 \\ 0 \\ 1 \\ 0 \\ 0\end{array}\right],\left[\begin{array}{r}10 \\ 6 \\ 0 \\ 5 \\ 1\end{array}\right]\right\}\)</span>. </p>
-<p>For <span class="arithmatex">\(\lambda=42\)</span>, basis: <span class="arithmatex">\(\left\{\left[\begin{array}{r}0 \\ 1 \\ -2 \\ 5 \\ 0\end{array}\right],\left[\begin{array}{r}-5 \\ -1 \\ -3 \\ 0 \\ 5\end{array}\right]\right\}\)</span>.</p>
+<p>Since <span class="arithmatex">\(\left[\begin{array}{r}-1 \\ 4 \\ -3\end{array}\right] \cdot\left[\begin{array}{r}3 \\ -4 \\ -7\end{array}\right]=2 \neq 0\)</span>, the set is not orthogonal.</p>
 </details>
-<p><strong>Exercise 7</strong> (5.2.1, 5.2.3, 5.2.6)</p>
-<p>Find the characteristic polynomial and the real eigenvalues of the following matricies.</p>
-<ol>
-<li><span class="arithmatex">\(\left[\begin{array}{ll}2 &amp; 7 \\ 7 &amp; 2\end{array}\right]\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{rr}-4 &amp; 2 \\ 6 &amp; 7\end{array}\right]\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{rr}9 &amp; -2 \\ 2 &amp; 5\end{array}\right]\)</span></li>
-</ol>
+<p><strong>Exercise 6</strong> (6.2.9)</p>
+<p>Show that <span class="arithmatex">\(\left\{\mathbf{u}_1, \mathbf{u}_2\right\}\)</span> or <span class="arithmatex">\(\left\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3\right\}\)</span> is an orthogonal basis for <span class="arithmatex">\(\mathbf{R}^2\)</span> or <span class="arithmatex">\(\mathbf{R}^3\)</span>, respectively. Then express <span class="arithmatex">\(\mathbf{x}\)</span> as a linear combination of the u's.</p>
+<p><span class="arithmatex">\(\mathbf{u}_1=\left[\begin{array}{l}1 \\ 0 \\ 1\end{array}\right], \mathbf{u}_2=\left[\begin{array}{r}-1 \\ 4 \\ 1\end{array}\right], \mathbf{u}_3=\left[\begin{array}{r}2 \\ 1 \\ -2\end{array}\right]\)</span>, and <span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{r}8 \\ -4 \\ -3\end{array}\right]\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<ol>
-<li>The characteristic polynomial is <span class="arithmatex">\(\operatorname{det}(A-\lambda I)=(2-\lambda)^2-7^2=4-4 \lambda+\lambda^2-49=\lambda^2-4 \lambda-45\)</span>, the eigenvalues of <span class="arithmatex">\(A\)</span> are -2 and -1.</li>
-<li>The characteristic polynomial is <span class="arithmatex">\(\operatorname{det}(A-\lambda I)=(-4-\lambda)(7-\lambda)-(2)(6)=\lambda^2-3 \lambda-40\)</span>, the eigenvalues of <span class="arithmatex">\(A\)</span> are 8 and -5.</li>
-<li>The characteristic polynomial is <span class="arithmatex">\(\operatorname{det}(A-\lambda I)=(9-\lambda)(5-\lambda)-(-2)(2)=\lambda^2-14 \lambda+49=(\lambda-7)(\lambda-7)\)</span>, thus <span class="arithmatex">\(A\)</span> has only one eigenvalue, 7, with multiplicity 2.</li>
-</ol>
+<p>Since <span class="arithmatex">\(\mathbf{u}_1 \cdot \mathbf{u}_2=\mathbf{u}_1 \cdot \mathbf{u}_3=\mathbf{u}_2 \cdot \mathbf{u}_3=0,\left\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3\right\}\)</span> is an orthogonal set. Since the vectors are non-zero, <span class="arithmatex">\(\mathbf{u}_1, \mathbf{u}_2\)</span>, and <span class="arithmatex">\(\mathbf{u}_3\)</span> are linearly independent by Theorem 4. Three such vectors in <span class="arithmatex">\(\mathbb{R}^3\)</span> automatically form a basis for <span class="arithmatex">\(\mathbb{R}^3\)</span>. So <span class="arithmatex">\(\left\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3\right\}\)</span> is an orthogonal basis for <span class="arithmatex">\(\mathbb{R}^3\)</span>. By Theorem 5,</p>
+<div class="arithmatex">\[
+\mathbf{x}=\frac{\mathbf{x} \cdot \mathbf{u}_1}{\mathbf{u}_1 \cdot \mathbf{u}_1} \mathbf{u}_1+\frac{\mathbf{x} \cdot \mathbf{u}_2}{\mathbf{u}_2 \cdot \mathbf{u}_2} \mathbf{u}_2+\frac{\mathbf{x} \cdot \mathbf{u}_3}{\mathbf{u}_3 \cdot \mathbf{u}_3} \mathbf{u}_3=\frac{5}{2} \mathbf{u}_1-\frac{3}{2} \mathbf{u}_2+2 \mathbf{u}_3
+\]</div>
 </details>
-<p><strong>Exercise 8</strong> (5.2.10, 5.2.11)</p>
-<p>Following exercises require techniques from Section 3.1. Find the characteristic polynomial of each matrix, using either a cofactor expansion or the special formula for <span class="arithmatex">\(3 \times 3\)</span> determinants described prior to Exercises 15-18 in Section 3.1. [Note: Finding the characteristic polynomial of a <span class="arithmatex">\(3 \times 3\)</span> matrix is not easy to do with just row operations, because the variable <span class="arithmatex">\(\lambda\)</span> is involved.]</p>
-<ol>
-<li><span class="arithmatex">\(\left[\begin{array}{rrr}3 &amp; 1 &amp; 1 \\ 0 &amp; 5 &amp; 0 \\ -2 &amp; 0 &amp; 7\end{array}\right]\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{lll}3 &amp; 0 &amp; 0 \\ 2 &amp; 1 &amp; 4 \\ 1 &amp; 0 &amp; 4\end{array}\right]\)</span></li>
-</ol>
+<p><strong>Exercise 7</strong> (6.2.12)</p>
+<p>Compute the orthogonal projection of <span class="arithmatex">\(\left[\begin{array}{r}1 \\ -1\end{array}\right]\)</span> onto the line through <span class="arithmatex">\(\left[\begin{array}{r}-1 \\ 3\end{array}\right]\)</span> and the origin.</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<ol>
-<li><span class="arithmatex">\(-\lambda^3+15 \lambda^2-73 \lambda+115\)</span></li>
-<li><span class="arithmatex">\(-\lambda^3+8 \lambda^2-19 \lambda+12\)</span></li>
-</ol>
+<p><span class="arithmatex">\(\hat{\mathbf{y}}=\frac{\mathbf{y} \cdot \mathbf{u}}{\mathbf{u} \cdot \mathbf{u}} \mathbf{u}=-\frac{2}{5} \mathbf{u}=\left[\begin{array}{r}2 / 5 \\ -6 / 5\end{array}\right]\)</span></p>
 </details>
-<p><strong>Exercise 9</strong> (5.3.1)</p>
-<p>Let <span class="arithmatex">\(A=P D P^{-1}\)</span> and compute <span class="arithmatex">\(A^4\)</span>.</p>
-<p><span class="arithmatex">\(P=\left[\begin{array}{ll}5 &amp; 7 \\ 2 &amp; 3\end{array}\right], D=\left[\begin{array}{ll}2 &amp; 0 \\ 0 &amp; 1\end{array}\right]\)</span></p>
+<p><strong>Exercise 8</strong> (6.2.21)</p>
+<p>Determine whether the set of vectors is orthonormal. If the set is only orthogonal, normalize the vectors to produce an orthonormal set.</p>
+<p><span class="arithmatex">\(\left[\begin{array}{l}1 / \sqrt{10} \\ 3 / \sqrt{20} \\ 3 / \sqrt{20}\end{array}\right],\left[\begin{array}{c}3 / \sqrt{10} \\ -1 / \sqrt{20} \\ -1 / \sqrt{20}\end{array}\right],\left[\begin{array}{c}0 \\ -1 / \sqrt{2} \\ 1 / \sqrt{2}\end{array}\right]\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p><span class="arithmatex">\(A^4=\left[\begin{array}{ll}5 &amp; 7 \\ 2 &amp; 3\end{array}\right]\left[\begin{array}{cc}16 &amp; 0 \\ 0 &amp; 1\end{array}\right]\left[\begin{array}{rr}3 &amp; -7 \\ -2 &amp; 5\end{array}\right]=\left[\begin{array}{cc}226 &amp; -525 \\ 90 &amp; -209\end{array}\right]\)</span></p>
+<p>Let <span class="arithmatex">\(\mathbf{u}=\left[\begin{array}{l}1 / \sqrt{10} \\ 3 / \sqrt{20} \\ 3 / \sqrt{20}\end{array}\right], \mathbf{v}=\left[\begin{array}{r}3 / \sqrt{10} \\ -1 / \sqrt{20} \\ -1 / \sqrt{20}\end{array}\right]\)</span>, and <span class="arithmatex">\(\mathbf{w}=\left[\begin{array}{r}0 \\ -1 / \sqrt{2} \\ 1 / \sqrt{2}\end{array}\right]\)</span>. Since <span class="arithmatex">\(\mathbf{u} \cdot \mathbf{v}=\mathbf{u} \cdot \mathbf{w}=\mathbf{v} \cdot \mathbf{w}=0,\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}\)</span> is an orthogonal set. Also, <span class="arithmatex">\(\|\mathbf{u}\|^2=\mathbf{u} \cdot \mathbf{u}=1,\|\mathbf{v}\|^2=\mathbf{v} \cdot \mathbf{v}=1\)</span>, and <span class="arithmatex">\(\|\mathbf{w}\|^2=\mathbf{w} \cdot \mathbf{w}=1\)</span>, so <span class="arithmatex">\(\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}\)</span> is an orthonormal set.</p>
 </details>
-<p><strong>Exercise 10</strong> (5.3.6)</p>
-<p>The matrix <span class="arithmatex">\(A\)</span> is factored in the form <span class="arithmatex">\(P D P^{-1}\)</span>. Use the Diagonalization Theorem to find the eigenvalue of <span class="arithmatex">\(A\)</span> and a basis for the eigenspace.</p>
-<p><span class="arithmatex">\(\begin{aligned} A &amp; =\left[\begin{array}{rrr}3 &amp; 0 &amp; 0 \\ -3 &amp; 4 &amp; 9 \\ 0 &amp; 0 &amp; 3\end{array}\right] \\ &amp; =\left[\begin{array}{rrr}3 &amp; 0 &amp; -1 \\ 0 &amp; 1 &amp; -3 \\ 1 &amp; 0 &amp; 0\end{array}\right]\left[\begin{array}{lll}3 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; 0 \\ 0 &amp; 0 &amp; 3\end{array}\right]\left[\begin{array}{rrr}0 &amp; 0 &amp; 1 \\ -3 &amp; 1 &amp; 9 \\ -1 &amp; 0 &amp; 3\end{array}\right]\end{aligned}\)</span></p>
+<p><strong>Exercise 9</strong> (6.2.35)</p>
+<p>[M] Show that the columns of the matrix <span class="arithmatex">\(A\)</span> are orthogonal by making an appropriate matrix calculation. State the calculation you use.</p>
+<p><span class="arithmatex">\(A=\left[\begin{array}{rrrr}-6 &amp; -3 &amp; 6 &amp; 1 \\ -1 &amp; 2 &amp; 1 &amp; -6 \\ 3 &amp; 6 &amp; 3 &amp; -2 \\ 6 &amp; -3 &amp; 6 &amp; -1 \\ 2 &amp; -1 &amp; 2 &amp; 3 \\ -3 &amp; 6 &amp; 3 &amp; 2 \\ -2 &amp; -1 &amp; 2 &amp; -3 \\ 1 &amp; 2 &amp; 1 &amp; 6\end{array}\right]\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p><span class="arithmatex">\(\lambda=4:\left[\begin{array}{l}0 \\ 1 \\ 0\end{array}\right] ; \lambda=3:\left[\begin{array}{l}3 \\ 0 \\ 1\end{array}\right],\left[\begin{array}{c}-1 \\ -3 \\ 0\end{array}\right]\)</span></p>
+<p>[M] One can compute that <span class="arithmatex">\(A^T A=100 I_4\)</span>. Since the off-diagonal entries in <span class="arithmatex">\(A^T A\)</span> are zero, the columns of <span class="arithmatex">\(A\)</span> are orthogonal.</p>
 </details>
-<p><strong>Exercise 11</strong> (5.3.10-14)</p>
-<p>Diagonalize the matrices, if possible. The real eigenvalues for Exercises (b)-(e) are included next to the matrix.</p>
-<ol>
-<li><span class="arithmatex">\(\left[\begin{array}{ll}1 &amp; 3 \\ 4 &amp; 2\end{array}\right]\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{lll}0 &amp; 1 &amp; 1 \\ 2 &amp; 1 &amp; 2 \\ 3 &amp; 3 &amp; 2\end{array}\right]\)</span>
-    <span class="arithmatex">\(\lambda=-1,5\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{lll}3 &amp; 1 &amp; 1 \\ 1 &amp; 3 &amp; 1 \\ 1 &amp; 1 &amp; 3\end{array}\right]\)</span>
-    <span class="arithmatex">\(\lambda=2,5\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{rrr}2 &amp; 2 &amp; -1 \\ 1 &amp; 3 &amp; -1 \\ -1 &amp; -2 &amp; 2\end{array}\right]\)</span>
-    <span class="arithmatex">\(\lambda=1,5\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{rrr}2 &amp; 0 &amp; -2 \\ 1 &amp; 3 &amp; 2 \\ 0 &amp; 0 &amp; 3\end{array}\right]\)</span>
-    <span class="arithmatex">\(\lambda=2,3\)</span></li>
-</ol>
+<p><strong>Exercise 10</strong> (6.3.1)</p>
+<p>You may assume that <span class="arithmatex">\(\left\{\mathbf{u}_1, \ldots, \mathbf{u}_4\right\}\)</span> is an orthogonal basis for <span class="arithmatex">\(\mathbb{R}^4\)</span>.</p>
+<p><span class="arithmatex">\(\mathbf{u}_1=\left[\begin{array}{r}0 \\ 1 \\ -4 \\ -1\end{array}\right], \mathbf{u}_2=\left[\begin{array}{l}3 \\ 5 \\ 1 \\ 1\end{array}\right], \mathbf{u}_3=\left[\begin{array}{r}1 \\ 0 \\ 1 \\ -4\end{array}\right], \mathbf{u}_4=\left[\begin{array}{r}5 \\ -3 \\ -1 \\ 1\end{array}\right]\)</span>, <span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{r}10 \\ -8 \\ 2 \\ 0\end{array}\right]\)</span>. </p>
+<p>Write <span class="arithmatex">\(\mathbf{x}\)</span> as the sum of two vectors, one in
+<span class="arithmatex">\(\operatorname{Span}\left\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3\right\}\)</span> and the other in Span <span class="arithmatex">\(\left\{\mathbf{u}_4\right\}\)</span>.</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<ol>
-<li>
-<p>For <span class="arithmatex">\(\lambda=-2\)</span>: The general solution is <span class="arithmatex">\(x_2\left[\begin{array}{r}-1 \\ 1\end{array}\right]\)</span>, and a nice basis vector for the eigenspace is <span class="arithmatex">\(\mathbf{v}_1=\left[\begin{array}{r}-1 \\ 1\end{array}\right]\)</span>.</p>
-<p>For <span class="arithmatex">\(\lambda=5\)</span>: The general solution is <span class="arithmatex">\(x_2\left[\begin{array}{c}3 / 4 \\ 1\end{array}\right]\)</span>, and a basis vector for the eigenspace is <span class="arithmatex">\(\mathbf{v}_2=\left[\begin{array}{l}3 \\ 4\end{array}\right]\)</span>.</p>
-<p><span class="arithmatex">\(D=\left[\begin{array}{rr}-2 &amp; 0 \\ 0 &amp; 5\end{array}\right]\)</span></p>
-</li>
-<li>
-<p>For <span class="arithmatex">\(\lambda=-1\)</span>: The general solution is <span class="arithmatex">\(x_2\left[\begin{array}{c}-1 \\ 1 \\ 0\end{array}\right]+x_3\left[\begin{array}{r}-1 \\ 0 \\ 1\end{array}\right]\)</span>, and a nice basis for the eigenspace is <span class="arithmatex">\(\left\{\mathbf{v}_1, \mathbf{v}_2\right\}=\left\{\left[\begin{array}{c}-1 \\ 1 \\ 0\end{array}\right],\left[\begin{array}{c}-1 \\ 0 \\ 1\end{array}\right]\right\}\)</span>.</p>
-<p>For <span class="arithmatex">\(\lambda=5\)</span>: general solution is <span class="arithmatex">\(x_3\left[\begin{array}{r}1 / 3 \\ 2 / 3 \\ 1\end{array}\right]\)</span>, and a nice basis vector for the eigenspace is <span class="arithmatex">\(\mathbf{v}_3=\left[\begin{array}{l}1 \\ 2 \\ 3\end{array}\right]\)</span>.</p>
-<p><span class="arithmatex">\(D=\left[\begin{array}{ccc}-1 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 5\end{array}\right]\)</span></p>
-</li>
-<li>
-<p>For <span class="arithmatex">\(\lambda=2\)</span>: The general solution is <span class="arithmatex">\(x_2\left[\begin{array}{c}-1 \\ 1 \\ 0\end{array}\right]+x_3\left[\begin{array}{r}-1 \\ 0 \\ 1\end{array}\right]\)</span>, and a nice basis for the eigenspace is <span class="arithmatex">\(\left\{\mathbf{v}_1, \mathbf{v}_2\right\}=\left\{\left[\begin{array}{c}-1 \\ 1 \\ 0\end{array}\right],\left[\begin{array}{c}-1 \\ 0 \\ 1\end{array}\right]\right\}\)</span>.</p>
-<p>For <span class="arithmatex">\(\lambda=5\)</span>: The general solution is <span class="arithmatex">\(x_3\left[\begin{array}{l}1 \\ 1 \\ 1\end{array}\right]\)</span>, and a basis for the eigenspace is <span class="arithmatex">\(\mathbf{v}_3=\left[\begin{array}{l}1 \\ 1 \\ 1\end{array}\right]\)</span>.</p>
-<p><span class="arithmatex">\(D=\left[\begin{array}{lll}2 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 5\end{array}\right]\)</span></p>
-</li>
-<li>
-<p>For <span class="arithmatex">\(\lambda=5\)</span>: The general solution is <span class="arithmatex">\(x_3\left[\begin{array}{r}-1 \\ -1 \\ 1\end{array}\right]\)</span>, and a basis for the eigenspace is <span class="arithmatex">\(\mathbf{v}_1=\left[\begin{array}{r}-1 \\ -1 \\ 1\end{array}\right]\)</span>.</p>
-<p>For <span class="arithmatex">\(\lambda=1\)</span>: The general solution is <span class="arithmatex">\(x_2\left[\begin{array}{r}-2 \\ 1 \\ 0\end{array}\right]+x_3\left[\begin{array}{l}1 \\ 0 \\ 1\end{array}\right]\)</span>, and a basis for the eigenspace is <span class="arithmatex">\(\left\{\mathbf{v}_2, \mathbf{v}_3\right\}=\left\{\left[\begin{array}{r}-2 \\ 1 \\ 0\end{array}\right],\left[\begin{array}{l}1 \\ 0 \\ 1\end{array}\right]\right\}\)</span>.</p>
-<p><span class="arithmatex">\(D=\left[\begin{array}{lll}5 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1\end{array}\right]\)</span></p>
-</li>
-<li>
-<p>For <span class="arithmatex">\(\lambda=2\)</span>: The general solution is <span class="arithmatex">\(x_2\left[\begin{array}{c}-1 \\ 1 \\ 0\end{array}\right]\)</span>, and a basis for the eigenspace is <span class="arithmatex">\(\mathbf{v}_1=\left[\begin{array}{c}-1 \\ 1 \\ 0\end{array}\right]\)</span>.</p>
-<p>For <span class="arithmatex">\(\lambda=3\)</span>: The general solution is <span class="arithmatex">\(x_2\left[\begin{array}{l}0 \\ 1 \\ 0\end{array}\right]+x_3\left[\begin{array}{r}-2 \\ 0 \\ 1\end{array}\right]\)</span>, and a nice basis for the eigenspace is <span class="arithmatex">\(\left\{\mathbf{v}_2, \mathbf{v}_3\right\}=\left\{\left[\begin{array}{l}0 \\ 1 \\ 0\end{array}\right],\left[\begin{array}{c}-2 \\ 0 \\ 1\end{array}\right]\right\}\)</span>.</p>
-<p><span class="arithmatex">\(D=\left[\begin{array}{lll}2 &amp; 0 &amp; 0 \\ 0 &amp; 3 &amp; 0 \\ 0 &amp; 0 &amp; 3\end{array}\right]\)</span></p>
-</li>
-</ol>
+<p><span class="arithmatex">\(\mathbf{x}-\frac{\mathbf{x} \cdot \mathbf{u}_4}{\mathbf{u}_4 \cdot \mathbf{u}_4} \mathbf{u}_4=\left[\begin{array}{r}10 \\ -8 \\ 2 \\ 0\end{array}\right]-\left[\begin{array}{r}10 \\ -6 \\ -2 \\ 2\end{array}\right]=\left[\begin{array}{r}0 \\ -2 \\ 4 \\ -2\end{array}\right]\)</span></p>
 </details>
-<p><strong>Exercise 12</strong> (5.3.35, 5.3.36)</p>
-<p>[M] Diagonalize the matrices. Use your matrix program's eigenvalue command to find the eigenvalues, and then compute bases for the eigenspaces as in Section 5.1.</p>
+<p><strong>Exercise 11</strong> (6.3.3)</p>
+<p>Verify that <span class="arithmatex">\(\left\{\mathbf{u}_1, \mathbf{u}_2\right\}\)</span> is an orthogonal set, and then find the orthogonal projection of <span class="arithmatex">\(\mathbf{y}\)</span> onto <span class="arithmatex">\(\operatorname{Span}\left\{\mathbf{u}_1, \mathbf{u}_2\right\}\)</span>.</p>
+<p><span class="arithmatex">\(\mathbf{y}=\left[\begin{array}{r}-1 \\ 4 \\ 3\end{array}\right], \mathbf{u}_1=\left[\begin{array}{l}1 \\ 1 \\ 0\end{array}\right], \mathbf{u}_2=\left[\begin{array}{r}-1 \\ 1 \\ 0\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>Since <span class="arithmatex">\(\mathbf{u}_1 \cdot \mathbf{u}_2=-1+1+0=0,\left\{\mathbf{u}_1, \mathbf{u}_2\right\}\)</span> is an orthogonal set. The orthogonal projection of <span class="arithmatex">\(\mathbf{y}\)</span> onto <span class="arithmatex">\(\operatorname{Span}\left\{\mathbf{u}_1, \mathbf{u}_2\right\}\)</span> is</p>
+<div class="arithmatex">\[
+\hat{\mathbf{y}}=\frac{\mathbf{y} \cdot \mathbf{u}_1}{\mathbf{u}_1 \cdot \mathbf{u}_1} \mathbf{u}_1+\frac{\mathbf{y} \cdot \mathbf{u}_2}{\mathbf{u}_2 \cdot \mathbf{u}_2} \mathbf{u}_2=\frac{3}{2} \mathbf{u}_1+\frac{5}{2} \mathbf{u}_2=\frac{3}{2}\left[\begin{array}{l}
+1 \\
+1 \\
+0
+\end{array}\right]+\frac{5}{2}\left[\begin{array}{r}
+-1 \\
+1 \\
+0
+\end{array}\right]=\left[\begin{array}{r}
+-1 \\
+4 \\
+0
+\end{array}\right]
+\]</div>
+</details>
+<p><strong>Exercise 12</strong> (6.3.7)</p>
+<p>Let <span class="arithmatex">\(W\)</span> be the subspace spanned by the <span class="arithmatex">\(\mathbf{u}\)</span> 's, and write <span class="arithmatex">\(y\)</span> as the sum of a vector in <span class="arithmatex">\(W\)</span> and a vector orthogonal to <span class="arithmatex">\(W\)</span>.</p>
+<p><span class="arithmatex">\(\mathbf{y}=\left[\begin{array}{l}1 \\ 3 \\ 5\end{array}\right], \mathbf{u}_1=\left[\begin{array}{r}1 \\ 3 \\ -2\end{array}\right], \mathbf{u}_2=\left[\begin{array}{l}5 \\ 1 \\ 4\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\hat{\mathbf{y}}=\frac{\mathbf{y} \cdot \mathbf{u}_1}{\mathbf{u}_1 \cdot \mathbf{u}_1} \mathbf{u}_1+\frac{\mathbf{y} \cdot \mathbf{u}_2}{\mathbf{u}_2 \cdot \mathbf{u}_2} \mathbf{u}_2=0 \mathbf{u}_1+\frac{2}{3} \mathbf{u}_2=\left[\begin{array}{r}10 / 3 \\ 2 / 3 \\ 8 / 3\end{array}\right], \mathbf{z}=\mathbf{y}-\hat{\mathbf{y}}=\left[\begin{array}{r}-7 / 3 \\ 7 / 3 \\ 7 / 3\end{array}\right]\)</span></p>
+</details>
+<p><strong>Exercise 13</strong> (6.3.13)</p>
+<p>Find the best approximation to <span class="arithmatex">\(\mathbf{z}\)</span> by vectors of the form <span class="arithmatex">\(c_1 \mathbf{v}_1+c_2 \mathbf{v}_2\)</span>.</p>
+<p><span class="arithmatex">\(\mathbf{z}=\left[\begin{array}{r}3 \\ -7 \\ 2 \\ 3\end{array}\right], \mathbf{v}_1=\left[\begin{array}{r}2 \\ -1 \\ -3 \\ 1\end{array}\right], \mathbf{v}_2=\left[\begin{array}{r}1 \\ 1 \\ 0 \\ -1\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\hat{\mathbf{z}}=\frac{\mathbf{z} \cdot \mathbf{v}_1}{\mathbf{v}_1 \cdot \mathbf{v}_1} \mathbf{v}_1+\frac{\mathbf{z} \cdot \mathbf{v}_2}{\mathbf{v}_2 \cdot \mathbf{v}_2} \mathbf{v}_2=\frac{2}{3} \mathbf{v}_1-\frac{7}{3} \mathbf{v}_2=\left[\begin{array}{c}-1 \\ -3 \\ -2 \\ 3\end{array}\right]\)</span></p>
+</details>
+<p><strong>Exercise 14</strong> (6.3.17)</p>
+<p>Let <span class="arithmatex">\(\mathbf{y}=\left[\begin{array}{l}4 \\ 8 \\ 1\end{array}\right], \quad \mathbf{u}_1=\left[\begin{array}{l}2 / 3 \\ 1 / 3 \\ 2 / 3\end{array}\right], \quad \mathbf{u}_2=\left[\begin{array}{r}-2 / 3 \\ 2 / 3 \\ 1 / 3\end{array}\right], \quad\)</span> and
+<span class="arithmatex">\(W=\operatorname{Span}\left\{\mathbf{u}_1, \mathbf{u}_2\right\}\)</span>.</p>
 <ol>
-<li><span class="arithmatex">\(\left[\begin{array}{rrrrr}13 &amp; -12 &amp; 9 &amp; -15 &amp; 9 \\ 6 &amp; -5 &amp; 9 &amp; -15 &amp; 9 \\ 6 &amp; -12 &amp; -5 &amp; 6 &amp; 9 \\ 6 &amp; -12 &amp; 9 &amp; -8 &amp; 9 \\ -6 &amp; 12 &amp; 12 &amp; -6 &amp; -2\end{array}\right]\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{rrrrr}24 &amp; -6 &amp; 2 &amp; 6 &amp; 2 \\ 72 &amp; 51 &amp; 9 &amp; -99 &amp; 9 \\ 0 &amp; -63 &amp; 15 &amp; 63 &amp; 63 \\ 72 &amp; 15 &amp; 9 &amp; -63 &amp; 9 \\ 0 &amp; 63 &amp; 21 &amp; -63 &amp; -27\end{array}\right]\)</span></li>
+<li>Let <span class="arithmatex">\(U=\left[\begin{array}{ll}\mathbf{u}_1 &amp; \mathbf{u}_2\end{array}\right]\)</span>. Compute <span class="arithmatex">\(U^T U\)</span> and <span class="arithmatex">\(U U^T\)</span>.</li>
+<li>Compute <span class="arithmatex">\(\operatorname{proj}_W \mathbf{y}\)</span> and <span class="arithmatex">\(\left(U U^T\right) \mathbf{y}\)</span>.</li>
 </ol>
 <details class="answer">
 <summary>&nbsp;</summary>
 <ol>
-<li><span class="arithmatex">\(D=\left[\begin{array}{ccccc}7 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 7 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 7 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -14 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; -14\end{array}\right]\)</span></li>
-<li><span class="arithmatex">\(D=\left[\begin{array}{ccccc}24 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -48 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -48 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 36 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 36\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(U^T U=\left[\begin{array}{ll}1 &amp; 0 \\ 0 &amp; 1\end{array}\right], U U^T=\left[\begin{array}{rrr}8 / 9 &amp; -2 / 9 &amp; 2 / 9 \\ -2 / 9 &amp; 5 / 9 &amp; 4 / 9 \\ 2 / 9 &amp; 4 / 9 &amp; 5 / 9\end{array}\right]\)</span></li>
+<li>Since <span class="arithmatex">\(U^T U=I_2\)</span>, the columns of <span class="arithmatex">\(U\)</span> form an orthonormal basis for <span class="arithmatex">\(W\)</span>, and by Theorem 10 <span class="arithmatex">\(\operatorname{proj}_W \mathbf{y}=U U^T \mathbf{y}=\left[\begin{array}{rrr}8 / 9 &amp; -2 / 9 &amp; 2 / 9 \\ -2 / 9 &amp; 5 / 9 &amp; 4 / 9 \\ 2 / 9 &amp; 4 / 9 &amp; 5 / 9\end{array}\right]\left[\begin{array}{l}4 \\ 8 \\ 1\end{array}\right]=\left[\begin{array}{l}2 \\ 4 \\ 5\end{array}\right]\)</span>.</li>
 </ol>
 </details>
 
@@ -1226,7 +1283,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../04_Vector_Spaces/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 04 Vector Spaces">
+          <a href="../07_Differential_Equations/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 07 Differential Equations">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1236,20 +1293,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                04 Vector Spaces
+                07 Differential Equations
               </div>
             </div>
           </a>
         
         
           
-          <a href="../06_Differential_Equations/" class="md-footer__link md-footer__link--next" aria-label="Next: 06 Differential Equations">
+          <a href="../09_Orthogonality_II/" class="md-footer__link md-footer__link--next" aria-label="Next: 09 Orthogonality II">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                06 Differential Equations
+                09 Orthogonality II
               </div>
             </div>
             <div class="md-footer__button md-icon">
