@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://rbrooksdk.github.io/ALI1_26/05_Change_of_Basis/">
       
       
+        <link rel="prev" href="../04_Vector_Spaces/">
+      
+      
+        <link rel="next" href="../06_Eigenvalues/">
       
       
         
@@ -25,7 +29,7 @@
     
     
       
-        <title>Index - Applied Linear Algebra</title>
+        <title>05 Change of Basis - Applied Linear Algebra</title>
       
     
     
@@ -127,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              05 Change of Basis
             
           </span>
         </div>
@@ -262,10 +266,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../Sessions/" class="md-tabs__link">
           
   
@@ -450,6 +456,8 @@
       
   
   
+    
+  
   
   
     
@@ -487,22 +495,24 @@
     
     
       
+        
+        
+      
       
     
     
       
-        
-        
-      
     
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
-  
-  
-  
-    <a href="../Sessions/" class="md-nav__link">
-      
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Sessions/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -516,12 +526,459 @@
   
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sessions
   
 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_Introduction_to_Linear_Algebra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 Introduction to Linear Algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Independence_and_Linear_Transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 Independence and Linear Transformations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Matrix_Algebra_and_Determinants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 Matrix Algebra and Determinants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Vector_Spaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 Vector Spaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 Change of Basis
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 Change of Basis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#session-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Material:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Description
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Concepts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_Eigenvalues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 Eigenvalues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_More_Linear_Transformations_and_Differential_Equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 More Linear Transformations and Differential Equations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_Orthogonality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 Orthogonality
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_Gram_Schmidt_and_Least_Squares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 Gram-Schmidt and Least Squares
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_Symmetric_Matrices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 Symmetric Matrices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_SVD_and_PCA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 SVD and PCA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_Recap_and_Conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12 Recap and Conclusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -756,193 +1213,159 @@
   
 
 
-<h1 align="center">Eigenvalues</h1>
+<h1 align="center">Change of Basis</h1>
 
 <h2 id="session-material">Session Material:<a class="headerlink" href="#session-material" title="Permanent link">&para;</a></h2>
-<p>Lay: ​5.1-5.3</p>
-<p><a href="https://drive.google.com/file/d/1wNL5E-jT3YuMJqcTAerjT93qPsChGpOc/view?usp=sharing">Recap and Exercises</a></p>
-<p><a href="https://drive.google.com/file/d/1B9R3FF0Xz6bitUmtA7I_0IjbwJuhYa0_/view?usp=sharing">Session Notes</a></p>
-<p><a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/ErEbWej73CxBiXGFKP-mtx4BzkmBdQWAJOwzWIuvuzoBZw?e=oCjf1Z">Session Material</a></p>
+<p>Lay: 4.4, 4.7</p>
+<p><a href="">Recap and Exercises</a></p>
+<p><a href="">Session Notes</a></p>
+<p><a href="">Session Material</a></p>
 <hr />
 <h2 id="session-description">Session Description<a class="headerlink" href="#session-description" title="Permanent link">&para;</a></h2>
-<p>This session introduces some of the most powerful and fascinating concepts in linear algebra: eigenvalues and eigenvectors! We'll explore what these special vectors (eigenvectors) and scalars (eigenvalues) are – basically, vectors that only get scaled (not changed in direction) when a matrix transformation is applied. We'll learn how to find eigenvalues by solving the "characteristic equation" and then find the corresponding eigenvectors by solving a system of equations.</p>
-<p>Understanding the set of all eigenvectors for a specific eigenvalue (the "eigenspace") is also key. Finally, we'll tackle the concept of "diagonalization" – a super useful technique where we can transform certain matrices into simpler diagonal forms using their eigenvectors and eigenvalues. This process, often called similarity transformation, simplifies many calculations and reveals deeper properties of the matrix and the transformation it represents.</p>
+<p>This session explores the concept of coordinate mappings and change of basis. We'll learn how to represent vectors in different coordinate systems and understand how changing from one basis to another affects the representation of vectors and linear transformations.</p>
+<p>We'll start by understanding coordinate vectors relative to a basis, then learn how to construct the change-of-coordinates matrix that allows us to convert between different coordinate systems. This is fundamental for understanding how the same vector or transformation can be represented differently depending on the chosen basis.</p>
 <h3 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Eigenvalues</li>
-<li>Eigenvectors</li>
-<li>Characteristic Equation</li>
-<li>Eigenspaces</li>
-<li>Diagonalization</li>
-<li>Matrix Similarity</li>
+<li>Coordinate Vectors</li>
+<li>Coordinate Mappings</li>
+<li>Change-of-Coordinates Matrix</li>
+<li>Change of Basis</li>
+<li>Matrix Representations in Different Bases</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Learning Objectives</p>
 <ul>
-<li>Define and compute eigenvalues and eigenvectors for matrices.</li>
-<li>Solve the characteristic equation and construct eigenspaces.</li>
-<li>Diagonalize matrices and explain the process of similarity transformation.</li>
-<li>Analyze the significance of eigenvalues and eigenvectors in matrix transformations.</li>
-<li>Apply diagonalization to simplify matrix computations and interpret results.</li>
+<li>Represent vectors as coordinate vectors relative to a given basis.</li>
+<li>Construct and use the change-of-coordinates matrix.</li>
+<li>Convert between coordinate systems using change of basis.</li>
+<li>Understand how linear transformations are represented in different bases.</li>
+<li>Apply change of basis to solve problems involving coordinate systems.</li>
 </ul>
 </div>
-<h2 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h2>
-<!--
-​​5.1: 1, 3, 5, 7, 13, 16, 40
-5.2: 1, 3, 6, 10, 11
-5.3: 1, 6, 10-14, 35, 36
--->
+<hr />
 <style type="text/css">
     ol { list-style-type: lower-alpha; }
 </style>
 
-<p><strong>Exercise 1</strong> (5.1.1)</p>
-<p>Is <span class="arithmatex">\(\lambda=2\)</span> an eigenvalue of <span class="arithmatex">\(\left[\begin{array}{ll}3 &amp; 2 \\ 3 &amp; 8\end{array}\right]\)</span> ? Why or why not?</p>
+<h2 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h2>
+<p><strong>Exercise 1</strong> (4.4.3)</p>
+<p>Find the vector <span class="arithmatex">\(\mathbf{x}\)</span> determined by the coordinate vector <span class="arithmatex">\([\mathbf{x}]_{\mathcal{B}}\)</span> and the basis <span class="arithmatex">\(\mathcal{B}\)</span>.</p>
+<p><span class="arithmatex">\(\mathcal{B}=\left\{\left[\begin{array}{r}1 \\ -2 \\ 3\end{array}\right],\left[\begin{array}{r}5 \\ 0 \\ -2\end{array}\right],\left[\begin{array}{r}4 \\ -3 \\ 0\end{array}\right]\right\},[\mathbf{x}]_{\mathcal{B}}=\left[\begin{array}{r}1 \\ 0 \\ -2\end{array}\right]\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p>2 is an eigenvalue of <span class="arithmatex">\(A\)</span>.</p>
+<p><span class="arithmatex">\(=\left[\begin{array}{r}-7 \\ 4 \\ 3\end{array}\right]\)</span></p>
 </details>
-<p><strong>Exercise 2</strong> (5.1.3)</p>
-<p>Is <span class="arithmatex">\(\left[\begin{array}{l}1 \\ 3\end{array}\right]\)</span> an eigenvector of <span class="arithmatex">\(\left[\begin{array}{ll}1 &amp; -1 \\ 6 &amp; -4\end{array}\right]\)</span> ? If so, find the eigenvalue.</p>
+<p><strong>Exercises 2</strong> (4.4.7)</p>
+<p>Find the coordinate vector <span class="arithmatex">\([\mathbf{x}]_{\mathcal{B}}\)</span> of <span class="arithmatex">\(\mathbf{x}\)</span> relative to the basis <span class="arithmatex">\(\mathcal{B}=\left\{\mathbf{b}_1, \ldots, \mathbf{b}_n\right\}\)</span>.</p>
+<p><span class="arithmatex">\(\mathbf{b}_1=\left[\begin{array}{r}1 \\ -1 \\ -3\end{array}\right], \mathbf{b}_2=\left[\begin{array}{r}-3 \\ 4 \\ 9\end{array}\right], \mathbf{b}_3=\left[\begin{array}{r}2 \\ -2 \\ 4\end{array}\right], \mathbf{x}=\left[\begin{array}{r}8 \\ -9 \\ 6\end{array}\right]\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p><span class="arithmatex">\(\left[\begin{array}{l}1 \\ 3\end{array}\right]\)</span> is an eigenvector of <span class="arithmatex">\(A\)</span> with eigenvalue -2 .</p>
+<p><span class="arithmatex">\([\mathbf{x}]_{\mathcal{B}}=\left[\begin{array}{r}-1 \\ -1 \\ 3\end{array}\right]\)</span></p>
 </details>
-<p><strong>Exercise 3</strong> (5.1.5)</p>
-<p>Is <span class="arithmatex">\(\left[\begin{array}{r}3 \\ -2 \\ 1\end{array}\right]\)</span> an eigenvector of <span class="arithmatex">\(\left[\begin{array}{rrr}-4 &amp; 3 &amp; 3 \\ 2 &amp; -3 &amp; -2 \\ -1 &amp; 0 &amp; -2\end{array}\right]\)</span> ? If so, find the eigenvalue.</p>
+<p><strong>Exercises 3</strong> (4.4.10)</p>
+<p>Find the change-of-coordinates matrix from <span class="arithmatex">\(\mathcal{B}\)</span> to the standard basis in <span class="arithmatex">\(\mathbb{R}^n\)</span>.</p>
+<p><span class="arithmatex">\(\mathcal{B}=\left\{\left[\begin{array}{l}3 \\ 0 \\ 6\end{array}\right],\left[\begin{array}{r}2 \\ 2 \\ -4\end{array}\right],\left[\begin{array}{r}1 \\ -2 \\ 3\end{array}\right]\right\}\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p><span class="arithmatex">\(\left[\begin{array}{r}3 \\ -2 \\ 1\end{array}\right]\)</span> is an eigenvector of <span class="arithmatex">\(A\)</span> for the eigenvalue -5.</p>
+<p><span class="arithmatex">\(P_B = \left[\begin{array}{rrr}3 &amp; 2 &amp; 1 \\ 0 &amp; 2 &amp; -2 \\ 6 &amp; -4 &amp; 3\end{array}\right]\)</span></p>
 </details>
-<p><strong>Exercise 4</strong> (5.1.7)</p>
-<p>Is <span class="arithmatex">\(\lambda=4\)</span> an eigenvalue of <span class="arithmatex">\(\left[\begin{array}{rrr}3 &amp; 0 &amp; -1 \\ 2 &amp; 3 &amp; 1 \\ -3 &amp; 4 &amp; 5\end{array}\right]\)</span> ? If so, find one corresponding eigenvector.</p>
+<p><strong>Exercises 4</strong> (4.4.17)</p>
+<p>The vectors <span class="arithmatex">\(\mathbf{v}_1=\left[\begin{array}{r}1 \\ -3\end{array}\right], \mathbf{v}_2=\left[\begin{array}{r}2 \\ -8\end{array}\right], \mathbf{v}_3=\left[\begin{array}{r}-3 \\ 7\end{array}\right] \operatorname{span} \mathbb{R}^2\)</span> but do not form a basis. Find two different ways to express <span class="arithmatex">\(\left[\begin{array}{l}1 \\ 1\end{array}\right]\)</span> as a linear combination of <span class="arithmatex">\(\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\)</span>.</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p>Yes, <span class="arithmatex">\(\lambda=4\)</span> is an eigenvalue of <span class="arithmatex">\(A\)</span>. The general solution is not requested, so to save time, simply take any nonzero value for <span class="arithmatex">\(x_3\)</span> to produce an eigenvector. If <span class="arithmatex">\(x_3=1\)</span>, then <span class="arithmatex">\(\mathbf{x}=(-1,-1,1)\)</span>.</p>
+<p>There are infinitely many correct answers to this problem. One possible answer is:</p>
+<p><span class="arithmatex">\(5 \mathbf{v}_1-2 \mathbf{v}_2\)</span> and <span class="arithmatex">\(10 \mathbf{v}_1-3 \mathbf{v}_2+\mathbf{v}_3\)</span>.</p>
+<p>There are also infinitely many incorrect answers to this problem!</p>
 </details>
-<p><strong>Exercise 5</strong> (5.1.13, 5.1.16)</p>
-<p>Find a basis for the eigenspace corresponding to both listed eigenvalues.</p>
+<p><strong>Exercises 5</strong> (4.4.32)</p>
+<p>Let <span class="arithmatex">\(\mathbf{p}_1(t)=1+t^2, \mathbf{p}_2(t)=t-3 t^2, \mathbf{p}_3(t)=1+t-3 t^2\)</span>.</p>
 <ol>
-<li><span class="arithmatex">\(A=\left[\begin{array}{rrr}4 &amp; 0 &amp; 1 \\ -2 &amp; 1 &amp; 0 \\ -2 &amp; 0 &amp; 1\end{array}\right], \lambda=1,2,3\)</span></li>
-<li><span class="arithmatex">\(A=\left[\begin{array}{rrrr}5 &amp; 0 &amp; -1 &amp; 0 \\ 1 &amp; 3 &amp; 0 &amp; 0 \\ 2 &amp; -1 &amp; 3 &amp; 0 \\ 4 &amp; -2 &amp; -2 &amp; 4\end{array}\right], \lambda=4\)</span></li>
+<li>
+<p>Use coordinate vectors to show that these polynomials form a basis for <span class="arithmatex">\(\mathbb{P}_2\)</span>.</p>
+</li>
+<li>
+<p>Consider the basis <span class="arithmatex">\(\mathcal{B}=\left\{\mathbf{p}_1, \mathbf{p}_2, \mathbf{p}_3\right\}\)</span> for <span class="arithmatex">\(\mathbb{P}_2\)</span>. Find <span class="arithmatex">\(\mathbf{q}\)</span> in <span class="arithmatex">\(\mathbb{P}_2\)</span>, given that <span class="arithmatex">\([\mathbf{q}]_{\mathcal{B}}=\left[\begin{array}{r}-1 \\ 1 \\ 2\end{array}\right]\)</span>.</p>
+</li>
 </ol>
 <details class="answer">
 <summary>&nbsp;</summary>
 <ol>
 <li>
-<p>For <span class="arithmatex">\(\lambda=1\)</span> : The general solution of <span class="arithmatex">\((A-I) \mathbf{x}=\mathbf{0}\)</span> is <span class="arithmatex">\(x_2 \mathbf{e}_2\)</span>, where <span class="arithmatex">\(\mathbf{e}_2=\left[\begin{array}{l}0 \\ 1 \\ 0\end{array}\right]\)</span>, and so <span class="arithmatex">\(\mathbf{e}_2\)</span> provides a basis for the eigenspace.</p>
-<p>For <span class="arithmatex">\(\lambda=2\)</span> : The general solution of <span class="arithmatex">\((A-2 I) \mathbf{x}=\mathbf{0}\)</span> is <span class="arithmatex">\(x_3\left[\begin{array}{c}-1 / 2 \\ 1 \\ 1\end{array}\right]\)</span>. A nice basis vector for the eigenspace is <span class="arithmatex">\(\left[\begin{array}{r}-1 \\ 2 \\ 2\end{array}\right]\)</span>.</p>
-<p>For <span class="arithmatex">\(\lambda=3\)</span> : A basis vector for the eigenspace is <span class="arithmatex">\(\left[\begin{array}{r}-1 \\ 1 \\ 1\end{array}\right]\)</span>.</p>
+<p>Row reduce to check for pivots</p>
 </li>
 <li>
-<p>Basis for the eigenspace : <span class="arithmatex">\(\left\{\left[\begin{array}{l}1 \\ 1 \\ 1 \\ 0\end{array}\right],\left[\begin{array}{l}0 \\ 0 \\ 0 \\ 1\end{array}\right]\right\}\)</span></p>
+<p><span class="arithmatex">\(\mathbf{q}(t)=1+3 t-10 t^2\)</span>.</p>
 </li>
 </ol>
 </details>
-<p><strong>Exercise 6</strong> (5.1.40)</p>
-<p>[M] Use a matrix program to find the eigenvalues of the matrix. Then use the method of Example 4 with a row reduction routine to produce a basis for the eigenspace.</p>
-<p><span class="arithmatex">\(\left[\begin{array}{rrrrr}-23 &amp; 57 &amp; -9 &amp; -15 &amp; -59 \\ -10 &amp; 12 &amp; -10 &amp; 2 &amp; -22 \\ 11 &amp; 5 &amp; -3 &amp; -19 &amp; -15 \\ -27 &amp; 31 &amp; -27 &amp; 25 &amp; -37 \\ -5 &amp; -15 &amp; -5 &amp; 1 &amp; 31\end{array}\right]\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p>[M] For <span class="arithmatex">\(\lambda=-14\)</span>, basis: <span class="arithmatex">\(\left\{\left[\begin{array}{r}-1 \\ 0 \\ 1 \\ 0 \\ 0\end{array}\right],\left[\begin{array}{r}10 \\ 6 \\ 0 \\ 5 \\ 1\end{array}\right]\right\}\)</span>. </p>
-<p>For <span class="arithmatex">\(\lambda=42\)</span>, basis: <span class="arithmatex">\(\left\{\left[\begin{array}{r}0 \\ 1 \\ -2 \\ 5 \\ 0\end{array}\right],\left[\begin{array}{r}-5 \\ -1 \\ -3 \\ 0 \\ 5\end{array}\right]\right\}\)</span>.</p>
-</details>
-<p><strong>Exercise 7</strong> (5.2.1, 5.2.3, 5.2.6)</p>
-<p>Find the characteristic polynomial and the real eigenvalues of the following matricies.</p>
+<p><strong>Exercises 6</strong> (4.7.2)</p>
+<p>Let <span class="arithmatex">\(\mathcal{B}=\left\{\mathbf{b}_1, \mathbf{b}_2\right\}\)</span> and <span class="arithmatex">\(\mathcal{C}=\left\{\mathbf{c}_1, \mathbf{c}_2\right\}\)</span> be bases for a vector space <span class="arithmatex">\(V\)</span>, and suppose <span class="arithmatex">\(\mathbf{b}_1=-2 \mathbf{c}_1+4 \mathbf{c}_2\)</span> and <span class="arithmatex">\(\mathbf{b}_2=3 \mathbf{c}_1-6 \mathbf{c}_2\)</span>.</p>
 <ol>
-<li><span class="arithmatex">\(\left[\begin{array}{ll}2 &amp; 7 \\ 7 &amp; 2\end{array}\right]\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{rr}-4 &amp; 2 \\ 6 &amp; 7\end{array}\right]\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{rr}9 &amp; -2 \\ 2 &amp; 5\end{array}\right]\)</span></li>
-</ol>
-<details class="answer">
-<summary>&nbsp;</summary>
-<ol>
-<li>The characteristic polynomial is <span class="arithmatex">\(\operatorname{det}(A-\lambda I)=(2-\lambda)^2-7^2=4-4 \lambda+\lambda^2-49=\lambda^2-4 \lambda-45\)</span>, the eigenvalues of <span class="arithmatex">\(A\)</span> are -2 and -1.</li>
-<li>The characteristic polynomial is <span class="arithmatex">\(\operatorname{det}(A-\lambda I)=(-4-\lambda)(7-\lambda)-(2)(6)=\lambda^2-3 \lambda-40\)</span>, the eigenvalues of <span class="arithmatex">\(A\)</span> are 8 and -5.</li>
-<li>The characteristic polynomial is <span class="arithmatex">\(\operatorname{det}(A-\lambda I)=(9-\lambda)(5-\lambda)-(-2)(2)=\lambda^2-14 \lambda+49=(\lambda-7)(\lambda-7)\)</span>, thus <span class="arithmatex">\(A\)</span> has only one eigenvalue, 7, with multiplicity 2.</li>
-</ol>
-</details>
-<p><strong>Exercise 8</strong> (5.2.10, 5.2.11)</p>
-<p>Following exercises require techniques from Section 3.1. Find the characteristic polynomial of each matrix, using either a cofactor expansion or the special formula for <span class="arithmatex">\(3 \times 3\)</span> determinants described prior to Exercises 15-18 in Section 3.1. [Note: Finding the characteristic polynomial of a <span class="arithmatex">\(3 \times 3\)</span> matrix is not easy to do with just row operations, because the variable <span class="arithmatex">\(\lambda\)</span> is involved.]</p>
-<ol>
-<li><span class="arithmatex">\(\left[\begin{array}{rrr}3 &amp; 1 &amp; 1 \\ 0 &amp; 5 &amp; 0 \\ -2 &amp; 0 &amp; 7\end{array}\right]\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{lll}3 &amp; 0 &amp; 0 \\ 2 &amp; 1 &amp; 4 \\ 1 &amp; 0 &amp; 4\end{array}\right]\)</span></li>
-</ol>
-<details class="answer">
-<summary>&nbsp;</summary>
-<ol>
-<li><span class="arithmatex">\(-\lambda^3+15 \lambda^2-73 \lambda+115\)</span></li>
-<li><span class="arithmatex">\(-\lambda^3+8 \lambda^2-19 \lambda+12\)</span></li>
-</ol>
-</details>
-<p><strong>Exercise 9</strong> (5.3.1)</p>
-<p>Let <span class="arithmatex">\(A=P D P^{-1}\)</span> and compute <span class="arithmatex">\(A^4\)</span>.</p>
-<p><span class="arithmatex">\(P=\left[\begin{array}{ll}5 &amp; 7 \\ 2 &amp; 3\end{array}\right], D=\left[\begin{array}{ll}2 &amp; 0 \\ 0 &amp; 1\end{array}\right]\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(A^4=\left[\begin{array}{ll}5 &amp; 7 \\ 2 &amp; 3\end{array}\right]\left[\begin{array}{cc}16 &amp; 0 \\ 0 &amp; 1\end{array}\right]\left[\begin{array}{rr}3 &amp; -7 \\ -2 &amp; 5\end{array}\right]=\left[\begin{array}{cc}226 &amp; -525 \\ 90 &amp; -209\end{array}\right]\)</span></p>
-</details>
-<p><strong>Exercise 10</strong> (5.3.6)</p>
-<p>The matrix <span class="arithmatex">\(A\)</span> is factored in the form <span class="arithmatex">\(P D P^{-1}\)</span>. Use the Diagonalization Theorem to find the eigenvalue of <span class="arithmatex">\(A\)</span> and a basis for the eigenspace.</p>
-<p><span class="arithmatex">\(\begin{aligned} A &amp; =\left[\begin{array}{rrr}3 &amp; 0 &amp; 0 \\ -3 &amp; 4 &amp; 9 \\ 0 &amp; 0 &amp; 3\end{array}\right] \\ &amp; =\left[\begin{array}{rrr}3 &amp; 0 &amp; -1 \\ 0 &amp; 1 &amp; -3 \\ 1 &amp; 0 &amp; 0\end{array}\right]\left[\begin{array}{lll}3 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; 0 \\ 0 &amp; 0 &amp; 3\end{array}\right]\left[\begin{array}{rrr}0 &amp; 0 &amp; 1 \\ -3 &amp; 1 &amp; 9 \\ -1 &amp; 0 &amp; 3\end{array}\right]\end{aligned}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(\lambda=4:\left[\begin{array}{l}0 \\ 1 \\ 0\end{array}\right] ; \lambda=3:\left[\begin{array}{l}3 \\ 0 \\ 1\end{array}\right],\left[\begin{array}{c}-1 \\ -3 \\ 0\end{array}\right]\)</span></p>
-</details>
-<p><strong>Exercise 11</strong> (5.3.10-14)</p>
-<p>Diagonalize the matrices, if possible. The real eigenvalues for Exercises (b)-(e) are included next to the matrix.</p>
-<ol>
-<li><span class="arithmatex">\(\left[\begin{array}{ll}1 &amp; 3 \\ 4 &amp; 2\end{array}\right]\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{lll}0 &amp; 1 &amp; 1 \\ 2 &amp; 1 &amp; 2 \\ 3 &amp; 3 &amp; 2\end{array}\right]\)</span>
-    <span class="arithmatex">\(\lambda=-1,5\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{lll}3 &amp; 1 &amp; 1 \\ 1 &amp; 3 &amp; 1 \\ 1 &amp; 1 &amp; 3\end{array}\right]\)</span>
-    <span class="arithmatex">\(\lambda=2,5\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{rrr}2 &amp; 2 &amp; -1 \\ 1 &amp; 3 &amp; -1 \\ -1 &amp; -2 &amp; 2\end{array}\right]\)</span>
-    <span class="arithmatex">\(\lambda=1,5\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{rrr}2 &amp; 0 &amp; -2 \\ 1 &amp; 3 &amp; 2 \\ 0 &amp; 0 &amp; 3\end{array}\right]\)</span>
-    <span class="arithmatex">\(\lambda=2,3\)</span></li>
+<li>
+<p>Find the change-of-coordinates matrix from <span class="arithmatex">\(\mathcal{B}\)</span> to <span class="arithmatex">\(\mathcal{C}\)</span>.</p>
+</li>
+<li>
+<p>Find <span class="arithmatex">\([\mathbf{x}]_{\mathcal{C}}\)</span> for <span class="arithmatex">\(\mathbf{x}=2 \mathbf{b}_1+3 \mathbf{b}_2\)</span>.</p>
+</li>
 </ol>
 <details class="answer">
 <summary>&nbsp;</summary>
 <ol>
 <li>
-<p>For <span class="arithmatex">\(\lambda=-2\)</span>: The general solution is <span class="arithmatex">\(x_2\left[\begin{array}{r}-1 \\ 1\end{array}\right]\)</span>, and a nice basis vector for the eigenspace is <span class="arithmatex">\(\mathbf{v}_1=\left[\begin{array}{r}-1 \\ 1\end{array}\right]\)</span>.</p>
-<p>For <span class="arithmatex">\(\lambda=5\)</span>: The general solution is <span class="arithmatex">\(x_2\left[\begin{array}{c}3 / 4 \\ 1\end{array}\right]\)</span>, and a basis vector for the eigenspace is <span class="arithmatex">\(\mathbf{v}_2=\left[\begin{array}{l}3 \\ 4\end{array}\right]\)</span>.</p>
-<p><span class="arithmatex">\(D=\left[\begin{array}{rr}-2 &amp; 0 \\ 0 &amp; 5\end{array}\right]\)</span></p>
+<p><span class="arithmatex">\(\underset{C \leftarrow B}{P}=\left[\begin{array}{rr}6 &amp; 9 \\ -2 &amp; -4\end{array}\right]\)</span>.</p>
 </li>
 <li>
-<p>For <span class="arithmatex">\(\lambda=-1\)</span>: The general solution is <span class="arithmatex">\(x_2\left[\begin{array}{c}-1 \\ 1 \\ 0\end{array}\right]+x_3\left[\begin{array}{r}-1 \\ 0 \\ 1\end{array}\right]\)</span>, and a nice basis for the eigenspace is <span class="arithmatex">\(\left\{\mathbf{v}_1, \mathbf{v}_2\right\}=\left\{\left[\begin{array}{c}-1 \\ 1 \\ 0\end{array}\right],\left[\begin{array}{c}-1 \\ 0 \\ 1\end{array}\right]\right\}\)</span>.</p>
-<p>For <span class="arithmatex">\(\lambda=5\)</span>: general solution is <span class="arithmatex">\(x_3\left[\begin{array}{r}1 / 3 \\ 2 / 3 \\ 1\end{array}\right]\)</span>, and a nice basis vector for the eigenspace is <span class="arithmatex">\(\mathbf{v}_3=\left[\begin{array}{l}1 \\ 2 \\ 3\end{array}\right]\)</span>.</p>
-<p><span class="arithmatex">\(D=\left[\begin{array}{ccc}-1 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 5\end{array}\right]\)</span></p>
-</li>
-<li>
-<p>For <span class="arithmatex">\(\lambda=2\)</span>: The general solution is <span class="arithmatex">\(x_2\left[\begin{array}{c}-1 \\ 1 \\ 0\end{array}\right]+x_3\left[\begin{array}{r}-1 \\ 0 \\ 1\end{array}\right]\)</span>, and a nice basis for the eigenspace is <span class="arithmatex">\(\left\{\mathbf{v}_1, \mathbf{v}_2\right\}=\left\{\left[\begin{array}{c}-1 \\ 1 \\ 0\end{array}\right],\left[\begin{array}{c}-1 \\ 0 \\ 1\end{array}\right]\right\}\)</span>.</p>
-<p>For <span class="arithmatex">\(\lambda=5\)</span>: The general solution is <span class="arithmatex">\(x_3\left[\begin{array}{l}1 \\ 1 \\ 1\end{array}\right]\)</span>, and a basis for the eigenspace is <span class="arithmatex">\(\mathbf{v}_3=\left[\begin{array}{l}1 \\ 1 \\ 1\end{array}\right]\)</span>.</p>
-<p><span class="arithmatex">\(D=\left[\begin{array}{lll}2 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 5\end{array}\right]\)</span></p>
-</li>
-<li>
-<p>For <span class="arithmatex">\(\lambda=5\)</span>: The general solution is <span class="arithmatex">\(x_3\left[\begin{array}{r}-1 \\ -1 \\ 1\end{array}\right]\)</span>, and a basis for the eigenspace is <span class="arithmatex">\(\mathbf{v}_1=\left[\begin{array}{r}-1 \\ -1 \\ 1\end{array}\right]\)</span>.</p>
-<p>For <span class="arithmatex">\(\lambda=1\)</span>: The general solution is <span class="arithmatex">\(x_2\left[\begin{array}{r}-2 \\ 1 \\ 0\end{array}\right]+x_3\left[\begin{array}{l}1 \\ 0 \\ 1\end{array}\right]\)</span>, and a basis for the eigenspace is <span class="arithmatex">\(\left\{\mathbf{v}_2, \mathbf{v}_3\right\}=\left\{\left[\begin{array}{r}-2 \\ 1 \\ 0\end{array}\right],\left[\begin{array}{l}1 \\ 0 \\ 1\end{array}\right]\right\}\)</span>.</p>
-<p><span class="arithmatex">\(D=\left[\begin{array}{lll}5 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1\end{array}\right]\)</span></p>
-</li>
-<li>
-<p>For <span class="arithmatex">\(\lambda=2\)</span>: The general solution is <span class="arithmatex">\(x_2\left[\begin{array}{c}-1 \\ 1 \\ 0\end{array}\right]\)</span>, and a basis for the eigenspace is <span class="arithmatex">\(\mathbf{v}_1=\left[\begin{array}{c}-1 \\ 1 \\ 0\end{array}\right]\)</span>.</p>
-<p>For <span class="arithmatex">\(\lambda=3\)</span>: The general solution is <span class="arithmatex">\(x_2\left[\begin{array}{l}0 \\ 1 \\ 0\end{array}\right]+x_3\left[\begin{array}{r}-2 \\ 0 \\ 1\end{array}\right]\)</span>, and a nice basis for the eigenspace is <span class="arithmatex">\(\left\{\mathbf{v}_2, \mathbf{v}_3\right\}=\left\{\left[\begin{array}{l}0 \\ 1 \\ 0\end{array}\right],\left[\begin{array}{c}-2 \\ 0 \\ 1\end{array}\right]\right\}\)</span>.</p>
-<p><span class="arithmatex">\(D=\left[\begin{array}{lll}2 &amp; 0 &amp; 0 \\ 0 &amp; 3 &amp; 0 \\ 0 &amp; 0 &amp; 3\end{array}\right]\)</span></p>
+<p><span class="arithmatex">\([\mathbf{x}]_C=\left[\begin{array}{r}0 \\ -2\end{array}\right]\)</span></p>
 </li>
 </ol>
 </details>
-<p><strong>Exercise 12</strong> (5.3.35, 5.3.36)</p>
-<p>[M] Diagonalize the matrices. Use your matrix program's eigenvalue command to find the eigenvalues, and then compute bases for the eigenspaces as in Section 5.1.</p>
+<p><strong>Exercises 7</strong> (4.7.14)</p>
+<p>In <span class="arithmatex">\(\mathbb{P}_2\)</span>, find the change-of-coordinates matrix from the basis <span class="arithmatex">\(\mathcal{B}=\left\{1-3 t^2, 2+t-5 t^2, 1+2 t\right\}\)</span> to the standard basis. Then write <span class="arithmatex">\(t^2\)</span> as a linear combination of the polynomials in <span class="arithmatex">\(\mathcal{B}\)</span>.</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(t^2=3\left(1-3 t^2\right)-2\left(2+t-5 t^2\right)+(1+2 t)\)</span></p>
+</details>
+<p><strong>Exercises 8</strong> (4.7.19)</p>
+<p>[M] Let</p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp; P=\left[\begin{array}{rrr}
+1 &amp; 2 &amp; -1 \\
+-3 &amp; -5 &amp; 0 \\
+4 &amp; 6 &amp; 1
+\end{array}\right], \\
+&amp; \mathbf{v}_1=\left[\begin{array}{r}
+-2 \\
+2 \\
+3
+\end{array}\right], \mathbf{v}_2=\left[\begin{array}{r}
+-8 \\
+5 \\
+2
+\end{array}\right], \mathbf{v}_3=\left[\begin{array}{r}
+-7 \\
+2 \\
+6
+\end{array}\right]
+\end{aligned}
+\]</div>
 <ol>
-<li><span class="arithmatex">\(\left[\begin{array}{rrrrr}13 &amp; -12 &amp; 9 &amp; -15 &amp; 9 \\ 6 &amp; -5 &amp; 9 &amp; -15 &amp; 9 \\ 6 &amp; -12 &amp; -5 &amp; 6 &amp; 9 \\ 6 &amp; -12 &amp; 9 &amp; -8 &amp; 9 \\ -6 &amp; 12 &amp; 12 &amp; -6 &amp; -2\end{array}\right]\)</span></li>
-<li><span class="arithmatex">\(\left[\begin{array}{rrrrr}24 &amp; -6 &amp; 2 &amp; 6 &amp; 2 \\ 72 &amp; 51 &amp; 9 &amp; -99 &amp; 9 \\ 0 &amp; -63 &amp; 15 &amp; 63 &amp; 63 \\ 72 &amp; 15 &amp; 9 &amp; -63 &amp; 9 \\ 0 &amp; 63 &amp; 21 &amp; -63 &amp; -27\end{array}\right]\)</span></li>
+<li>
+<p>Find a basis <span class="arithmatex">\(\left\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3\right\}\)</span> for <span class="arithmatex">\(\mathbb{R}^3\)</span> such that <span class="arithmatex">\(P\)</span> is the change-of-coordinates matrix from <span class="arithmatex">\(\left\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3\right\}\)</span> to the basis <span class="arithmatex">\(\left\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\right\}\)</span>. [Hint: What do the columns of <span class="arithmatex">\({ }_{\mathcal{C} \leftarrow \mathcal{B}}\)</span> represent?]</p>
+</li>
+<li>
+<p>Find a basis <span class="arithmatex">\(\left\{\mathbf{w}_1, \mathbf{w}_2, \mathbf{w}_3\right\}\)</span> for <span class="arithmatex">\(\mathbb{R}^3\)</span> such that <span class="arithmatex">\(P\)</span> is the change-of-coordinates matrix from <span class="arithmatex">\(\left\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\right\}\)</span> to <span class="arithmatex">\(\left\{\mathbf{w}_1, \mathbf{w}_2, \mathbf{w}_3\right\}\)</span>.</p>
+</li>
 </ol>
 <details class="answer">
 <summary>&nbsp;</summary>
 <ol>
-<li><span class="arithmatex">\(D=\left[\begin{array}{ccccc}7 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 7 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 7 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -14 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; -14\end{array}\right]\)</span></li>
-<li><span class="arithmatex">\(D=\left[\begin{array}{ccccc}24 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -48 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -48 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 36 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 36\end{array}\right]\)</span></li>
+<li>
+<p><span class="arithmatex">\(\left[\begin{array}{rrr}-6 &amp; -6 &amp; -5 \\ -5 &amp; -9 &amp; 0 \\ 21 &amp; 32 &amp; 3\end{array}\right]\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\left[\begin{array}{rrr}28 &amp; 38 &amp; 21 \\ -9 &amp; -13 &amp; -7 \\ -3 &amp; 2 &amp; 3\end{array}\right]\)</span></p>
+</li>
 </ol>
 </details>
 
@@ -977,6 +1400,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../04_Vector_Spaces/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 04 Vector Spaces">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                04 Vector Spaces
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../06_Eigenvalues/" class="md-footer__link md-footer__link--next" aria-label="Next: 06 Eigenvalues">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                06 Eigenvalues
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">

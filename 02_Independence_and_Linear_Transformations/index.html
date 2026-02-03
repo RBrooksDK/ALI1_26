@@ -18,7 +18,7 @@
         <link rel="prev" href="../01_Introduction_to_Linear_Algebra/">
       
       
-        <link rel="next" href="../06_Eigenvalues/">
+        <link rel="next" href="../03_Matrix_Algebra_and_Determinants/">
       
       
         
@@ -704,14 +704,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../03_Matrix_Algebra/README.md" class="md-nav__link">
+      <a href="../03_Matrix_Algebra_and_Determinants/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    03 Matrix Algebra
+    03 Matrix Algebra and Determinants
   
 
     
@@ -732,14 +732,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../04_Determinants/README.md" class="md-nav__link">
+      <a href="../04_Vector_Spaces/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    04 Determinants
+    04 Vector Spaces
   
 
     
@@ -760,14 +760,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../05_Vector_Spaces/README.md" class="md-nav__link">
+      <a href="../05_Change_of_Basis/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    05 Vector Spaces
+    05 Change of Basis
   
 
     
@@ -816,14 +816,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../07_Differential_Equations/README.md" class="md-nav__link">
+      <a href="../07_More_Linear_Transformations_and_Differential_Equations/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    07 Differential Equations
+    07 More Linear Transformations and Differential Equations
   
 
     
@@ -844,14 +844,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../08_Orthogonality_I/README.md" class="md-nav__link">
+      <a href="../08_Orthogonality/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    08 Orthogonality I
+    08 Orthogonality
   
 
     
@@ -872,14 +872,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../09_Orthogonality_II/README.md" class="md-nav__link">
+      <a href="../09_Gram_Schmidt_and_Least_Squares/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    09 Orthogonality II
+    09 Gram-Schmidt and Least Squares
   
 
     
@@ -900,14 +900,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../10_Symmetric_Matrices_SVD_and_PCA/README.md" class="md-nav__link">
+      <a href="../10_Symmetric_Matrices/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10 Symmetric Matrices, SVD, and PCA
+    10 Symmetric Matrices
   
 
     
@@ -1216,29 +1216,184 @@
 <h1 align="center">Independence and Linear Transformations</h1>
 
 <h2 id="session-material">Session Material:<a class="headerlink" href="#session-material" title="Permanent link">&para;</a></h2>
-<p>Lay: </p>
+<p>Lay: 1.7-1.9</p>
+<p><a href="">Recap and Exercises</a></p>
 <p><a href="">Session Notes</a></p>
 <p><a href="">Session Material</a></p>
 <hr />
 <h2 id="session-description">Session Description<a class="headerlink" href="#session-description" title="Permanent link">&para;</a></h2>
+<p>In this session, we move from solving static equations to understanding the dynamic behavior of vector sets and matrices. We begin with <strong>Linear Independence</strong>, a cornerstone concept that determines whether a set of vectors contains redundant information. You will learn to identify independence by testing for the trivial solution and understanding how it relates to the presence of pivots in a matrix.</p>
+<p>Next, we reframe the matrix <span class="arithmatex">\(A\)</span> not just as a table of numbers, but as a <strong>Linear Transformation</strong> which isa rule that maps vectors from one space to another. We will explore the geometry of these transformations, visualizing how they rotate, reflect, and shear space. You will learn how to "build" a transformation by constructing its <strong>Standard Matrix</strong> using the unit vectors (<span class="arithmatex">\(e_1, \dots, e_n\)</span>). Finally, we define the properties of <strong>onto</strong> and <strong>one-to-one</strong> mappings, which link back to our fundamental questions of existence and uniqueness.</p>
 <h3 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h3>
 <ul>
-<li></li>
+<li>Linear Independence</li>
+<li>Redundancy and Pivots</li>
+<li>Linear Transformations (<span class="arithmatex">\(T: \mathbb{R}^n \to \mathbb{R}^m\)</span>)</li>
+<li>Domain, Codomain, and Range</li>
+<li>The Standard Matrix</li>
+<li>Geometric Transformations (Rotations, Reflections)</li>
+<li>Onto and One-to-one Mappings</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Learning Objectives</p>
 <ul>
-<li></li>
+<li>Analyze sets of vectors to determine linear independence and identify redundant vectors.</li>
+<li>Define and interpret linear transformations as mathematical mappings between vector spaces.</li>
+<li>Construct the standard matrix of a linear transformation using the images of the identity matrix columns.</li>
+<li>Visualize and describe the geometric effects of transformations like rotations, shears, and reflections.</li>
+<li>Determine if a transformation is one-to-one or onto based on the pivot positions of its matrix.</li>
 </ul>
 </div>
-<hr />
 <h2 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h2>
+<!-- 
+1.7: 11, 15-20, 41​​​  
+1.8: 3-6, 10  
+1.9: 15      
+2.1: 1, 2, 10, 13, 40, 41   
+2.2: 9, 30, 31, 32   
+​2.3: 11, 12, 15, 17  
+-->
+<style type="text/css">
+    ol { list-style-type: lower-alpha; }
+</style>
+
+<p><strong>Exercise 1</strong> (1.7.11)</p>
+<p>Find the value(s) of <span class="arithmatex">\(h\)</span> for which the vectors are linearly dependent. Justify your answer.</p>
+<p><span class="arithmatex">\(\left[\begin{array}{r}2 \\ -2 \\ 4\end{array}\right],\left[\begin{array}{r}4 \\ -6 \\ 7\end{array}\right],\left[\begin{array}{r}-2 \\ 2 \\ h\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>The vectors are linearly dependent if and only if <span class="arithmatex">\(h=-4\)</span>.</p>
+</details>
+<p><strong>Exercise 2</strong> (1.7.15-1.7.20)</p>
+<p>Determine by inspection whether the vectors in Exercises a-f are linearly independent. Justify each answer.</p>
+<ol>
+<li><span class="arithmatex">\(\left[\begin{array}{l}5 \\ 1\end{array}\right],\left[\begin{array}{l}2 \\ 8\end{array}\right],\left[\begin{array}{l}1 \\ 3\end{array}\right],\left[\begin{array}{r}-1 \\ 7\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{r}2 \\ -4 \\ 8\end{array}\right],\left[\begin{array}{r}-3 \\ 6 \\ -12\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{r}5 \\ -3 \\ -1\end{array}\right],\left[\begin{array}{l}0 \\ 0 \\ 0\end{array}\right],\left[\begin{array}{r}-7 \\ 2 \\ 4\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{l}3 \\ 4\end{array}\right],\left[\begin{array}{r}-1 \\ 5\end{array}\right],\left[\begin{array}{l}3 \\ 5\end{array}\right],\left[\begin{array}{l}7 \\ 1\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{r}-8 \\ 12 \\ -4\end{array}\right],\left[\begin{array}{r}2 \\ -3 \\ -1\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{r}1 \\ 4 \\ -7\end{array}\right],\left[\begin{array}{r}-2 \\ 5 \\ 3\end{array}\right],\left[\begin{array}{l}0 \\ 0 \\ 0\end{array}\right]\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>The set is linearly dependent, by Theorem 8, because there are four vectors in the set but only two entries in each vector.</li>
+<li>The set is linearly dependent because the second vector is <span class="arithmatex">\(-3 / 2\)</span> times the first vector.</li>
+<li>The set is linearly dependent, by Theorem 9, because the list of vectors contains a zero vector.</li>
+<li>The set is linearly dependent, by Theorem 8, because there are four vectors in the set but only two entries in each vector.</li>
+<li>The set is linearly independent because neither vector is a multiple of the other vector. [Two of the entries in the first vector are -4 times the corresponding entry in the second vector. But this multiple does not work for the third entries.]</li>
+<li>The set is linearly dependent, by Theorem 9, because the list of vectors contains a zero vector.</li>
+</ol>
+</details>
+<p><strong>Exercise 3</strong> (1.7.41)</p>
+<p>[M] Use as many columns of <span class="arithmatex">\(A\)</span> as possible to construct a matrix <span class="arithmatex">\(B\)</span> with the property that the equation <span class="arithmatex">\(B \mathbf{x}=\mathbf{0}\)</span> has only the trivial solution. Solve <span class="arithmatex">\(B \mathbf{x}=\mathbf{0}\)</span> to verify your work.</p>
+<p><span class="arithmatex">\(A=\left[\begin{array}{rrrrr}3 &amp; -4 &amp; 10 &amp; 7 &amp; -4 \\ -5 &amp; -3 &amp; -7 &amp; -11 &amp; 15 \\ 4 &amp; 3 &amp; 5 &amp; 2 &amp; 1 \\ 8 &amp; -7 &amp; 23 &amp; 4 &amp; 15\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<div class="arithmatex">\[
+B=\left[\begin{array}{rrr}
+3 &amp; -4 &amp; 7 \\
+-5 &amp; -3 &amp; -11 \\
+4 &amp; 3 &amp; 2 \\
+8 &amp; -7 &amp; 4
+\end{array}\right] . \text { Other choices are possible. }
+\]</div>
+</details>
+<p><strong>Exercise 4</strong> (1.8.3-1.8.6)</p>
+<p>In Exercises a-d, with <span class="arithmatex">\(T\)</span> defined by <span class="arithmatex">\(T(\mathbf{x})=A \mathbf{x}\)</span>, find a vector <span class="arithmatex">\(\mathbf{x}\)</span> whose image under <span class="arithmatex">\(T\)</span> is <span class="arithmatex">\(\mathbf{b}\)</span>, and determine whether <span class="arithmatex">\(\mathbf{x}\)</span> is unique.</p>
+<ol>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rrr}1 &amp; 0 &amp; -3 \\ -3 &amp; 1 &amp; 6 \\ 2 &amp; -2 &amp; -1\end{array}\right], \mathbf{b}=\left[\begin{array}{r}-2 \\ 3 \\ -1\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rrr}1 &amp; -2 &amp; 3 \\ 0 &amp; 1 &amp; -3 \\ 2 &amp; -5 &amp; 6\end{array}\right], \mathbf{b}=\left[\begin{array}{l}-6 \\ -4 \\ -5\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rrr}1 &amp; -5 &amp; -7 \\ -3 &amp; 7 &amp; 5\end{array}\right], \mathbf{b}=\left[\begin{array}{l}-2 \\ -2\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(A=\left[\begin{array}{rrr}1 &amp; -3 &amp; 2 \\ 3 &amp; -8 &amp; 8 \\ 0 &amp; 1 &amp; 2 \\ 1 &amp; 0 &amp; 8\end{array}\right], \mathbf{b}=\left[\begin{array}{r}1 \\ 6 \\ 3 \\ 10\end{array}\right]\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li><span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{l}7 \\ 6 \\ 1\end{array}\right]\)</span>, unique solution</li>
+<li><span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{r}-17 \\ -7 \\ -1\end{array}\right]\)</span>, unique solution</li>
+<li>The general solution is <span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{c}x_1 \\ x_2 \\ x_3\end{array}\right]=\left[\begin{array}{c}3-3 x_3 \\ 1-2 x_3 \\ x_3\end{array}\right]=\left[\begin{array}{l}3 \\ 1 \\ 0\end{array}\right]+x_3\left[\begin{array}{r}-3 \\ -2 \\ 1\end{array}\right]\)</span>. For a particular solution, one might choose <span class="arithmatex">\(x_3=0\)</span> and <span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{l}3 \\ 1 \\ 0\end{array}\right]\)</span>.</li>
+<li>The general solution is <span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{c}x_1 \\ x_2 \\ x_3\end{array}\right]=\left[\begin{array}{c}10-8 x_3 \\ 3-2 x_3 \\ x_3\end{array}\right]=\left[\begin{array}{r}10 \\ 3 \\ 0\end{array}\right]+x_3\left[\begin{array}{r}-8 \\ -2 \\ 1\end{array}\right]\)</span>. For a particular solution, one might choose <span class="arithmatex">\(x_3=0\)</span> and <span class="arithmatex">\(\mathbf{x}=\left[\begin{array}{c}10 \\ 3 \\ 0\end{array}\right]\)</span>.</li>
+</ol>
+</details>
+<p><strong>Exercise 5</strong> (1.8.7)</p>
+<p>Let <span class="arithmatex">\(A\)</span> be a <span class="arithmatex">\(6 \times 5\)</span> matrix. What must <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> be in order to define <span class="arithmatex">\(T: \mathbb{R}^a \rightarrow \mathbb{R}^b\)</span> by <span class="arithmatex">\(T(\mathbf{x})=A \mathbf{x}\)</span> ?</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(a = 5\)</span> and <span class="arithmatex">\(b = 6\)</span>.</p>
+</details>
+<p><strong>Exercise 6</strong> (1.8.8)</p>
+<p>How many rows and columns must a matrix <span class="arithmatex">\(A\)</span> have in order to define a mapping from <span class="arithmatex">\(\mathbb{R}^5\)</span> into <span class="arithmatex">\(\mathbb{R}^7\)</span> by the rule <span class="arithmatex">\(T(\mathbf{x})=A \mathbf{x}\)</span> ?</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(A\)</span> must have 7 rows and 5 columns.</p>
+</details>
+<p><strong>Exercise 7</strong> (1.8.10)</p>
+<p>Find all <span class="arithmatex">\(\mathbf{x}\)</span> in <span class="arithmatex">\(\mathbb{R}^4\)</span> that are mapped into the zero vector by the transformation <span class="arithmatex">\(\mathbf{x} \mapsto A \mathbf{x}\)</span> for the given matrix <span class="arithmatex">\(A\)</span>.</p>
+<p><span class="arithmatex">\(A=\left[\begin{array}{rrrr}3 &amp; 2 &amp; 10 &amp; -6 \\ 1 &amp; 0 &amp; 2 &amp; -4 \\ 0 &amp; 1 &amp; 2 &amp; 3 \\ 1 &amp; 4 &amp; 10 &amp; 8\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\left\{\begin{array}{l}x_1=-2 x_3+4 x_4 \\ x_2=-2 x_3-3 x_4 \\ x_3 \text { is free } \\ x_4 \text { is free }\end{array} \quad \quad \mathbf{x}=\left[\begin{array}{c}-2 x_3 \\ -2 x_3 \\ x_3 \\ 0\end{array}\right]+\left[\begin{array}{c}4 x_4 \\ -3 x_4 \\ 0 \\ x_4\end{array}\right]=x_3\left[\begin{array}{r}-2 \\ -2 \\ 1 \\ 0\end{array}\right]+x_4\left[\begin{array}{r}4 \\ -3 \\ 0 \\ 1\end{array}\right]\right.\)</span></p>
+</details>
+<p><strong>Exercise 8</strong> (1.8.9-1.8.12)
+Consider the matrix:</p>
+<div class="arithmatex">\[
+A=\left[\begin{array}{rrrr}
+3 &amp; 2 &amp; 10 &amp; -6 \\
+1 &amp; 0 &amp; 2 &amp; -4 \\
+0 &amp; 1 &amp; 2 &amp; 3 \\
+1 &amp; 4 &amp; 10 &amp; 8
+\end{array}\right]
+\]</div>
+<ol>
+<li>
+<p>For the matrix above, find all <span class="arithmatex">\(\mathbf{x}\)</span> in <span class="arithmatex">\(\mathbb{R}^4\)</span> that are mapped into the zero vector by the transformation <span class="arithmatex">\(\mathbf{x} \mapsto A \mathbf{x}\)</span> for the given matrix <span class="arithmatex">\(A\)</span>.</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\left\{\begin{array}{l}x_1=-2 x_3+4 x_4 \\ x_2=-2 x_3-3 x_4 \\ x_3 \text { is free } \\ x_4 \text { is free }\end{array} \quad \quad \mathbf{x}=\left[\begin{array}{c}-2 x_3 \\ -2 x_3 \\ x_3 \\ 0\end{array}\right]+\left[\begin{array}{c}4 x_4 \\ -3 x_4 \\ 0 \\ x_4\end{array}\right]=x_3\left[\begin{array}{r}-2 \\ -2 \\ 1 \\ 0\end{array}\right]+x_4\left[\begin{array}{r}4 \\ -3 \\ 0 \\ 1\end{array}\right]\right.\)</span></p>
+</details>
+</li>
+<li>
+<p>Let <span class="arithmatex">\(\mathbf{b}=\left[\begin{array}{r}-1 \\ 3 \\ -1 \\ 4\end{array}\right]\)</span>, and let <span class="arithmatex">\(A\)</span> be the matrix in Exercise 10. Is <span class="arithmatex">\(\mathbf{b}\)</span> in the range of the linear transformation <span class="arithmatex">\(\mathbf{x} \mapsto A \mathbf{x}\)</span> ? Why or why not?</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(\mathbf{b}\)</span> is not in the range of the linear transformation <span class="arithmatex">\(\mathbf{x} \mapsto A \mathbf{x}\)</span> because the equation <span class="arithmatex">\(A \mathbf{x}=\mathbf{b}\)</span> has no solution.</p>
+</details>
+</li>
+</ol>
+<p><strong>Exercise 9</strong> (1.9.15)</p>
+<p>Fill in the missing entries of the matrix, assuming that the equation holds for all values of the variables.</p>
+<p><span class="arithmatex">\(\left[\begin{array}{lll}? &amp; ? &amp; ? \\ ? &amp; ? &amp; ? \\ ? &amp; ? &amp; ?\end{array}\right]\left[\begin{array}{l}x_1 \\ x_2 \\ x_3\end{array}\right]=\left[\begin{array}{c}2 x_1-4 x_2 \\ x_1-x_3 \\ -x_2+3 x_3\end{array}\right]\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>By inspection, <span class="arithmatex">\(\left[\begin{array}{rrr}2 &amp; -4 &amp; 0 \\ 1 &amp; 0 &amp; -1 \\ 0 &amp; -1 &amp; 3\end{array}\right]\left[\begin{array}{l}x_1 \\ x_2 \\ x_3\end{array}\right]=\left[\begin{array}{c}2 x_1-4 x_2 \\ x_1-x_3 \\ -x_2+3 x_3\end{array}\right]\)</span></p>
+</details>
+<p><strong>Exercise 10</strong> (1.9.37-40)</p>
+<p>[M] In Exercises (a)-(d)), let <span class="arithmatex">\(T\)</span> be the linear transformation whose standard matrix is given. In Exercises (a)-(b), decide if <span class="arithmatex">\(T\)</span> is a one-to-one mapping. In Exercises (&#8203;c)-(d), decide if <span class="arithmatex">\(T\)</span> maps <span class="arithmatex">\(\mathbb{R}^5\)</span> onto <span class="arithmatex">\(\mathbb{R}^5\)</span>. Justify your answers.</p>
+<ol>
+<li><span class="arithmatex">\(\left[\begin{array}{rrrr}-5 &amp; 6 &amp; -5 &amp; -6 \\ 8 &amp; 3 &amp; -3 &amp; 8 \\ 2 &amp; 9 &amp; 5 &amp; -12 \\ -3 &amp; 2 &amp; 7 &amp; -12\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{rrrr}7 &amp; 5 &amp; 9 &amp; -9 \\ 5 &amp; 6 &amp; 4 &amp; -4 \\ 4 &amp; 8 &amp; 0 &amp; 7 \\ -6 &amp; -6 &amp; 6 &amp; 5\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{rrrrr}4 &amp; -7 &amp; 3 &amp; 7 &amp; 5 \\ 6 &amp; -8 &amp; 5 &amp; 12 &amp; -8 \\ -7 &amp; 10 &amp; -8 &amp; -9 &amp; 14 \\ 3 &amp; -5 &amp; 4 &amp; 2 &amp; -6 \\ -5 &amp; 6 &amp; -6 &amp; -7 &amp; 3\end{array}\right]\)</span></li>
+<li><span class="arithmatex">\(\left[\begin{array}{rrrrr}9 &amp; 43 &amp; 5 &amp; 6 &amp; -1 \\ 14 &amp; 15 &amp; -7 &amp; -5 &amp; 4 \\ -8 &amp; -6 &amp; 12 &amp; -5 &amp; -9 \\ -5 &amp; -6 &amp; -4 &amp; 9 &amp; 8 \\ 13 &amp; 14 &amp; 15 &amp; 3 &amp; 11\end{array}\right]\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li><span class="arithmatex">\(T\)</span> is a not a one-to-one mapping.</li>
+<li><span class="arithmatex">\(T\)</span> is a one-to-one mapping.</li>
+<li><span class="arithmatex">\(T\)</span> does not map <span class="arithmatex">\(\mathbb{R}^5\)</span> onto <span class="arithmatex">\(\mathbb{R}^5\)</span>.</li>
+<li><span class="arithmatex">\(T\)</span> maps <span class="arithmatex">\(\mathbb{R}^5\)</span> onto <span class="arithmatex">\(\mathbb{R}^5\)</span>.</li>
+</ol>
+</details>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -1287,13 +1442,13 @@
         
         
           
-          <a href="../06_Eigenvalues/" class="md-footer__link md-footer__link--next" aria-label="Next: 06 Eigenvalues">
+          <a href="../03_Matrix_Algebra_and_Determinants/" class="md-footer__link md-footer__link--next" aria-label="Next: 03 Matrix Algebra and Determinants">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                06 Eigenvalues
+                03 Matrix Algebra and Determinants
               </div>
             </div>
             <div class="md-footer__button md-icon">
