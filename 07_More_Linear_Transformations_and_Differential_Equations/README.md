@@ -1,39 +1,54 @@
+---
+tags:
+    - Linear Transformations
+    - Differential Equations
+    - Diagonalization
+    - Phase Portraits
+    - Dynamical Systems
+    - Change of Basis
+    - Stability Analysis
+    - Eigenvalues
+    - Decoupling
+---
+
 <h1 align="center">Differential Equations</h1>
 
 ## Session Material:
 
-Lay: 5.7
+Lay: 5.4 and 5.7
 
-[Recap and Exercises](https://drive.google.com/file/d/1IdILvufN2_j4yMma1oCD1NfzmSo6C2tm/view?usp=sharing)
+[Recap and Exercises]()
 
-[Session Notes](https://drive.google.com/file/d/1SiSA99_BH1VNszqPkM41wJ1CxjX2oaj_/view?usp=sharing)
+[Session Notes]()
 
-[Session Material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/Elax7Cbk0DNLhpjCdiMwfOwBmG7jxqF7AJW5boJBajmB7Q?e=NzLWfW)
+[Session Material]()
 
 ---
 
 ## Session Description
+This session explores the deep connection between eigenvalues and the geometry of linear transformations, ultimately applying these tools to solve systems of **Differential Equations**. We begin by revisiting linear transformations through the lens of a basis. You will learn how to find the matrix of a transformation relative to a specific basis and how choosing the "right" basis—specifically one consisting of eigenvectors—can simplify a complex transformation into a simple diagonal matrix.
 
-We've learned about eigenvalues and eigenvectors and how to diagonalize matrices. In this session, we'll see a powerful application of these ideas to the real world: solving systems of linear differential equations! We'll discover how the eigenvalues and eigenvectors of a matrix connected to the system give us the fundamental building blocks for the solutions.
-
-We'll focus on understanding how these concepts help us find the general solution to systems of equations that describe things changing over time, like population models or coupled systems. The eigenvalues will relate to the exponential growth or decay rates, and the eigenvectors will define the directions of these changes. While this is just an introduction, it highlights how abstract linear algebra tools are essential for tackling dynamic problems in science and engineering.
+We then transition into the continuous world with **Section 5.7**, where we use these algebraic tools to solve systems of first-order linear differential equations ($\mathbf{x}' = A\mathbf{x}$). You will discover how the eigenvalues of matrix $A$ determine the long-term behavior of a dynamic system. By "decoupling" the equations using eigenvectors, we can transform a tangled system of changing variables into a set of independent, solvable equations. Finally, we will visualize these solutions using **phase portraits**, learning to identify whether a system’s origin is an attractor, a repeller, or a saddle point.
 
 ### Key Concepts
 
-* Systems of Differential Equations
-* Applications of Eigenvalues
-* Applications of Eigenvectors
-* Linear Differential Equations
-* Solution Structure
-* Exponential Solutions
+*   The Matrix of a Linear Transformation
+*   Diagonal Matrix Representations ($[T]_{\mathcal{B}}$)
+*   Similarity and Diagonalization
+*   Systems of First-Order Differential Equations
+*   Decoupling a Dynamical System
+*   Fundamental Sets of Solutions
+*   Phase Portraits (Attractors, Repellers, and Saddle Points)
+*   Stability Analysis
 
 !!! tip "Learning Objectives"
 
-    - Model and solve systems of linear differential equations using matrix methods.
-    - Apply eigenvalues and eigenvectors to construct general solutions.
-    - Interpret the role of exponential solutions in dynamic systems.
-    - Analyze the structure of solutions for linear differential equations.
-    - Connect linear algebra concepts to real-world applications in science and engineering.
+    - Find the matrix of a linear transformation relative to a non-standard basis.
+    - Understand how similarity transformations relate different matrix representations of the same mapping.
+    - Solve systems of linear differential equations using eigenvalues and eigenvectors.
+    - Decouple systems of equations to find general solutions for $\mathbf{x}' = A\mathbf{x}$.
+    - Construct and interpret phase portraits to describe the stability and trajectory of a system over time.
+    - Relate the sign and magnitude of eigenvalues to the physical behavior of a dynamical system.
 
 ---
 
@@ -45,6 +60,26 @@ We'll focus on understanding how these concepts help us find the general solutio
 <style type="text/css">
     ol { list-style-type: lower-alpha; }
 </style>
+
+**Exercise 1** (5.4.1)
+
+Let $T: \mathbb{R}^2 \to \mathbb{R}^2$ be the linear transformation that rotates vectors counterclockwise by $\pi / 4$ radians. Find the matrix of $T$ relative to the standard basis $\mathcal{E}_2$.
+
+??? answer "&nbsp;"
+    $T=\left[\begin{array}{rr}\cos \frac{\pi}{4} & -\sin \frac{\pi}{4} \\ \sin \frac{\pi}{4} & \cos \frac{\pi}{4}\end{array}\right]=\left[\begin{array}{rr}\frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}\end{array}\right]$
+
+**Exercise 2** (5.4.7)
+
+Assume the mapping \(T: \mathbb{P}_2 \rightarrow \mathbb{P}_2\) defined by
+
+$$
+T\left(a_0+a_1 t+a_2 t^2\right)=3 a_0+\left(5 a_0-2 a_1\right) t+\left(4 a_1+a_2\right) t^2
+$$
+
+is linear. Find the matrix representation of \(T\) relative to the basis \(\mathcal{B}=\left\{1, t, t^2\right\}\).
+
+??? answer "&nbsp;"
+    \(\left[\begin{array}{rrr}3 & 0 & 0 \\ 5 & -2 & 0 \\ 0 & 4 & 1\end{array}\right]\)
 
 **Exercise 1** (5.7.1)
 
@@ -94,18 +129,6 @@ Make a change of variable that decouples the equation $\mathbf{x}^{\prime}=A \ma
     8. 
 
         $\left[\begin{array}{l}y_1^{\prime}(t) \\ y_2^{\prime}(t)\end{array}\right]=\left[\begin{array}{rr}-2 & 0 \\ 0 & -1\end{array}\right]\left[\begin{array}{l}y_1(t) \\ y_2(t)\end{array}\right]$
-
-**Exercise 5** (5.7.15-5.7.16)
-
-Construct the general solution of $\mathbf{x}^{\prime}=A \mathbf{x}$ involving complex eigenfunctions and then obtain the general real solution. Describe the shapes of typical trajectories.
-
-15. $[\mathbf{M}] A=\left[\begin{array}{rrr}-8 & -12 & -6 \\ 2 & 1 & 2 \\ 7 & 12 & 5\end{array}\right]$
-16. $[\mathbf{M}] A=\left[\begin{array}{rrr}-6 & -11 & 16 \\ 2 & 5 & -4 \\ -4 & -5 & 10\end{array}\right]$
-
-??? answer "&nbsp;"
-    15. The general solution is $\mathbf{x}(t)=c_1\left[\begin{array}{r}-4 \\ 1 \\ 4\end{array}\right] e^t+c_2\left[\begin{array}{r}-6 \\ 1 \\ 5\end{array}\right] e^{-t}+c_3\left[\begin{array}{r}-1 \\ 0 \\ 1\end{array}\right] e^{-2 t}$. The origin is a saddle point.
-    A solution with $c_1=0$ is attracted to the origin while a solution with $c_2=c_3=0$ is repelled.
-    16. The general solution is $\mathbf{x}(t)=c_1\left[\begin{array}{r}7 \\ -2 \\ 3\end{array}\right] e^{4 t}+c_2\left[\begin{array}{r}3 \\ -1 \\ 1\end{array}\right] e^{3 t}+c_3\left[\begin{array}{l}2 \\ 0 \\ 1\end{array}\right] e^{2 t}$. The origin is a repellor, because all eigenvalues are positive. All trajectories tend away from the origin.
 
 **Exercise 6** (5.7.19)
 

@@ -4,6 +4,8 @@
 
 Lay: 
 
+[Recap and Exercises]()
+
 [Session Notes]()
 
 [Session Material]()

@@ -1,12 +1,14 @@
-<h1 align="center">Vector Spaces</h1>
+<h1 align="center">More Linear Transformations and Differential Equations</h1>
 
 ## Session Material:
 
-[Recap and Exercises](https://drive.google.com/file/d/1aV4KGTyLo9xG6Nggc-_ITgNbp0LL-_XC/view?usp=sharing)
+Lay: 4.1-4.3 and 4.5-4.6
 
-[Session Notes](https://drive.google.com/file/d/1xAHL9RSgd2lWDU-LaGRtwrbEG9U78h9m/view?usp=sharing)
+[Recap and Exercises]()
 
-[Session Material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/EgXzFwcFf_tBh8mwVvN0UycBh_gTnjRq8A5x15bFaLKCTg?e=eGwSEq)
+[Session Notes]()
+
+[Session Material]()
 
 ---
 
@@ -197,8 +199,8 @@ Determine the dimensions of $\operatorname{Nul} A$ and $\operatorname{Col} A$ fo
 
 Assume that the matrix $A$ is row equivalent to $B$. Without calculations, list $\operatorname{rank} A$ and $\operatorname{dim} \operatorname{Nul} A$. Then find bases for $\operatorname{Col} A, \operatorname{Row} A$, and $\operatorname{Nul} A$.
 
-2. $\begin{aligned} A & =\left[\begin{array}{rrrrr}1 & 3 & 4 & -1 & 2 \\ 2 & 6 & 6 & 0 & -3 \\ 3 & 9 & 3 & 6 & -3 \\ 3 & 9 & 0 & 9 & 0\end{array}\right], \\ B & =\left[\begin{array}{rrrrr}1 & 3 & 4 & -1 & 2 \\ 0 & 0 & 1 & -1 & 1 \\ 0 & 0 & 0 & 0 & -5 \\ 0 & 0 & 0 & 0 & 0\end{array}\right],\end{aligned}$
-4. $\begin{aligned} A & =\left[\begin{array}{rrrrrr}1 & 1 & -2 & 0 & 1 & -2 \\ 1 & 2 & -3 & 0 & -2 & -3 \\ 1 & -1 & 0 & 0 & 1 & 6 \\ 1 & -2 & 2 & 1 & -3 & 0 \\ 1 & -2 & 1 & 0 & 2 & -1\end{array}\right], \\ B & =\left[\begin{array}{rrrrrr}1 & 1 & -2 & 0 & 1 & -2 \\ 0 & 1 & -1 & 0 & -3 & -1 \\ 0 & 0 & 1 & 1 & -13 & -1 \\ 0 & 0 & 0 & 0 & 1 & -1 \\ 0 & 0 & 0 & 0 & 0 & 1\end{array}\right]\end{aligned}$
+1. $\begin{aligned} A & =\left[\begin{array}{rrrrr}1 & 3 & 4 & -1 & 2 \\ 2 & 6 & 6 & 0 & -3 \\ 3 & 9 & 3 & 6 & -3 \\ 3 & 9 & 0 & 9 & 0\end{array}\right], \\ B & =\left[\begin{array}{rrrrr}1 & 3 & 4 & -1 & 2 \\ 0 & 0 & 1 & -1 & 1 \\ 0 & 0 & 0 & 0 & -5 \\ 0 & 0 & 0 & 0 & 0\end{array}\right],\end{aligned}$
+2. $\begin{aligned} A & =\left[\begin{array}{rrrrrr}1 & 1 & -2 & 0 & 1 & -2 \\ 1 & 2 & -3 & 0 & -2 & -3 \\ 1 & -1 & 0 & 0 & 1 & 6 \\ 1 & -2 & 2 & 1 & -3 & 0 \\ 1 & -2 & 1 & 0 & 2 & -1\end{array}\right], \\ B & =\left[\begin{array}{rrrrrr}1 & 1 & -2 & 0 & 1 & -2 \\ 0 & 1 & -1 & 0 & -3 & -1 \\ 0 & 0 & 1 & 1 & -13 & -1 \\ 0 & 0 & 0 & 0 & 1 & -1 \\ 0 & 0 & 0 & 0 & 0 & 1\end{array}\right]\end{aligned}$
 
 ??? answer "&nbsp;"
     2. 

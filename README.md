@@ -61,6 +61,7 @@ Applied Linear Algebra focuses on understanding and applying the core concepts o
 - **Symmetric Matrices, SVD, and PCA**: Analyse symmetric matrices, perform Singular Value Decomposition (SVD), and understand its application to data reduction and Principal Component Analysis (PCA).
 
 **Changes from 2025**
+
 - Added more emphasis on Linear Transformations.
 - Added Coordinate Mappings and Change of Basis.
 - Added explicit reference to PCA

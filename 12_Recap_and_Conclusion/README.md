@@ -6,7 +6,7 @@
 
 [Session Notes]()
 
-[Session Material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/EtfV6J_rSERJj-mb3xr1ZxQByfGidzerAswflw1EoyE7iA?e=xbkSf3)
+[Session Material]()
 
 ---
 
