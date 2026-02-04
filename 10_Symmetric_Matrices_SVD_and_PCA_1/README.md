@@ -1,4 +1,4 @@
-<h1 align="center">Symmetric Matrices, SVD, and PCA</h1>
+<h1 align="center">Symmetric Matrices, SVD and PCA 1</h1>
 
 ## Session Material:
 

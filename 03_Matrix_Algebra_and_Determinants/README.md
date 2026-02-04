@@ -23,7 +23,7 @@ Lay: 2.1-2.3 + 3.1-3.2
 
 [Session Notes]()
 
-[Session Material]()
+[Session Material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgAMEID2phisS4KUfj2Mf0gqAXEysLn5lVSLconixqB5aek?e=cY8imK)
 
 ---
 

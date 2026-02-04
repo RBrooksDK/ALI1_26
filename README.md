@@ -19,7 +19,7 @@
 * 11 sessions, each with a duration of 4 lessons + 1 session for the exam
 * Bachelor level course
 * Grade: 7-step scale
-* Type of assessment: 4-hour written exam (see exam description in the menu to the left)
+* Type of assessment: 4-hour written exam (see exam description in the menu at the top)
 
 ## <i class="fas fa-book" style="color:#6CA2C6"></i> Prerequisites
 It is important that you recap some of your high-school math. Most importantly:
@@ -58,7 +58,7 @@ Applied Linear Algebra focuses on understanding and applying the core concepts o
 - **Eigen-Basics**: Understand the concept of eigenvalues and eigenvectors. Learn to find eigenvalues and eigenvectors of a matrix and how to diagonalize a matrix.
 - **Systems of Differential Equations**: Apply linear algebra techniques to solve systems of first-order differential equations. Understand the connection between eigenvalues, eigenvectors, and the behaviour of dynamic systems.
 - **Orthogonality and Least Squares**: Explore orthogonality in vector spaces, apply the Gram-Schmidt process, and solve least squares problems. Understand projections and their role in approximating inconsistent systems and fitting models to data.
-- **Symmetric Matrices, SVD, and PCA**: Analyse symmetric matrices, perform Singular Value Decomposition (SVD), and understand its application to data reduction and Principal Component Analysis (PCA).
+- **Symmetric Matrices, SVD and PCA**: Analyse symmetric matrices, perform Singular Value Decomposition (SVD), and understand its application to data reduction and Principal Component Analysis (PCA).
 
 **Changes from 2025**
 
@@ -80,9 +80,9 @@ Note, for each lesson I have uploaded the presentations that accompany the book.
 
 Non-session specific resources such as the exercises from the book, solutions, old exam cases, etc. can be found her:
 
-[General Resources ALI](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/EqyrbL4eyEtPlLcHYKt3NfIBLLBs2xWNa4CtjvvZb5dKTw?e=HGyFGo)
+[General Resources ALI](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgDR5ncW87JbT4OdWAKYVgNoAcUuggmL9dH0Vzcx_tlmORk?e=7bG1d5)
 
-This folder is always accessible in the menu to the left.
+This folder is always accessible in the menu at the top.
 
 ---
 
@@ -90,7 +90,7 @@ The Wiseflow code for all flows that are used during the course is always 0000. 
 
 ---
 
-Suggested online resources can be found in the menu to the left. These are not mandatory, but they can be useful for some students.
+Suggested online resources can be found in the menu at the top. These are not mandatory, but they can be useful for some students.
 
 ---
 

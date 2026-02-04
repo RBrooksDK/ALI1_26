@@ -148,11 +148,11 @@ nav:
     - 07 More Linear Transformations and Differential Equations: 07_More_Linear_Transformations_and_Differential_Equations/README.md
     - 08 Orthogonality: 08_Orthogonality/README.md
     - 09 Gram-Schmidt and Least Squares: 09_Gram_Schmidt_and_Least_Squares/README.md
-    - 10 Symmetric Matrices: 10_Symmetric_Matrices/README.md
-    - 11 SVD and PCA: 11_SVD_and_PCA/README.md
+    - 10 Symmetric Matrices, SVD and PCA 1: 10_Symmetric_Matrices_SVD_and_PCA_1/README.md
+    - 11 Symmetric Matrices, SVD and PCA 2: 11_Symmetric_Matrices_SVD_and_PCA_2/README.md
     - 12 Recap and Conclusion: 12_Recap_and_Conclusion/README.md    
   - Online Resources: pages/online_resources.md
-  - General Resources ALI: https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/EqyrbL4eyEtPlLcHYKt3NfIBLLBs2xWNa4CtjvvZb5dKTw?e=HGyFGo
+  - General Resources ALI: https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgDR5ncW87JbT4OdWAKYVgNoAcUuggmL9dH0Vzcx_tlmORk?e=7bG1d5
   - Exam: pages/exam.md
   - FAQ: pages/faq.md
   - About: https://rbrooksdk.github.io

@@ -11,7 +11,7 @@ tags:
     - Decoupling
 ---
 
-<h1 align="center">Differential Equations</h1>
+<h1 align="center">More Linear Transformations and Differential Equations</h1>
 
 ## Session Material:
 

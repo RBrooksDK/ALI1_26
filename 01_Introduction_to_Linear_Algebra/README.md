@@ -22,7 +22,7 @@ Lay: 1.1-1.5 + 1.6. as self-study
 
 [Session Notes]()
 
-[Session Material]()
+[Session Material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgBv700AhGBXQ6TLy1kZVkh2AaJVBG6an8WKXvsvkwXXKxg?e=A3qaPu)
 
 ---
 
@@ -39,16 +39,16 @@ Next, we introduce vectors: linear combinations, spans, and how vector equations
  - Row Reduction
  - Vectors
  - Span
- - Linear Dependence
- - Linear Transformations
+ - Solutions sets and parametric vector form
 
 !!! tip "Learning Objectives"
 
     - Identify and represent linear systems using matrices.
     - Apply row reduction techniques to solve linear systems.
     - Describe and construct vectors, spans, and linear combinations.
-    - Distinguish and determine linear dependence and independence in sets of vectors.
-    - Analyze and interpret linear transformations and their relationship with matrices.
+    - Move from systems of linear equations to vector equations to matrix equations and back again.
+    - Solve systems of linear equations and determine the solutions sets in parametric vector form.
+
 
 ---
 
@@ -212,7 +212,7 @@ $A=\left[\begin{array}{rrr}1 & 3 & -4 \\ 1 & 5 & 2 \\ -3 & -7 & 6\end{array}\rig
 
 **Exercise 13** (1.4.17, 1.4.18)
 
-Refer to the matrices $A$ and $B$ below. Make appropriate calculations that justify your answers and mention an appropriate theorem.
+$[\mathbf{M}]$  Refer to the matrices $A$ and $B$ below. Make appropriate calculations that justify your answers and mention an appropriate theorem.
 
 $$
 A=\left[\begin{array}{rrrr}

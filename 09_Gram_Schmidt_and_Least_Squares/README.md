@@ -1,4 +1,4 @@
-<h1 align="center">Orthogonality II</h1>
+<h1 align="center">Gram Schmidt and Least Squares</h1>
 
 ## Session Material:
 Lay: ​​​6.4-6.6

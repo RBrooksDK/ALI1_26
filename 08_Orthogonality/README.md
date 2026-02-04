@@ -1,4 +1,4 @@
-<h1 align="center">Orthogonality I</h1>
+<h1 align="center">Orthogonality</h1>
 
 ## Session Material:
 

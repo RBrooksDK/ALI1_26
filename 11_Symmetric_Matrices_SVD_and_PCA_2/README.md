@@ -1,8 +1,8 @@
-<h1 align="center">SVD and PCA</h1>
+<h1 align="center">Symmetric Matrices, SVD and PCA 2</h1>
 
 ## Session Material:
 
-Lay: 
+Lay: ​​​​7.1+7.4-7.5
 
 [Recap and Exercises]()
 
