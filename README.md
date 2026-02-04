@@ -1,6 +1,6 @@
 <p align="center">
     <h1 align="center">Applied Linear Algebra - 2026</h1>
-    <p align="center">Repository for <a href="https://www.via.dk/TMH/Courses/applied-linear-algebra?education">ALI1-S26</a> at VIA</p>
+    <p align="center">Repository for <a href="https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-ali1-4-0">ALI1-S26</a> at VIA</p>
     <p align="center"><strong><a href="https://rbrooksdk.github.io/ALI1_26">Checkout the homepage!</a></strong></p>
 </p>
 

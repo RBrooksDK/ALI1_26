@@ -6,7 +6,7 @@
     Yes, you are looking at it! This FAQ is designed to answer some of the most common questions about the course. If you have a question that is not answered here, please feel free to contact the course responsible, [Richard Brooks](mailto: rib@via.dk)
 
 ??? question "What is the course about?"
-    The course covers an introduction to linear algebra and its applications, particularly its relation to machine learning and computer graphics. In depth description can be found in the [course description](https://www.via.dk/TMH/Courses/applied-linear-algebra?education) or by going through the description of each session in the Sessions menu.
+    The course covers an introduction to linear algebra and its applications, particularly its relation to machine learning and computer graphics. In depth description can be found in the [course description](https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-ali1-4-0) or by going through the description of each session in the Sessions menu.
 
 ??? question "How is the course related to the study program?"
     The course mostly relates to the study program by providing a foundation for understanding and applying linear algebra in the context of engineering, especially in the field of data science and machine learning as well as computer graphics.
