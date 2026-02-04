@@ -12,13 +12,13 @@
         <meta name="author" content="Richard Brooks">
       
       
-        <link rel="canonical" href="https://rbrooksdk.github.io/ALI1_26/10_Symmetric_Matrices/">
+        <link rel="canonical" href="https://rbrooksdk.github.io/ALI1_26/11_Symmetric_Matrices_SVD_and_PCA_2/">
       
       
-        <link rel="prev" href="../09_Gram_Schmidt_and_Least_Squares/">
+        <link rel="prev" href="../10_Symmetric_Matrices_SVD_and_PCA_1/">
       
       
-        <link rel="next" href="../11_SVD_and_PCA/">
+        <link rel="next" href="../12_Recap_and_Conclusion/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>10 Symmetric Matrices - Applied Linear Algebra</title>
+        <title>11 Symmetric Matrices, SVD and PCA 2 - Applied Linear Algebra</title>
       
     
     
@@ -131,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              10 Symmetric Matrices
+              11 Symmetric Matrices, SVD and PCA 2
             
           </span>
         </div>
@@ -311,7 +311,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/EqyrbL4eyEtPlLcHYKt3NfIBLLBs2xWNa4CtjvvZb5dKTw?e=HGyFGo" class="md-tabs__link">
+      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgDR5ncW87JbT4OdWAKYVgNoAcUuggmL9dH0Vzcx_tlmORk?e=7bG1d5" class="md-tabs__link">
         
   
   
@@ -804,6 +804,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_Symmetric_Matrices_SVD_and_PCA_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 Symmetric Matrices, SVD and PCA 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -821,7 +849,7 @@
   <span class="md-ellipsis">
     
   
-    10 Symmetric Matrices
+    11 Symmetric Matrices, SVD and PCA 2
   
 
     
@@ -839,7 +867,7 @@
   <span class="md-ellipsis">
     
   
-    10 Symmetric Matrices
+    11 Symmetric Matrices, SVD and PCA 2
   
 
     
@@ -928,34 +956,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../11_SVD_and_PCA/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    11 SVD and PCA
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../12_Recap_and_Conclusion/" class="md-nav__link">
         
   
@@ -1018,7 +1018,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/EqyrbL4eyEtPlLcHYKt3NfIBLLBs2xWNa4CtjvvZb5dKTw?e=HGyFGo" class="md-nav__link">
+      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgDR5ncW87JbT4OdWAKYVgNoAcUuggmL9dH0Vzcx_tlmORk?e=7bG1d5" class="md-nav__link">
         
   
   
@@ -1213,40 +1213,27 @@
   
 
 
-<h1 align="center">Symmetric Matrices, SVD, and PCA</h1>
+<h1 align="center">Symmetric Matrices, SVD and PCA 2</h1>
 
 <h2 id="session-material">Session Material:<a class="headerlink" href="#session-material" title="Permanent link">&para;</a></h2>
-<p>Lay: ​​​​7.1+7.4-7.5  </p>
+<p>Lay: ​​​​7.1+7.4-7.5</p>
 <p><a href="">Recap and Exercises</a></p>
 <p><a href="">Session Notes</a></p>
 <p><a href="">Session Material</a></p>
 <hr />
 <h2 id="session-description">Session Description<a class="headerlink" href="#session-description" title="Permanent link">&para;</a></h2>
-<p>This session dives into some advanced and incredibly useful matrix factorizations. We start by looking at special matrices – the "symmetric matrices" (where A equals its transpose) – and discover that they have remarkable properties, particularly that they can always be "orthogonally diagonalized" (meaning we can find an orthonormal basis of eigenvectors). This fundamental result is captured by the "Spectral Theorem."</p>
-<p>Then, we move to a factorization that applies to <em>any</em> matrix, not just square or symmetric ones: the "Singular Value Decomposition" (SVD). We'll learn about "singular values" and "singular vectors" and how they provide a powerful way to understand the structure and geometric action of any linear transformation. Finally, we'll explore some of the many real-world "applications of SVD," seeing how this decomposition is essential in areas like data analysis, image processing (for compression), and even in finding the best approximate solutions to systems using the "pseudoinverse."</p>
 <h3 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Symmetric Matrices</li>
-<li>Orthogonal Diagonalization</li>
-<li>Spectral Theorem</li>
-<li>Singular Value Decomposition (SVD)</li>
-<li>Applications of SVD</li>
-<li>Pseudoinverse</li>
+<li></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Learning Objectives</p>
 <ul>
-<li>Identify and analyze properties of symmetric matrices and their diagonalization.</li>
-<li>Apply the Spectral Theorem to orthogonally diagonalize matrices.</li>
-<li>Perform and interpret Singular Value Decomposition (SVD) for general matrices.</li>
-<li>Relate singular values and vectors to the structure of linear transformations.</li>
-<li>Apply SVD and the pseudoinverse to solve problems in data analysis and engineering.</li>
+<li></li>
 </ul>
 </div>
 <hr />
 <h2 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h2>
-<p>ALL SVD problems from the Exam Cases (2018-s2020)</p>
-<p>If you do not finish in class, work on them at home</p>
 
 
 
@@ -1284,7 +1271,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../09_Gram_Schmidt_and_Least_Squares/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 09 Gram-Schmidt and Least Squares">
+          <a href="../10_Symmetric_Matrices_SVD_and_PCA_1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 10 Symmetric Matrices, SVD and PCA 1">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1294,20 +1281,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                09 Gram-Schmidt and Least Squares
+                10 Symmetric Matrices, SVD and PCA 1
               </div>
             </div>
           </a>
         
         
           
-          <a href="../11_SVD_and_PCA/" class="md-footer__link md-footer__link--next" aria-label="Next: 11 SVD and PCA">
+          <a href="../12_Recap_and_Conclusion/" class="md-footer__link md-footer__link--next" aria-label="Next: 12 Recap and Conclusion">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                11 SVD and PCA
+                12 Recap and Conclusion
               </div>
             </div>
             <div class="md-footer__button md-icon">
