@@ -52,7 +52,7 @@ Applied Linear Algebra focuses on understanding and applying the core concepts o
 - **Linear Systems**: Understand the concept of a linear system of equations, how to represent them with matrices, and how to solve them using row reduction.
 - **Matrix Algebra**: Perform matrix operations including addition, multiplication, and inversion. Understand matrices as transformations and systems of linear equations, and learn to use matrices for practical problem solving.
 - **Determinants and Invertibility**: Compute determinants of matrices and understand their geometric and algebraic significance. Use determinants to assess matrix invertibility and to solve linear systems.
-- - **Linear Transformations**: Understand the concept of linear transformations. Learn to represent linear transformations with matrices and how to compose linear transformations.
+- **Linear Transformations**: Understand the concept of linear transformations. Learn to represent linear transformations with matrices and how to compose linear transformations.
 - **Vectors and Vector Spaces**: Understand the fundamental concepts of vectors, vector operations, and vector spaces. Learn to interpret vectors algebraically and geometrically, and reason about spans, bases, dimensions, and linear independence.
 - **Coordinate Mappings and Change of Basis**: Understand the concept of coordinate mappings and change of basis. Learn to represent vectors in different bases and how to change the basis of a vector space.
 - **Eigen-Basics**: Understand the concept of eigenvalues and eigenvectors. Learn to find eigenvalues and eigenvectors of a matrix and how to diagonalize a matrix.
