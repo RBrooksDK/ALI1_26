@@ -20,7 +20,7 @@ tags:
 ## Session Material:
 Lay: 1.1-1.5 + 1.6. as self-study
 
-[Session Notes]()
+[Session Notes](https://drive.google.com/file/d/1RdyO_y_bt37l4Q_Snxpcgs8_5uZW3JTE/view?usp=sharing)
 
 [Session Material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgBv700AhGBXQ6TLy1kZVkh2AaJVBG6an8WKXvsvkwXXKxg?e=A3qaPu)
 
