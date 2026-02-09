@@ -24,7 +24,19 @@ Lay: 1.1-1.5 + 1.6. as self-study
 
 [Session Material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgBv700AhGBXQ6TLy1kZVkh2AaJVBG6an8WKXvsvkwXXKxg?e=A3qaPu)
 
+### Session Recording
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1sOA7Z0JIRklYc3Qs1HKnxIe5scgNWaDY/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
 ---
+
 
 ## Session Description
 
