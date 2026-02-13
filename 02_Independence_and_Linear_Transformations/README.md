@@ -22,9 +22,9 @@ tags:
 
 Lay: 1.7-1.9
 
-[Recap and Exercises]()
+[Recap and Exercises](https://drive.google.com/file/d/1_aHnlC2IPgOTFjrrnDDP6XUhd8sFX5FK/view?usp=sharing)
 
-[Session Notes]()
+[Session Notes](https://drive.google.com/file/d/1iay_Pb-DYwuGgQFLcbb6zguk-qt9FtBm/view?usp=sharing)
 
 [Session Material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgD8E9yY5zG2TYxEPAmsTjPqAYdwJC5-9hWMgMukRQfxVlY?e=FQ58l2)
 
@@ -192,7 +192,7 @@ $\left[\begin{array}{lll}? & ? & ? \\ ? & ? & ? \\ ? & ? & ?\end{array}\right]\l
 4. \(\left[\begin{array}{rrrrr}9 & 43 & 5 & 6 & -1 \\ 14 & 15 & -7 & -5 & 4 \\ -8 & -6 & 12 & -5 & -9 \\ -5 & -6 & -4 & 9 & 8 \\ 13 & 14 & 15 & 3 & 11\end{array}\right]\)
 
 ??? answer "&nbsp;"
-    1. \(T\) is a not a one-to-one mapping.
+    1. \(T\) is not a one-to-one mapping.
     2. \(T\) is a one-to-one mapping.
     3. \(T\) does not map \(\mathbb{R}^5\) onto \(\mathbb{R}^5\).
     4. \(T\) maps \(\mathbb{R}^5\) onto \(\mathbb{R}^5\).
