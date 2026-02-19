@@ -111,35 +111,7 @@ Let $\quad A=\left[\begin{array}{rr}3 & -6 \\ -1 & 2\end{array}\right], \quad B=
     $A B=\left[\begin{array}{rr}3 & -6 \\ -1 & 2\end{array}\right]\left[\begin{array}{rr}-1 & 1 \\ 3 & 4\end{array}\right]=\left[\begin{array}{rr}-21 & -21 \\ 7 & 7\end{array}\right], A C=\left[\begin{array}{rr}3 & -6 \\ -1 & 2\end{array}\right]\left[\begin{array}{rr}-3 & -5 \\ 2 & 1\end{array}\right]=\left[\begin{array}{rr}-21 & -21 \\ 7 & 7\end{array}\right]$
 
 
-**Exercise 3** (2.1.40)
-
-$[\mathbf{M}]$ Let
-
-$$
-S=\left[\begin{array}{lllll}
-0 & 1 & 0 & 0 & 0 \\
-0 & 0 & 1 & 0 & 0 \\
-0 & 0 & 0 & 1 & 0 \\
-0 & 0 & 0 & 0 & 1 \\
-0 & 0 & 0 & 0 & 0
-\end{array}\right]
-$$
-
-Compute $S^k$ for $k=2, \ldots, 6$.
-
-??? answer "&nbsp;"
-    $S^2=\left[\begin{array}{lllll}0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0\end{array}\right]$
-
-    $S^3=\left[\begin{array}{lllll}0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0\end{array}\right]$
-
-    $S^4=\left[\begin{array}{lllll}0 & 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0\end{array}\right]$
-
-    $S^5$ is the $5 \times 5$ zero matrix.   
-
-    $S^6$ is also the $5 \times 5$ zero matrix.
-
-
-**Exercise 4** (2.2.9)
+**Exercise 3** (2.2.9)
 
 Mark each statement True or False. Justify each answer.
 
@@ -156,7 +128,7 @@ Mark each statement True or False. Justify each answer.
     4. True. This follows from Theorem 5, which also says that the solution of $A \mathbf{x}=\mathbf{b}$ is unique, for each $\mathbf{b}$.
     5. True, by the box just before Example 6 .
 
-**Exercise 5** (2.2.30-2.2.32)
+**Exercise 4** (2.2.30-2.2.32)
 
 Find the inverses of the matrices, if they exist. Use the algorithm introduced in this section.
 
@@ -169,7 +141,7 @@ Find the inverses of the matrices, if they exist. Use the algorithm introduced i
     2. $A^{-1}=\left[\begin{array}{ccc}8 & 3 & 1 \\ 10 & 4 & 1 \\ 7 / 2 & 3 / 2 & 1 / 2\end{array}\right]$
     3. The matrix $A$ is not invertible.
 
-**Exercise 6** (2.3.11)
+**Exercise 5** (2.3.11)
 
 The matrices are all $n \times n$. Each part of the exercises is an implication of the form "If 〈statement 1〉, then $\langle$ statement 2$\rangle$." Mark an implication as True if the truth of〈statement 2〉 always follows whenever 〈statement 1〉 happens to be true. An implication is False if there is an instance in which 〈statement 2 〉 is false but $\langle$ statement 1$\rangle$ is true. Justify each answer.
 
@@ -186,7 +158,7 @@ The matrices are all $n \times n$. Each part of the exercises is an implication 
     4. True, by the IMT. If the equation $A \mathbf{x}=\mathbf{0}$ has a nontrivial solution, then statement (d) of the IMT is false. In this case, all the lettered statements in the IMT are false, including statement (c), which means that $A$ must have fewer than $n$ pivot positions.
     5. True, by the IMT. If $A^T$ is not invertible, then statement (1) of the IMT is false, and hence statement (a) must also be false.
 
-**Exercise 7** (2.3.12)
+**Exercise 6** (2.3.12)
 
 The matrices are all $n \times n$. Each part of the exercises is an implication of the form "If 〈statement 1〉, then $\langle$ statement 2$\rangle$." Mark an implication as True if the truth of〈statement 2〉 always follows whenever 〈statement 1〉 happens to be true. An implication is False if there is an instance in which 〈statement 2 〉 is false but $\langle$ statement 1$\rangle$ is true. Justify each answer.
 
@@ -203,21 +175,21 @@ The matrices are all $n \times n$. Each part of the exercises is an implication 
     4. False. Since (g) if the IMT is true, so is (f).
     5. False, by the IMT. The fact that there is a $\mathbf{b}$ in $\mathbb{R}^n$ such that the equation $A \mathbf{x}=\mathbf{b}$ is consistent, does not imply that statement (g) of the IMT is true, and hence there could be more than one solution.
 
-**Exercise 8** (2.3.15)
+**Exercise 7** (2.3.15)
 
 Is it possible for a $4 \times 4$ matrix to be invertible when its columns do not span $\mathbb{R}^4$ ? Why or why not?
 
 ??? answer "&nbsp;"
     Part (h) of the IMT shows that a $4 \times 4$ matrix cannot be invertible when its columns do not span $\mathbf{R}^4$.
 
-**Exercise 9** (2.3.17)
+**Exercise 8** (2.3.17)
 
 Can a square matrix with two identical columns be invertible? Why or why not?
 
 ??? answer "&nbsp;"
     If $A$ has two identical columns then its columns are linearly dependent. Part (e) of the IMT shows that $A$ cannot be invertible.
 
-**Exercise 10** (3.1.1-3.1.2)
+**Exercise 9** (3.1.1-3.1.2)
 
 Compute the determinants using a cofactor expansion across the first row. Then compute the determinant also by a cofactor expansion down the second column.
 
@@ -228,7 +200,7 @@ Compute the determinants using a cofactor expansion across the first row. Then c
     1. 1
     2. 2
 
-**Exercise 11** (3.1.9)
+**Exercise 10** (3.1.9)
 
 Compute the determinant by cofactor expansions. At each step, choose a row or column that involves the least amount of computation.
 
@@ -244,7 +216,7 @@ $\displaystyle \left|\begin{array}{rrrr}
 ??? answer "&nbsp;"
     10
 
-**Exercise 12** (3.1.43)
+**Exercise 11** (3.1.43)
 
 $[\mathbf{M}]$ Is it true that $\operatorname{det}(A+B)=\operatorname{det} A+\operatorname{det} B ?$ To find out, generate random $5 \times 5$ matrices $A$ and $B$, and compute $\operatorname{det}(A+B)-\operatorname{det} A-\operatorname{det} B$. (Refer to Exercise 37 in Section 2.1.) Repeat the calculations for three other pairs of $n \times n$ matrices, for various values of $n$. Report your results.
 
@@ -261,7 +233,7 @@ $[\mathbf{M}]$ Is it true that $\operatorname{det}(A+B)=\operatorname{det} A+\op
     In every case, $\det(A+B)-\det A-\det B\neq0$, demonstrating that $\det(A+B)\neq\det A+\det B$. In general, determinant is **not** an additive function of matrices.
 
 
-**Exercise 13** (3.2.1-3.2.2)
+**Exercise 12** (3.2.1-3.2.2)
 
 Both equations illustrate a property of determinants. State the property.
 
@@ -272,7 +244,7 @@ Both equations illustrate a property of determinants. State the property.
     1. Rows 1 and 2 are interchanged, so the determinant changes sign (Theorem 3b.).
     2. The constant 2 may be factored out of the Row 1 (Theorem 3c.).
 
-**Exercise 14** (3.2.15-3.2.20)
+**Exercise 13** (3.2.15-3.2.20)
 
 Find the determinants in the following exercises, where
 
@@ -299,7 +271,7 @@ $$
     5. 14
     6. 7
 
-**Exercise 15** (3.2.25)
+**Exercise 14** (3.2.25)
 
 Use the determinant to decide if the set of vectors is linearly independent.
 

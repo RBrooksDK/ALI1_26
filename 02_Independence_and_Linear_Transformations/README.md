@@ -152,16 +152,7 @@ How many rows and columns must a matrix \(A\) have in order to define a mapping 
 ??? answer "&nbsp;"
     \(A\) must have 7 rows and 5 columns.
 
-**Exercise 7** (1.8.10)
-
-Find all $\mathbf{x}$ in $\mathbb{R}^4$ that are mapped into the zero vector by the transformation $\mathbf{x} \mapsto A \mathbf{x}$ for the given matrix $A$.
-
-$A=\left[\begin{array}{rrrr}3 & 2 & 10 & -6 \\ 1 & 0 & 2 & -4 \\ 0 & 1 & 2 & 3 \\ 1 & 4 & 10 & 8\end{array}\right]$
-
-??? answer "&nbsp;"
-    $\left\{\begin{array}{l}x_1=-2 x_3+4 x_4 \\ x_2=-2 x_3-3 x_4 \\ x_3 \text { is free } \\ x_4 \text { is free }\end{array} \quad \quad \mathbf{x}=\left[\begin{array}{c}-2 x_3 \\ -2 x_3 \\ x_3 \\ 0\end{array}\right]+\left[\begin{array}{c}4 x_4 \\ -3 x_4 \\ 0 \\ x_4\end{array}\right]=x_3\left[\begin{array}{r}-2 \\ -2 \\ 1 \\ 0\end{array}\right]+x_4\left[\begin{array}{r}4 \\ -3 \\ 0 \\ 1\end{array}\right]\right.$
-
-**Exercise 8** (1.8.9-1.8.12)
+**Exercise 7** (1.8.9-1.8.12)
 Consider the matrix:
 
 $$
@@ -179,12 +170,12 @@ $$
         $\left\{\begin{array}{l}x_1=-2 x_3+4 x_4 \\ x_2=-2 x_3-3 x_4 \\ x_3 \text { is free } \\ x_4 \text { is free }\end{array} \quad \quad \mathbf{x}=\left[\begin{array}{c}-2 x_3 \\ -2 x_3 \\ x_3 \\ 0\end{array}\right]+\left[\begin{array}{c}4 x_4 \\ -3 x_4 \\ 0 \\ x_4\end{array}\right]=x_3\left[\begin{array}{r}-2 \\ -2 \\ 1 \\ 0\end{array}\right]+x_4\left[\begin{array}{r}4 \\ -3 \\ 0 \\ 1\end{array}\right]\right.$
 
 
-2. Let \(\mathbf{b}=\left[\begin{array}{r}-1 \\ 3 \\ -1 \\ 4\end{array}\right]\), and let \(A\) be the matrix in Exercise 10. Is \(\mathbf{b}\) in the range of the linear transformation \(\mathbf{x} \mapsto A \mathbf{x}\) ? Why or why not?
+2. Let \(\mathbf{b}=\left[\begin{array}{r}-1 \\ 3 \\ -1 \\ 4\end{array}\right]\), and let \(A\) be the matrix above. Is \(\mathbf{b}\) in the range of the linear transformation \(\mathbf{x} \mapsto A \mathbf{x}\) ? Why or why not?
 
     ??? answer "&nbsp;"
         $\mathbf{b}$ is not in the range of the linear transformation $\mathbf{x} \mapsto A \mathbf{x}$ because the equation $A \mathbf{x}=\mathbf{b}$ has no solution.
 
-**Exercise 9** (1.9.15)
+**Exercise 8** (1.9.15)
 
 Fill in the missing entries of the matrix, assuming that the equation holds for all values of the variables.
 
@@ -193,7 +184,7 @@ $\left[\begin{array}{lll}? & ? & ? \\ ? & ? & ? \\ ? & ? & ?\end{array}\right]\l
 ??? answer "&nbsp;"
     By inspection, $\left[\begin{array}{rrr}2 & -4 & 0 \\ 1 & 0 & -1 \\ 0 & -1 & 3\end{array}\right]\left[\begin{array}{l}x_1 \\ x_2 \\ x_3\end{array}\right]=\left[\begin{array}{c}2 x_1-4 x_2 \\ x_1-x_3 \\ -x_2+3 x_3\end{array}\right]$
 
-**Exercise 10** (1.9.37-40)
+**Exercise 9** (1.9.37-40)
 
 [M] In Exercises (a)-(d)), let \(T\) be the linear transformation whose standard matrix is given. In Exercises (a)-(b), decide if \(T\) is a one-to-one mapping. In Exercises (&#8203;c)-(d), decide if \(T\) maps \(\mathbb{R}^5\) onto \(\mathbb{R}^5\). Justify your answers.
 
