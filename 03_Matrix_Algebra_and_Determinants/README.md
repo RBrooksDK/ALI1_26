@@ -19,9 +19,9 @@ tags:
 
 Lay: 2.1-2.3 + 3.1-3.2
 
-[Recap and Exercises]()
+[Recap and Exercises](https://drive.google.com/file/d/11ALtM3NUj5bDszkDrpZYXnIGE4x9XN6f/view?usp=sharing)
 
-[Session Notes]()
+[Session Notes](https://drive.google.com/file/d/1RFqxjjNa1tlmauS49Okw-IoVQvn8jexk/view?usp=sharing)
 
 [Session Material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgAMEID2phisS4KUfj2Mf0gqAXEysLn5lVSLconixqB5aek?e=cY8imK)
 
