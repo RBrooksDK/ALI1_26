@@ -13,7 +13,7 @@ Click on a session in the top menu (or below) to access a plan of a specific ses
 | 04      | 27 Feb 08:20 – 11:50 | [Vector Spaces](/ALI1_26/04_Vector_Spaces/) |
 | 05      | 6 Mar 08:20 – 11:50  | [Change of Basis](/ALI1_26/05_Change_of_Basis/) |
 | 06      | 13 Mar 08:20 – 11:50 | [Eigenvalues](/ALI1_26/06_Eigenvalues/) |
-| 07      | 03 Apr 08:20 – 11:50 | [More Linear Transformations and Differential Equations](/ALI1_26/07_More_Linear_Transformations_and_Differential_Equations/) |
+| 07      | 27 Mar 08:20 – 11:50 | [More Linear Transformations and Differential Equations](/ALI1_26/07_More_Linear_Transformations_and_Differential_Equations/) |
 | 08      | 10 Apr 08:20 – 11:50 | [Orthogonality](/ALI1_26/08_Orthogonality/) |
 | 09      | 17 Apr 08:20 – 11:50 | [Gram-Schmidt and Least Squares](/ALI1_26/09_Gram_Schmidt_and_Least_Squares/) |
 | 10      | 24 Apr 08:20 – 11:50 | [Symmetric Matrices, SVD and PCA 1](/ALI1_26/10_Symmetric_Matrices_SVD_and_PCA_1/) |
