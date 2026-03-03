@@ -20,7 +20,6 @@ Lay: 4.1-4.3 and 4.5-4.6
         allowfullscreen>
     </iframe>
 </div>
-https://drive.google.com/file/d//view?usp=sharing
 
 ---
 
