@@ -10,6 +10,17 @@ Lay: 4.4, 4.7
 
 [Session Material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCFhq7FZrJJQorMNZVGauVfAYSd9oYjWJr1r3VBA5lJdEQ?e=ikCFi9)
 
+### Session Recording
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1KVLd4MxZ0IeJqc9mZOpzbBTGEp8-uNo8/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
 ---
 
 ## Session Description
