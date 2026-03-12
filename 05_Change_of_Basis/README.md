@@ -116,9 +116,9 @@ Let \(\mathcal{B}=\left\{\mathbf{b}_1, \mathbf{b}_2\right\}\) and \(\mathcal{C}=
 2. Find \([\mathbf{x}]_{\mathcal{C}}\) for \(\mathbf{x}=2 \mathbf{b}_1+3 \mathbf{b}_2\).
 
 ??? answer "&nbsp;"
-    1. \(\underset{C \leftarrow B}{P}=\left[\begin{array}{rr}6 & 9 \\ -2 & -4\end{array}\right]\).
+    1. \(\underset{C \leftarrow B}{P}=\left[\begin{array}{rr}-2 & 3 \\ 4 & -6\end{array}\right]\).
 
-    2. \([\mathbf{x}]_C=\left[\begin{array}{r}0 \\ -2\end{array}\right]\)
+    2. \([\mathbf{x}]_C=\left[\begin{array}{r}5 \\ -10\end{array}\right]\)
 
 **Exercises 7** (4.7.14)
 
