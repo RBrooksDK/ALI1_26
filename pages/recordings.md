@@ -61,13 +61,12 @@
 ### 06 Eigenvalues
 
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
-    <video 
-        src="/ALI1_26/figures/comingsoon.mp4" 
+    <iframe 
+        src="https://drive.google.com/file/d/1E3LATYXYl5F0vBaAgISsTcXPG5-85Qs_/preview" 
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
-        autoplay
-        muted
+        allow="autoplay; encrypted-media" 
         allowfullscreen>
-    </video>
+    </iframe>
 </div>
 
 ### 07 More Linear Transformations and Differential Equations
