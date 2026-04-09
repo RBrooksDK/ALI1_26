@@ -4,11 +4,11 @@
 
 Lay: 6.1-6.3
 
-[Recap and Exercises]()
+[Recap and Exercises](https://drive.google.com/file/d/1V4G78IfT3CJb5A9G6nVtJmWEbLc72hQY/view?usp=sharing)
 
-[Session Notes]()
+[Session Notes](https://drive.google.com/file/d/1XvTCyFRvTqJRxM4bG_-7ANNmKPLYxknt/view?usp=sharing)
 
-[Session Material]()
+[Session Material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCYcDyQ5PBORL94cIeu8Jv1AV4tUy7wrwKcJ2UXG9hGQ3s?e=KfdxIA)
 
 ---
 
