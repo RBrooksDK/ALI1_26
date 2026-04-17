@@ -3,11 +3,11 @@
 ## Session Material:
 Lay: ​​​6.4-6.6
 
-[Recap and Exercises]()
+[Recap](https://drive.google.com/file/d/1jRV38A8438aLA7amBEcjOc2V8gi-vNZH/view?usp=sharing)
 
 [Session Notes]()
 
-[Session Material]()
+[Session Material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgDzu8xknOZLTLyCC-Y0FrIqAeRjq0xnVT5EA39iQ8X9sm4?e=S0U848)
 
 ---
 
