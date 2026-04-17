@@ -5,7 +5,7 @@ Lay: ​​​6.4-6.6
 
 [Recap](https://drive.google.com/file/d/1jRV38A8438aLA7amBEcjOc2V8gi-vNZH/view?usp=sharing)
 
-[Session Notes]()
+[Session Notes](https://drive.google.com/file/d/1ygtv9ckbIz8fQzj-fcgertgCg5BaQsaS/view?usp=sharing)
 
 [Session Material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgDzu8xknOZLTLyCC-Y0FrIqAeRjq0xnVT5EA39iQ8X9sm4?e=S0U848)
 
