@@ -7,7 +7,16 @@ Lay: ​​​6.4-6.6
 
 [Session Notes](https://drive.google.com/file/d/1ygtv9ckbIz8fQzj-fcgertgCg5BaQsaS/view?usp=sharing)
 
-[Session Material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgDzu8xknOZLTLyCC-Y0FrIqAeRjq0xnVT5EA39iQ8X9sm4?e=S0U848)
+[Session Material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgDzu8xknOZLTLyCC-Y0FrIqAeRjq0xnVT5EA39iQ8X9sm4?e=S0U848)### Session Recording
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1CPhqaRwhfLsjGLU22KkXNbJnk7IWLn0x/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
 
 ---
 
