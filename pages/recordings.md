@@ -105,14 +105,15 @@
 
 ### 10 Symmetric Matrices, SVD and PCA 1
 
+**Note:** The audio is fairly poor in the last part of the recording due to issues with the microphone - around the last 20 minutes or so.
+
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
-    <video 
-        src="/ALI1_26/figures/comingsoon.mp4" 
+    <iframe 
+        src="https://drive.google.com/file/d/12rANgIX_gz1Gh6FOvHyuK53uhFpQES8a/preview" 
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
-        autoplay
-        muted
+        allow="autoplay; encrypted-media" 
         allowfullscreen>
-    </video>
+    </iframe>
 </div>
 
 ### 11 Symmetric Matrices, SVD and PCA 2

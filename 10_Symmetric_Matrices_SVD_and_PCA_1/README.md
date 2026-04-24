@@ -10,6 +10,19 @@ Lay: ​​​​7.1+7.4-7.5
 
 [Session Material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgDb2-ufWhVoT7rb34Pp_lQWAeYbMDZtqO1oOzhgaekNeAU?e=fIdtDf)
 
+### Session Recording
+
+**Note:** The audio is fairly poor in the last part of the recording due to issues with the microphone - around the last 20 minutes or so.
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/12rANgIX_gz1Gh6FOvHyuK53uhFpQES8a/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
 ---
 
 ## Session Description
