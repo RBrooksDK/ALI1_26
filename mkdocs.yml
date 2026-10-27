@@ -5,6 +5,8 @@ site_author: Richard Brooks
 site_description: Course page for Applied Linear Algebra at VIA University College
 docs_dir: .
 site_dir: ../site
+exclude_docs: |
+  CLAUDE.md
 # Repository information
 repo_name: Github
 repo_url: https://github.com/RBrooksDK/ALI1_26
