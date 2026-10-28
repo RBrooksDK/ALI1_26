@@ -13,5 +13,4 @@ Kursusside (engelsk) for ALI1, et af minimumskurserne for at søge ind på AU's 
 - `site_dir: ../site`, dvs. `C:\GitHub\site`, som deles med MSU1_26 og STA_26. Byg til en anden mappe (`mkdocs build --strict -d <mappe>`), hvis flere sites bygges efter hinanden.
 - Ingen `mkdocs-jupyter`.
 - Ingen `.gitignore`. Pas på ikke at committe `.venv/` eller byggeoutput.
-- CI (`ci.yml`) kører kun `mkdocs gh-deploy --force` med Python `3.x`, uden `--strict`. Kør selv `mkdocs build --strict` før push.
 - Den lokale `.venv` er i stykker (dens launcher peger på `OneDrive - ViaUC\Arbejde\GitHub\ALI1_25\.venv`). Byg med den globale `mkdocs`, indtil den er genskabt.

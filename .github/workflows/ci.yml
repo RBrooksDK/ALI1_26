@@ -28,13 +28,18 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.x
+          python-version: "3.12"
 
       - name: Install dependencies
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
           pip install mkdocs
+
+      - name: Build site (strict)
+        run: mkdocs build --strict
+        env:
+          DISABLE_MKDOCS_2_WARNING: "true"
 
       - name: Deploy
         run: mkdocs gh-deploy --force
